@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KCOperationViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mw-Tu-ETi">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="并发queue测试"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="32" y="65" width="103" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="ya9-xn-BIl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5v-yV-PTO">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="多线程停止"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="32" y="103" width="75" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="kSv-hE-V7F"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjS-M3-o58">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="NSArray 遍历"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="32" y="147" width="91" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="arrayBianliClick:" destination="-1" eventType="touchUpInside" id="SpN-NM-g5y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAh-IF-cEf">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="NSCache"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="32" y="204" width="64" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="cacheClick:" destination="-1" eventType="touchUpInside" id="Y4Q-Z3-D7P"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="2mw-Tu-ETi"/>
+                    <exclude reference="X5v-yV-PTO"/>
+                    <exclude reference="QjS-M3-o58"/>
+                    <exclude reference="OAh-IF-cEf"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="2mw-Tu-ETi"/>
+                    <include reference="X5v-yV-PTO"/>
+                    <include reference="QjS-M3-o58"/>
+                    <include reference="OAh-IF-cEf"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

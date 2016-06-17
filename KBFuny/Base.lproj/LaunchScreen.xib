@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" highlightedImage="ReceiverVoiceNodePlaying" translatesAutoresizingMaskIntoConstraints="NO" id="UGv-32-lel">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="copyRight@杭州快的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZv-Tw-Zvu">
+                    <rect key="frame" x="80" y="449" width="161" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UGv-32-lel" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="255-Qb-rhF"/>
+                <constraint firstItem="UGv-32-lel" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HYA-cx-RaW"/>
+                <constraint firstAttribute="trailing" secondItem="UGv-32-lel" secondAttribute="trailing" id="Oyx-Qp-Drr"/>
+                <constraint firstAttribute="bottom" secondItem="UGv-32-lel" secondAttribute="bottom" id="XL3-sQ-Iq0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="345" y="465"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ReceiverVoiceNodePlaying" width="20" height="20"/>
+        <image name="welcome" width="320" height="480"/>
+    </resources>
+</document>

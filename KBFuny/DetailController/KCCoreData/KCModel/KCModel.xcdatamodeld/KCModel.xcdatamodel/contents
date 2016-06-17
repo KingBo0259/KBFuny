@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="createData" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderNumer" optional="YES" attributeType="String" syncable="YES"/>
+        <fetchedProperty name="orderFatch" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Order"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="OrderDetail" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="OrderDetail" positionX="-243" positionY="-135" width="128" height="73"/>
+        <element name="Order" positionX="-468" positionY="-133" width="128" height="116"/>
+    </elements>
+</model>
