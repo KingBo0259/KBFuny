@@ -24,17 +24,30 @@ static dispatch_source_t source_t;
 @property(weak,nonatomic)NSThread *thread;
 @property(assign,nonatomic)CFRunLoopRef runLoopRef;
 @property(assign,nonatomic)CFRunLoopSourceRef source;
+@property(assign,nonatomic)NSInteger productNumber;
+
+@property(strong,nonatomic)NSCondition *condition;
+@property(strong,nonatomic)NSMutableArray<NSString*> *sources;//资源列表
 
 @end
 
 @implementation KBCrandCenterDispatchViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor whiteColor];
 
+    self.condition=[[NSCondition alloc]init];
+    self.sources=[[NSMutableArray alloc]init];
+    
     [self createDataSource];
+    
+    
+    [self createCustomer];
+    
     [self UIInit];
 
 }
@@ -128,8 +141,105 @@ static dispatch_source_t source_t;
     }];
 
     
+    
+    UIButton *productButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [productButton setTitle:@"生产者模式" forState:UIControlStateNormal];
+    [productButton addTarget:self action:@selector(productButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:productButton];
+    
+    [productButton makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.left.equalTo(runLoopBtn);
+        make.top.equalTo(creatLoopButton.mas_bottom).offset(10);
+    }];
+    
+    
+    
 }
 
+#pragma mark - 生产者 | 消费者
+
+
+-(void)productButtonClick:(id)sender{
+
+
+    static NSUInteger index=0;
+    NSThread *thread=[[NSThread  alloc]initWithTarget:self selector:@selector(productorHander) object:nil];
+    thread.name= [NSString stringWithFormat:@"ProductThread%li",index ];
+    [thread start];
+
+}
+
+
+
+//生存者创建
+-(void)productorHander{
+
+    
+    [self.condition lock];
+    
+    NSLog(@" productorHander Begin");
+    
+    self.productNumber++;
+    
+    [self.sources addObject:[NSString stringWithFormat: @"source%li",self.productNumber]];
+    
+    sleep(3);
+    [self.condition signal];//发送信号量
+    
+    
+    NSLog(@" productorHander End");
+
+    [self.condition unlock];
+    
+    
+    
+
+}
+
+//创建消费者列表
+-(void)createCustomer{
+    NSThread *productThread=[[NSThread alloc]initWithTarget:self selector:@selector(customerHander) object:nil];
+
+    [productThread start];
+    
+}
+//消费则
+-(void)customerHander{
+
+    
+    
+    
+    
+    while (1) {
+        
+        NSLog(@"customerHander begion");
+
+        [self.condition lock];
+        [self.condition wait];//等待
+        
+        NSLog(@"开始处理事件");
+
+        for (NSInteger i=self.sources.count-1; i>=0; --i) {
+            NSLog(@"printSource:第%li个; name: %@",i,[self.sources lastObject]);
+            [self.sources removeLastObject];
+        }
+        
+        //处理事件
+        sleep(5);
+        
+        NSLog(@"结束事件");
+        [self.condition unlock];
+
+        
+        NSLog(@"customerHander End");
+
+    }
+    
+
+    
+    
+
+}
 #pragma mark - GCD 实现倒计时
 ///GCD 实现倒计时
 -(void)startCountDown:(UIButton*)sender{
@@ -283,6 +393,8 @@ static void fire(void* info __unused){
     
     dispatch_source_set_event_handler(source_t, ^{
         NSLog(@"dispatch_source_set_event_handler");
+        
+        sleep(5);
     });
     
     dispatch_source_set_event_handler(source_t, ^{ //block 不能叠加

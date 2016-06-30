@@ -39,12 +39,13 @@
     
     
     //2、画长方形(圆角任意)
-    CGRect rect=CGRectMake(100, 150, 100, 40);
-    UIRectCorner rectCorners=UIRectCornerBottomLeft|UIRectCornerTopLeft;
-    CGSize conerRadii=CGSizeMake(10, 2);
+    CGRect rect=CGRectMake(100, 150, 200, 40);
+    UIRectCorner rectCorners=UIRectCornerTopRight|UIRectCornerTopLeft;
+    CGSize conerRadii=CGSizeMake(20, 20);
     bezierPath=[UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:rectCorners cornerRadii:conerRadii];
     shaperLayer=[CAShapeLayer layer];
     shaperLayer.path=bezierPath.CGPath;
+    
     shaperLayer.strokeColor=[UIColor redColor].CGColor;
     shaperLayer.lineWidth=1;
     shaperLayer.fillColor=[UIColor greenColor].CGColor;
