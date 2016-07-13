@@ -96,6 +96,9 @@
 		A959F1F51B0F3E540050D9A2 /* KBArchiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = A959F1F41B0F3E540050D9A2 /* KBArchiveController.m */; };
 		A959F1FB1B0F3F310050D9A2 /* KCAddressResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A959F1F81B0F3F310050D9A2 /* KCAddressResponse.m */; };
 		A959F1FC1B0F3F310050D9A2 /* KCUserLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A959F1FA1B0F3F310050D9A2 /* KCUserLoginResponse.m */; };
+		A95F4ADE1D34E3E100EE6A72 /* KBCALayerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A95F4ADD1D34E3E100EE6A72 /* KBCALayerFactory.m */; };
+		A95F4AE11D34EBA400EE6A72 /* KBShaperTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95F4AE01D34EBA400EE6A72 /* KBShaperTableViewController.m */; };
+		A96337BB1D35DE7000726E2F /* KBShaperLayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96337BA1D35DE7000726E2F /* KBShaperLayerDemoViewController.m */; };
 		A9678A0A1C843DA9006EB732 /* KBCrandCenterDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9678A091C843DA9006EB732 /* KBCrandCenterDispatchViewController.m */; };
 		A976153D1C297F8C00741586 /* KCNetWorkProxy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A976153A1C297F8300741586 /* KCNetWorkProxy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A976637D1C0ECB8A00F7E3C9 /* KBRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A976637C1C0ECB8A00F7E3C9 /* KBRefreshViewController.m */; };
@@ -321,6 +324,12 @@
 		A959F1F81B0F3F310050D9A2 /* KCAddressResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAddressResponse.m; sourceTree = "<group>"; };
 		A959F1F91B0F3F310050D9A2 /* KCUserLoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCUserLoginResponse.h; sourceTree = "<group>"; };
 		A959F1FA1B0F3F310050D9A2 /* KCUserLoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCUserLoginResponse.m; sourceTree = "<group>"; };
+		A95F4ADC1D34E3E100EE6A72 /* KBCALayerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBCALayerFactory.h; sourceTree = "<group>"; };
+		A95F4ADD1D34E3E100EE6A72 /* KBCALayerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBCALayerFactory.m; sourceTree = "<group>"; };
+		A95F4ADF1D34EBA400EE6A72 /* KBShaperTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBShaperTableViewController.h; path = DetailController/KBShaperLayerController/KBShaperTableViewController.h; sourceTree = "<group>"; };
+		A95F4AE01D34EBA400EE6A72 /* KBShaperTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBShaperTableViewController.m; path = DetailController/KBShaperLayerController/KBShaperTableViewController.m; sourceTree = "<group>"; };
+		A96337B91D35DE7000726E2F /* KBShaperLayerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBShaperLayerDemoViewController.h; path = DetailController/KBShaperLayerController/KBShaperLayerDemoViewController.h; sourceTree = "<group>"; };
+		A96337BA1D35DE7000726E2F /* KBShaperLayerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBShaperLayerDemoViewController.m; path = DetailController/KBShaperLayerController/KBShaperLayerDemoViewController.m; sourceTree = "<group>"; };
 		A9678A081C843DA9006EB732 /* KBCrandCenterDispatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBCrandCenterDispatchViewController.h; path = DetailController/KBGrandCenterDispatch/KBCrandCenterDispatchViewController.h; sourceTree = "<group>"; };
 		A9678A091C843DA9006EB732 /* KBCrandCenterDispatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCrandCenterDispatchViewController.m; path = DetailController/KBGrandCenterDispatch/KBCrandCenterDispatchViewController.m; sourceTree = "<group>"; };
 		A976153A1C297F8300741586 /* KCNetWorkProxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KCNetWorkProxy.framework; path = /Users/jinlb/Desktop/mySelf/2015/KBFuny/KBFuny/KCNetWorkProxy.framework; sourceTree = "<absolute>"; };
@@ -826,6 +835,30 @@
 			path = Custom/ArciveModel;
 			sourceTree = "<group>";
 		};
+		A95F4AD31D34DD2B00EE6A72 /* KBShaperController */ = {
+			isa = PBXGroup;
+			children = (
+				A95F4AD81D34DE4100EE6A72 /* Customer */,
+				A9E268771AEC728F008EA651 /* KBShaperLayerController.h */,
+				A9E268781AEC728F008EA651 /* KBShaperLayerController.m */,
+				A95F4ADF1D34EBA400EE6A72 /* KBShaperTableViewController.h */,
+				A95F4AE01D34EBA400EE6A72 /* KBShaperTableViewController.m */,
+				A96337B91D35DE7000726E2F /* KBShaperLayerDemoViewController.h */,
+				A96337BA1D35DE7000726E2F /* KBShaperLayerDemoViewController.m */,
+			);
+			name = KBShaperController;
+			sourceTree = "<group>";
+		};
+		A95F4AD81D34DE4100EE6A72 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				A95F4ADC1D34E3E100EE6A72 /* KBCALayerFactory.h */,
+				A95F4ADD1D34E3E100EE6A72 /* KBCALayerFactory.m */,
+			);
+			name = Customer;
+			path = DetailController/KBShaperLayerController/Customer;
+			sourceTree = "<group>";
+		};
 		A9678A071C843CD5006EB732 /* KCGrandCenterDispatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1017,6 +1050,7 @@
 		A9DF77771AE10A7600055E0C /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
+				A95F4AD31D34DD2B00EE6A72 /* KBShaperController */,
 				A9839DA01CD1E35C00F2F257 /* KCCoreData */,
 				A928D1641CC4911700E1247C /* KCTms */,
 				A981027F1C9146690053127B /* KCOperationQueue */,
@@ -1030,8 +1064,6 @@
 				A949CD941B2142010012D0A1 /* RecordController */,
 				A9DF77781AE10AB600055E0C /* KBSecondViewController.h */,
 				A9DF77791AE10AB600055E0C /* KBSecondViewController.m */,
-				A9E268771AEC728F008EA651 /* KBShaperLayerController.h */,
-				A9E268781AEC728F008EA651 /* KBShaperLayerController.m */,
 				A92D07261AF5C75A002D4928 /* KBMediaTimingViewController.h */,
 				A92D07271AF5C75A002D4928 /* KBMediaTimingViewController.m */,
 				A90D43501B07470F009F65C0 /* KBHessianViewController.h */,
@@ -1389,6 +1421,7 @@
 				A90D441D1B0750D2009F65C0 /* CWHessianUnarchiver.m in Sources */,
 				A9839DA81CD1E49F00F2F257 /* KCModel.xcdatamodeld in Sources */,
 				A98102831C9149F10053127B /* KCOperationViewController.m in Sources */,
+				A95F4AE11D34EBA400EE6A72 /* KBShaperTableViewController.m in Sources */,
 				A90D441B1B0750D2009F65C0 /* CWHessianConnection.m in Sources */,
 				A9839DB21CD1EA2C00F2F257 /* KBCoreDataMananger.m in Sources */,
 				A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */,
@@ -1418,6 +1451,7 @@
 				A98ED64F1AA013B10031BA10 /* AppDelegate.m in Sources */,
 				A9839DA41CD1E39000F2F257 /* KCCoredataViewController.m in Sources */,
 				A976637D1C0ECB8A00F7E3C9 /* KBRefreshViewController.m in Sources */,
+				A95F4ADE1D34E3E100EE6A72 /* KBCALayerFactory.m in Sources */,
 				A9839DAF1CD1E82C00F2F257 /* Order.m in Sources */,
 				A90D44181B0750D2009F65C0 /* CWHessianArchiver+Private.m in Sources */,
 				A98ED6521AA013B10031BA10 /* MasterViewController.m in Sources */,
@@ -1446,6 +1480,7 @@
 				A9F3925A1C61D4D70008F62B /* Lion.m in Sources */,
 				A98ED6551AA013B10031BA10 /* DetailViewController.m in Sources */,
 				A9E268791AEC728F008EA651 /* KBShaperLayerController.m in Sources */,
+				A96337BB1D35DE7000726E2F /* KBShaperLayerDemoViewController.m in Sources */,
 				A9F392571C61AF460008F62B /* Tiger.m in Sources */,
 				A9D7D83A1AC4F6D10075E333 /* KBBadgeView.m in Sources */,
 				A928D17C1CC5E2C100E1247C /* KCCityListResponse.m in Sources */,

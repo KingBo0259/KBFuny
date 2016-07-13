@@ -10,4 +10,13 @@
 
 @interface KBCALayerFactory : NSObject
 
+/**
+ *  创建自定义shaperLayer  代尖头遮罩效果 
+ *
+ *  @param view 父view
+ *
+ *  @return CAShaperLayer
+ */
++(CAShapeLayer*)createShaperWithView:(UIView*)view;
+
 @end

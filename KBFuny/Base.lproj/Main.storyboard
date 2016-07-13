@@ -1309,7 +1309,7 @@
     </scenes>
     <resources>
         <image name="Door" width="126" height="219"/>
-        <image name="ball" width="46" height="45"/>
+        <image name="ball" width="23" height="22"/>
         <image name="bigShiper" width="42" height="38"/>
     </resources>
 </document>

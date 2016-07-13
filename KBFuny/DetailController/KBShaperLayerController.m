@@ -8,6 +8,7 @@
 
 #import "KBShaperLayerController.h"
 #import "UIImage+KBImage.h"
+#import "KBCALayerFactory.h"
 
 
 @interface KBShaperLayerController ()
@@ -112,6 +113,12 @@
     }];
     
     
+    //view
+    UIView *tempView=[[UIView alloc]initWithFrame:CGRectMake(10, 180, 100, 100)];
+    tempView.backgroundColor=[UIColor redColor];
+    tempView.layer.mask=[KBCALayerFactory createShaperWithView:tempView];
+    
+    [self.view addSubview:tempView];
 
     
  }

@@ -142,7 +142,7 @@
                         ,@"GrandCenterDispatch"
                         ,@"KCNetworkframework"
                         ,@"OperationQueue And Other "
-                        ,@"TMS"
+                        ,@"ShaperLayer1"
                         ,@"CoreData"
                         , nil];
     }
@@ -284,7 +284,7 @@
         //1、 设置动画
         [self navigationAnimation:@"suckEffect"];
         
-        Class class=NSClassFromString(@"KCTmsViewController");
+        Class class=NSClassFromString(@"KBShaperTableViewController");
         id obj=[class new];
         [self.navigationController pushViewController:obj animated:YES];
 
