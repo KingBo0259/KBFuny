@@ -84,7 +84,7 @@
 
 -(void)click:(id)sender{
 
-    UIAlertController *alertController=[UIAlertController alertControllerWithTitle:@"点我干什么" message:@"在点一次呗" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController=[UIAlertController alertControllerWithTitle:@"点我干什么" message:@"再点一次呗" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *cancel=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
     [alertController addAction:cancel];
     
