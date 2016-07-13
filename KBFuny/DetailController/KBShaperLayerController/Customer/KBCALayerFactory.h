@@ -19,4 +19,12 @@
  */
 +(CAShapeLayer*)createShaperWithView:(UIView*)view;
 
+
+/**
+ *  圆形进度条
+ *
+ *  @return
+ */
++(CAShapeLayer*)circlProgressLayerWithWidth:(CGFloat)width;
+
 @end

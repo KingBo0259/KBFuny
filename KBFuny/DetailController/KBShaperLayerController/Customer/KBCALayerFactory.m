@@ -49,4 +49,32 @@
     return shaperLayer;
 
 }
+
+/**
+ *  圆形进度条
+ *
+ *  @return
+ */
++(CAShapeLayer*)circlProgressLayerWithWidth:(CGFloat)width{
+
+    CAShapeLayer *shaperLayer=[CAShapeLayer layer];
+    
+    //画内切圆
+    UIBezierPath *path=[UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, width, width)];
+    shaperLayer.path=path.CGPath;
+    shaperLayer.fillColor=[UIColor clearColor].CGColor;
+    shaperLayer.lineWidth=10.;
+    shaperLayer.strokeColor=[UIColor redColor].CGColor;
+    //添加动画
+    CABasicAnimation *pathAnima=[CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    pathAnima.duration=2.0f;
+    pathAnima.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    pathAnima.fromValue=@0.0f;
+    pathAnima.toValue=@1.0f;
+    pathAnima.fillMode=kCAFillModeForwards;
+    pathAnima.removedOnCompletion=YES;
+    
+    [shaperLayer addAnimation:pathAnima forKey:@"strokeEndAnimation"];
+    return shaperLayer;
+}
 @end

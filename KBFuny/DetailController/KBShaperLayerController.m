@@ -39,7 +39,7 @@
     [self.view.layer addSublayer:shaperLayer];
     
     
-    //2、画长方形(圆角任意)
+    //2、在矩形中，可以针对四角中的某个角加圆角
     CGRect rect=CGRectMake(100, 150, 200, 40);
     UIRectCorner rectCorners=UIRectCornerTopRight|UIRectCornerTopLeft;
     CGSize conerRadii=CGSizeMake(20, 20);

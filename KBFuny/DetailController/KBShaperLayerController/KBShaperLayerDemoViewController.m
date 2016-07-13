@@ -60,11 +60,35 @@
     
 
     
+    //圆形进度条
+    
+    UIView *criclProcessView=[[UIView alloc]init];
+    criclProcessView.frame=CGRectMake(30, 200, 100, 100);
+    
+   [criclProcessView.layer addSublayer:   [KBCALayerFactory circlProgressLayerWithWidth:criclProcessView.frame.size.width]];
+    [self.view addSubview:criclProcessView];
+    
+    descripLabel=[UILabel new];
+    descripLabel.textColor=[UIColor blackColor];
+    descripLabel.text=@"使用了CAShapeLayer的strokeStart和strokeEnd属性 来进行绘制";
+    descripLabel.numberOfLines=0;
+    [self.view addSubview:descripLabel];
+    [descripLabel makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.bottom.equalTo(criclProcessView);
+        make.left.equalTo(criclProcessView.right).offset(5);
+        make.right.equalTo(self.view).offset(-5);
+    }];
+    
 }
 
 -(void)click:(id)sender{
 
-    NSLog(@"click");
+    UIAlertController *alertController=[UIAlertController alertControllerWithTitle:@"点我干什么" message:@"在点一次呗" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+    [alertController addAction:cancel];
+    
+    [self.navigationController presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
