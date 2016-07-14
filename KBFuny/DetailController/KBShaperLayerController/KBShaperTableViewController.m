@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"CALayer 效果案例";
-    self.titles=@[@"模态/遮罩/边框/粒子效果",@"Mask"];
-    self.detailControllers=@[@"KBShaperLayerController",@"KBShaperLayerDemoViewController"];
+    self.titles=@[@"模态/遮罩/边框/粒子效果",@"Mask",@"UIBezierPath"];
+    self.detailControllers=@[@"KBShaperLayerController",@"KBShaperLayerDemoViewController",@"UIBezierPathViewController"];
 }
 
 - (void)didReceiveMemoryWarning {
