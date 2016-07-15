@@ -68,10 +68,10 @@ NSString* const KBRefreshViewControlStr=@"KBRefreshViewControlStr";
     
     
     button=[UIButton buttonWithType:UIButtonTypeSystem];
-    [button setTitle:@"Framework调用" forState:UIControlStateNormal];
-    button.frame=CGRectMake(160, 60, 100, 40);
+    [button setTitle:@"系统自带share" forState:UIControlStateNormal];
+    button.frame=CGRectMake(160, 60, 200, 40);
     button.tag=2;
-    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(shareAction:) forControlEvents:UIControlEventTouchUpInside];
     [headerView addSubview:button];
     
     
@@ -111,6 +111,31 @@ NSString* const KBRefreshViewControlStr=@"KBRefreshViewControlStr";
 //    [self.refreshControl beginRefreshing];
 }
 
+
+
+- (IBAction)shareAction:(id)sender {
+    
+    NSString *textToShare =@"我是kingbo博客。";
+    
+    UIImage *imageToShare = [UIImage imageNamed:@"联系人"];
+    
+    NSURL *urlToShare = [NSURL URLWithString:@"http://www.iosbook3.com"];
+    
+    NSArray *activityItems = @[textToShare, imageToShare, urlToShare];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc]initWithActivityItems:activityItems
+                                            
+                                                                            applicationActivities:nil];
+    
+    //不出现在活动项目
+    
+    activityVC.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeCopyToPasteboard,
+                                         
+                                         UIActivityTypeAssignToContact,UIActivityTypeSaveToCameraRoll];
+    
+    [self presentViewController:activityVC animated:TRUE completion:nil];
+    
+}
 
 -(void)showAlertController{
 

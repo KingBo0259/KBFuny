@@ -234,7 +234,6 @@
 
 -(void)createBezire{
 
-    
     self.bootBezierLineLayer= [self curveStartPoint:[_points[0] CGPointValue] ToPoint:[_points[3] CGPointValue] controlPoint1:[_points[1] CGPointValue] controlPoint2:[_points[2] CGPointValue]];
     
     [self.bootView.layer addSublayer:self.bootBezierLineLayer];
