@@ -146,6 +146,7 @@
 		A9F392541C61ABF50008F62B /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F392531C61ABF50008F62B /* Animal.m */; };
 		A9F392571C61AF460008F62B /* Tiger.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F392561C61AF460008F62B /* Tiger.m */; };
 		A9F3925A1C61D4D70008F62B /* Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F392591C61D4D70008F62B /* Lion.m */; };
+		A9FEFC2E1D41E94600E830F2 /* KBShoppingCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FEFC2D1D41E94600E830F2 /* KBShoppingCartController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -436,6 +437,8 @@
 		A9F392561C61AF460008F62B /* Tiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tiger.m; path = DetailController/KBObjectiveC/Tiger.m; sourceTree = "<group>"; };
 		A9F392581C61D4D70008F62B /* Lion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lion.h; path = DetailController/KBObjectiveC/Animal/Lion.h; sourceTree = "<group>"; };
 		A9F392591C61D4D70008F62B /* Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lion.m; path = DetailController/KBObjectiveC/Animal/Lion.m; sourceTree = "<group>"; };
+		A9FEFC2C1D41E94600E830F2 /* KBShoppingCartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBShoppingCartController.h; path = DetailController/KBShaperLayerController/KBShoppingCartController.h; sourceTree = "<group>"; };
+		A9FEFC2D1D41E94600E830F2 /* KBShoppingCartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBShoppingCartController.m; path = DetailController/KBShaperLayerController/KBShoppingCartController.m; sourceTree = "<group>"; };
 		B69C1FBEA80B086699A2DE14 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAB3643DE78F715BD32C189 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -850,6 +853,8 @@
 				A96337BA1D35DE7000726E2F /* KBShaperLayerDemoViewController.m */,
 				A96337BC1D37644400726E2F /* UIBezierPathViewController.h */,
 				A96337BD1D37644400726E2F /* UIBezierPathViewController.m */,
+				A9FEFC2C1D41E94600E830F2 /* KBShoppingCartController.h */,
+				A9FEFC2D1D41E94600E830F2 /* KBShoppingCartController.m */,
 			);
 			name = KBShaperController;
 			sourceTree = "<group>";
@@ -1460,6 +1465,7 @@
 				A95F4ADE1D34E3E100EE6A72 /* KBCALayerFactory.m in Sources */,
 				A9839DAF1CD1E82C00F2F257 /* Order.m in Sources */,
 				A90D44181B0750D2009F65C0 /* CWHessianArchiver+Private.m in Sources */,
+				A9FEFC2E1D41E94600E830F2 /* KBShoppingCartController.m in Sources */,
 				A98ED6521AA013B10031BA10 /* MasterViewController.m in Sources */,
 				A98ED64C1AA013B10031BA10 /* main.m in Sources */,
 				A92C51BF1CC8D9C20097C699 /* KCTMSUnarchive.m in Sources */,

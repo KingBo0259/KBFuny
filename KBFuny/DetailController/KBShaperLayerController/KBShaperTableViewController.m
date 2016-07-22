@@ -19,9 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"CALayer 效果案例";
-    self.titles=@[@"模态/遮罩/边框/粒子效果",@"Mask",@"UIBezierPath"];
-    self.detailControllers=@[@"KBShaperLayerController",@"KBShaperLayerDemoViewController",@"UIBezierPathViewController"];
-}
+    self.titles=@[@"模态/遮罩/边框/粒子效果",@"Mask",@"UIBezierPath",@"类似淘宝购物车"];
+    
+    self.detailControllers=@[@"KBShaperLayerController",@"KBShaperLayerDemoViewController",@"UIBezierPathViewController",@"KBShoppingCartController"];
+    
+    UIBarButtonItem *backItem=[[UIBarButtonItem alloc]init];
+    backItem.title=@"";
+    self.navigationItem.backBarButtonItem=backItem;}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
