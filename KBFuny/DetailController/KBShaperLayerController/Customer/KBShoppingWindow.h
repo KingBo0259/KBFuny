@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KBShoppingCartDetailController.h"
+
 
 @interface KBShoppingWindow : UIWindow
 
+@property(weak,nonatomic) id<KBShoppingCartDetailDelegate>delegate;
++(instancetype)shareShoppingWindow;
+
+-(void)show;
+-(void)hide;
 @end

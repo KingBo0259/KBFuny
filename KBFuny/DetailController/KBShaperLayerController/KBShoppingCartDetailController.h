@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol  KBShoppingCartDetailDelegate <NSObject>
+
+-(void)shoppingCartDetailHidden;
+@end
+
+
 @interface KBShoppingCartDetailController : UIViewController
 
+@property(weak,nonatomic) id<KBShoppingCartDetailDelegate> delegate;
+
+-(void)showAnimation;
+
 @end
+
+

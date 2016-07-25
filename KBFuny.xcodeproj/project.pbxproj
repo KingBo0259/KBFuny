@@ -147,6 +147,8 @@
 		A9F392571C61AF460008F62B /* Tiger.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F392561C61AF460008F62B /* Tiger.m */; };
 		A9F3925A1C61D4D70008F62B /* Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F392591C61D4D70008F62B /* Lion.m */; };
 		A9FEFC2E1D41E94600E830F2 /* KBShoppingCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FEFC2D1D41E94600E830F2 /* KBShoppingCartController.m */; };
+		A9FEFC311D421B2800E830F2 /* KBShoppingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FEFC301D421B2800E830F2 /* KBShoppingWindow.m */; };
+		A9FEFC341D421CBE00E830F2 /* KBShoppingCartDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FEFC331D421CBE00E830F2 /* KBShoppingCartDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -439,6 +441,10 @@
 		A9F392591C61D4D70008F62B /* Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lion.m; path = DetailController/KBObjectiveC/Animal/Lion.m; sourceTree = "<group>"; };
 		A9FEFC2C1D41E94600E830F2 /* KBShoppingCartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBShoppingCartController.h; path = DetailController/KBShaperLayerController/KBShoppingCartController.h; sourceTree = "<group>"; };
 		A9FEFC2D1D41E94600E830F2 /* KBShoppingCartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBShoppingCartController.m; path = DetailController/KBShaperLayerController/KBShoppingCartController.m; sourceTree = "<group>"; };
+		A9FEFC2F1D421B2800E830F2 /* KBShoppingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBShoppingWindow.h; sourceTree = "<group>"; };
+		A9FEFC301D421B2800E830F2 /* KBShoppingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBShoppingWindow.m; sourceTree = "<group>"; };
+		A9FEFC321D421CBE00E830F2 /* KBShoppingCartDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBShoppingCartDetailController.h; path = DetailController/KBShaperLayerController/KBShoppingCartDetailController.h; sourceTree = "<group>"; };
+		A9FEFC331D421CBE00E830F2 /* KBShoppingCartDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBShoppingCartDetailController.m; path = DetailController/KBShaperLayerController/KBShoppingCartDetailController.m; sourceTree = "<group>"; };
 		B69C1FBEA80B086699A2DE14 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAB3643DE78F715BD32C189 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -855,6 +861,8 @@
 				A96337BD1D37644400726E2F /* UIBezierPathViewController.m */,
 				A9FEFC2C1D41E94600E830F2 /* KBShoppingCartController.h */,
 				A9FEFC2D1D41E94600E830F2 /* KBShoppingCartController.m */,
+				A9FEFC321D421CBE00E830F2 /* KBShoppingCartDetailController.h */,
+				A9FEFC331D421CBE00E830F2 /* KBShoppingCartDetailController.m */,
 			);
 			name = KBShaperController;
 			sourceTree = "<group>";
@@ -864,6 +872,8 @@
 			children = (
 				A95F4ADC1D34E3E100EE6A72 /* KBCALayerFactory.h */,
 				A95F4ADD1D34E3E100EE6A72 /* KBCALayerFactory.m */,
+				A9FEFC2F1D421B2800E830F2 /* KBShoppingWindow.h */,
+				A9FEFC301D421B2800E830F2 /* KBShoppingWindow.m */,
 			);
 			name = Customer;
 			path = DetailController/KBShaperLayerController/Customer;
@@ -1493,9 +1503,11 @@
 				A98ED6551AA013B10031BA10 /* DetailViewController.m in Sources */,
 				A9E268791AEC728F008EA651 /* KBShaperLayerController.m in Sources */,
 				A96337BB1D35DE7000726E2F /* KBShaperLayerDemoViewController.m in Sources */,
+				A9FEFC311D421B2800E830F2 /* KBShoppingWindow.m in Sources */,
 				A9F392571C61AF460008F62B /* Tiger.m in Sources */,
 				A9D7D83A1AC4F6D10075E333 /* KBBadgeView.m in Sources */,
 				A928D17C1CC5E2C100E1247C /* KCCityListResponse.m in Sources */,
+				A9FEFC341D421CBE00E830F2 /* KBShoppingCartDetailController.m in Sources */,
 				A9516F761CF6E5A300B45D71 /* UITextField+BSErrorMessageView.m in Sources */,
 				A90D441E1B0750D2009F65C0 /* CWValueObject+Private.m in Sources */,
 				A9E490211B1706220065B7DA /* KBZbarViewController.m in Sources */,

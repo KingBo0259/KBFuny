@@ -7,8 +7,15 @@
 //
 
 #import "KBShoppingCartController.h"
+#import "KBShoppingWindow.h"
 
 static const  NSTimeInterval  durationTime=0.2f;
+@interface KBShoppingCartController ()<KBShoppingCartDetailDelegate>{
+
+}
+
+
+@end
 
 @implementation KBShoppingCartController
 
@@ -54,6 +61,9 @@ static const  NSTimeInterval  durationTime=0.2f;
  */
 -(void)shrunkView{
     
+    
+    
+    //自身缩小
     [UIView animateWithDuration:durationTime delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         
         CATransform3D perspective=CATransform3DIdentity;//透视效果  结构体用来描述效果
@@ -85,6 +95,11 @@ static const  NSTimeInterval  durationTime=0.2f;
         
     }];
     
+    //试图弹出
+    KBShoppingWindow *shopperWindow=[KBShoppingWindow shareShoppingWindow];
+    shopperWindow.delegate=self;
+    [shopperWindow show];
+    
 
 }
 
@@ -96,14 +111,37 @@ static const  NSTimeInterval  durationTime=0.2f;
     self.navigationController.view.layer.anchorPoint=CGPointMake(0.5, 0.5);
 
     [UIView animateWithDuration:durationTime delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        self.navigationController.view.transform=CGAffineTransformMakeScale(1.0,1.0);
         
+        CATransform3D perspective=CATransform3DIdentity;//透视效果  结构体用来描述效果
+        perspective.m34=-1.0/500.0;
         
+        perspective=CATransform3DScale(perspective, 0.9, 0.9,1.0);
+        perspective=CATransform3DRotate(perspective, M_PI_4/4, 1, 0, 0);
+        self.navigationController.view.layer.transform=perspective;
     } completion:^(BOOL finished) {
         
+        [UIView animateWithDuration:durationTime delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+
+        CATransform3D perspective=CATransform3DIdentity;//透视效果  结构体用来描述效果
+        perspective.m34=-1.0/500.0;
+        
+        perspective=CATransform3DScale(perspective, 1.0, 1.0,1.0);
+        perspective=CATransform3DRotate(perspective, 0, 1, 0, 0);
+        self.navigationController.view.layer.transform=perspective;
+        } completion:nil];
+
+
+
         
     }];
 
 }
 
+#pragma KBShoppingCartDetailDelegate 
+-(void)shoppingCartDetailHidden{
+
+    //恢复图像
+    [self blowUpView];
+
+}
 @end
