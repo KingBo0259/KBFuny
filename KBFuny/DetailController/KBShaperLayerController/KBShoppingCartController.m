@@ -14,6 +14,8 @@ static const  NSTimeInterval  durationTime=0.2f;
 
 }
 
+@property(weak,nonatomic)UIView *myView;
+
 
 @end
 
@@ -37,6 +39,13 @@ static const  NSTimeInterval  durationTime=0.2f;
     [self.view addSubview:fangdaButton];
     
     
+   UIButton * menuButton=[UIButton new];
+    [menuButton setTitle:@"UIMenuContoller" forState:UIControlStateNormal];
+    [menuButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [menuButton addTarget:self action:@selector(menuController:) forControlEvents:UIControlEventTouchUpInside];
+    _myView=menuButton;
+    [self.view addSubview:menuButton];
+    
     [shuoxiaoButton makeConstraints:^(MASConstraintMaker *make) {
        
         make.left.right.equalTo(self.view);
@@ -52,10 +61,58 @@ static const  NSTimeInterval  durationTime=0.2f;
         make.height.equalTo(shuoxiaoButton);
         
     }];
+    
+    [menuButton makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view);
+        make.top.equalTo(fangdaButton.bottom).offset(10);
+        make.height.equalTo(fangdaButton);
+    }];
 
     
 }
 
+#pragma mark  - menu
+-(void)menuController:(UIButton*)button{
+    UIMenuItem *flag = [[UIMenuItem alloc] initWithTitle:@"delete"action:@selector(flag:)];
+    UIMenuItem *approve = [[UIMenuItem alloc] initWithTitle:@"copy"action:@selector(approve:)];
+    UIMenuItem *deny = [[UIMenuItem alloc] initWithTitle:@"cancel"action:@selector(deny:)];
+    
+    UIMenuController *menu=[UIMenuController sharedMenuController];
+    [menu setMenuItems:@[flag,approve,deny]];
+    [menu setTargetRect:CGRectMake(button.frame.origin.x, button.frame.origin.y, button.frame.size.width, 30) inView:self.view];
+    [menu setMenuVisible:YES animated:YES];
+}
+
+
+-(void)flag:(id)sender{
+
+}
+
+-(void)approve:(id)sender{
+
+}
+
+-(void)deny:(id)sender{
+
+}
+//必须要有，如果要UIMenuController显示
+-(BOOL)canBecomeFirstResponder{
+
+    return YES;
+}
+
+//监听自己的定义事件，是 return YES；  否 return NO 即移除系统；
+-(BOOL)canPerformAction:(SEL)action withSender:(id)sender{
+
+    
+    if (action==@selector(flag:)||action==@selector(approve:)||action==@selector(deny:)) {
+        return YES;
+    }
+    return NO;
+}
+
+
+#pragma mark - 效果动画
 /**
  *  缩小试图
  */
@@ -69,7 +126,7 @@ static const  NSTimeInterval  durationTime=0.2f;
         CATransform3D perspective=CATransform3DIdentity;//透视效果  结构体用来描述效果
         perspective.m34=-1.0/500.0;
         
-
+        
         perspective=CATransform3DScale(perspective, 0.9, 0.9,1.0);
         perspective=CATransform3DRotate(perspective, M_PI_4/4, 1, 0, 0);
         self.navigationController.view.layer.transform=perspective;
@@ -88,7 +145,7 @@ static const  NSTimeInterval  durationTime=0.2f;
             perspective=CATransform3DScale(perspective, 0.9, 0.9,1.0);
             perspective=CATransform3DRotate(perspective, 0, 1, 0, 0);
             self.navigationController.view.layer.transform=perspective;
-
+            
             
         } completion:nil];
         
@@ -100,8 +157,10 @@ static const  NSTimeInterval  durationTime=0.2f;
     shopperWindow.delegate=self;
     [shopperWindow show];
     
-
+    
 }
+
+
 
 /**
  *  放大恢复

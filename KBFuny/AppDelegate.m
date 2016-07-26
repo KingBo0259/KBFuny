@@ -61,11 +61,20 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    [self checkPasteBorardContext];
 }
 
+
+/*
+ 对比 applicationWillEnterForeground
+ 和 applicationDidBecomeActive
+ 这两个方法，前者是指 App从后台进入前台，后者是指 App处于活跃状态，所以前者相对于后者，缺少的部分是，当 App 刚刚启动，而不是从后台取出的时候，它无法识别剪贴板。
+ */
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    
+    [self checkPasteBorardContext];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
