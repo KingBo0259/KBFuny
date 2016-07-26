@@ -52,10 +52,29 @@
     bootView.frame=CGRectMake(0, CGRectGetHeight(self.view.frame), CGRectGetWidth(self.view.frame), 250.0f);
 
     [self.view addSubview:bootView];
+    
+    
+    UIButton *closeButton=[UIButton new];
+    
+    closeButton.layer.cornerRadius=2.0f;
+    [closeButton setBackgroundColor:[UIColor orangeColor]];
+    [closeButton setTitle:@"关闭" forState:UIControlStateNormal];
+    [closeButton addTarget:self action:@selector(panClick:) forControlEvents:UIControlEventTouchUpInside];
+    [bootView addSubview:closeButton];
+    
 
     [backgroundView makeConstraints:^(MASConstraintMaker *make) {
         
         make.edges.equalTo(self.view);
+    }];
+    
+    [closeButton makeConstraints:^(MASConstraintMaker *make) {
+        CGFloat margin=5.0f;
+        make.left.equalTo(bootView).offset(margin);
+        make.right.equalTo(bootView).offset(-margin);
+        make.bottom.equalTo(bootView).offset(-margin);
+        make.height.equalTo(@50);
+        
     }];
     
     
