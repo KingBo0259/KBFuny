@@ -61,6 +61,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [self checkPasteBorardContext];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -71,4 +72,22 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+//淘宝复制分享 打开内容
+-(void)checkPasteBorardContext{
+
+    //剪切板内容
+    NSString* paste=  [UIPasteboard generalPasteboard].string;
+    if (!paste|| [paste isEqualToString:@"我是开发自定义的"]) {
+        return;
+    }
+    [UIPasteboard generalPasteboard].string=@"我是开发自定义的";//清空
+    
+    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"剪切板内容"
+                                                 message:paste
+                                                delegate:nil
+                                       cancelButtonTitle:@"确定" otherButtonTitles:nil];
+
+    [alert show];
+}
 @end
