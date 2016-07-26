@@ -83,11 +83,24 @@
     }
     [UIPasteboard generalPasteboard].string=@"我是开发自定义的";//清空
     
-    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"剪切板内容"
-                                                 message:paste
-                                                delegate:nil
-                                       cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    UIAlertController *alertController=[UIAlertController alertControllerWithTitle:@"要打开剪贴板中的链接" message:paste preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *action=[UIAlertAction  actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction=[UIAlertAction actionWithTitle:@"打开" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"哈哈 你真打开了啊，笨"
+                                                         message:paste
+                                                        delegate:nil
+                                               cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        
+            [alert show];
 
-    [alert show];
+        
+    }];
+    [alertController addAction:action];
+    [alertController addAction:okAction];
+
+
+    [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+    
 }
 @end
