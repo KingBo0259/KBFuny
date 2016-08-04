@@ -35,6 +35,9 @@
 //    splashView.frame=CGRectMake(-60, -90, 440, 700);
 //    [UIView commitAnimations];
 //
+    
+    NSLog(@"didFinishLaunchingWithOptions：%@",launchOptions);
+
     NSLog(@"newBranch01");
     NSLog(@"newBranch02");
     
@@ -75,6 +78,37 @@
     
     [self checkPasteBorardContext];
 
+}
+
+//当一个应用程序被其他程序打开的时候会调用这个方法，在该方法中可以实现两个应用程序间的数据局传递
+
+-(BOOL)application:(UIApplication*)application openURL:(nonnull NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(nonnull id)annotation{
+
+    NSString *urlString=url.absoluteString;
+  NSArray *urlArray=  [urlString componentsSeparatedByString:@"="];
+    NSString *sourcApplicationURL=urlArray[1];
+    NSLog(@"%@",url.absoluteString);
+    
+
+    
+    
+    UIAlertController *alertController=[UIAlertController alertControllerWithTitle:@"来自KBSwiftFuny" message:@"是否返回应用?" preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *okAction=[UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        
+        NSURL *url=[[NSURL alloc]initWithString:[sourcApplicationURL stringByAppendingString:@":"]];
+        [[UIApplication  sharedApplication] openURL:url];
+    }];
+    
+    [alertController addAction:okAction];
+    UIAlertAction *cancelAction=[UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleCancel handler:nil];
+    [alertController addAction:cancelAction];
+
+    [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+    
+    
+    return YES;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

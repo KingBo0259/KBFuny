@@ -11,6 +11,7 @@
 #import "KCStartAnimation.h"
 #import "KCUserNavigationView.h"
 #import "KBTouchTableView.h"
+#import "SKYBase64.h"
 
 
 @interface MasterViewController ()<TouchTableViewDelegate>
@@ -28,6 +29,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self dataInit];
+    
+    
+    NSString *encode=[SKYBase64 base64StringFromText:@"123456"];
+    NSString *decodeStr=[SKYBase64 textFromBase64String:encode];
+    NSString *value=decodeStr;
     
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 

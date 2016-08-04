@@ -123,6 +123,7 @@
 		A98ED65D1AA013B10031BA10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98ED65B1AA013B10031BA10 /* LaunchScreen.xib */; };
 		A98ED6691AA013B20031BA10 /* KBFunyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED6681AA013B20031BA10 /* KBFunyTests.m */; };
 		A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED6BD1AA1C2140031BA10 /* KBButton.m */; };
+		A9AC9D8D1D52E12C00FD3CAB /* SKYBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */; };
 		A9CDC1B11AC64A1C007C14EC /* KBGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CDC1B01AC64A1C007C14EC /* KBGraphicsView.m */; };
 		A9D7D83A1AC4F6D10075E333 /* KBBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7D8391AC4F6D10075E333 /* KBBadgeView.m */; };
 		A9DA072E1AC3A1290070120D /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DA072D1AC3A1290070120D /* PopoverView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -382,6 +383,8 @@
 		A98FF20C1B09CE1300AC1A9A /* paymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paymentService.h; sourceTree = "<group>"; };
 		A98FF2131B0A10B200AC1A9A /* UnionpayOrderTransDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionpayOrderTransDTO.h; sourceTree = "<group>"; };
 		A98FF2161B0A1B2700AC1A9A /* activityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activityService.h; sourceTree = "<group>"; };
+		A9AC9D8B1D52E12C00FD3CAB /* SKYBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKYBase64.h; path = KBCommon/SKYBase64.h; sourceTree = "<group>"; };
+		A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKYBase64.m; path = KBCommon/SKYBase64.m; sourceTree = "<group>"; };
 		A9CDC1AF1AC64A1C007C14EC /* KBGraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBGraphicsView.h; path = Custom/KBGraphicsView.h; sourceTree = "<group>"; };
 		A9CDC1B01AC64A1C007C14EC /* KBGraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBGraphicsView.m; path = Custom/KBGraphicsView.m; sourceTree = "<group>"; };
 		A9D7D8381AC4F6D10075E333 /* KBBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBBadgeView.h; path = Custom/KBBadgeView.h; sourceTree = "<group>"; };
@@ -974,6 +977,7 @@
 		A98ED6481AA013B10031BA10 /* KBFuny */ = {
 			isa = PBXGroup;
 			children = (
+				A9AC9D8A1D52E0FD00FD3CAB /* KBCommon */,
 				A94740681C006BAE00C38D40 /* KBExtion */,
 				A9E4907A1B170B730065B7DA /* Foundation */,
 				A90D43FE1B074DF6009F65C0 /* HessianModel */,
@@ -1048,6 +1052,15 @@
 				A92D072A1AF741EE002D4928 /* KBGradientCircleView.m */,
 			);
 			name = Custom;
+			sourceTree = "<group>";
+		};
+		A9AC9D8A1D52E0FD00FD3CAB /* KBCommon */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC9D8B1D52E12C00FD3CAB /* SKYBase64.h */,
+				A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */,
+			);
+			name = KBCommon;
 			sourceTree = "<group>";
 		};
 		A9DA072B1AC3A1290070120D /* PopoverView */ = {
@@ -1474,6 +1487,7 @@
 				A92C51A71CC75B4C0097C699 /* KCTMSRpcResponse.m in Sources */,
 				A9516F741CF6E5A300B45D71 /* BSErrorMessageView.m in Sources */,
 				A93A4E301B217C3100AFFAFD /* KBVoiceRecordView.m in Sources */,
+				A9AC9D8D1D52E12C00FD3CAB /* SKYBase64.m in Sources */,
 				A96337BE1D37644400726E2F /* UIBezierPathViewController.m in Sources */,
 				A98ED64F1AA013B10031BA10 /* AppDelegate.m in Sources */,
 				A9839DA41CD1E39000F2F257 /* KCCoredataViewController.m in Sources */,
