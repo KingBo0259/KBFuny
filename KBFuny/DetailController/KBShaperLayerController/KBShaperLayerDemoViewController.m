@@ -80,6 +80,40 @@
         make.right.equalTo(self.view).offset(-5);
     }];
     
+    
+    
+    //自动布局水平抗压设置
+    UILabel *address = [[UILabel alloc] init];
+    [self.view addSubview:address];
+    address.text = @"地址:";
+    address.textColor=[UIColor yellowColor];
+    address.font=[UIFont systemFontOfSize:18.0f];
+    address.backgroundColor = [UIColor blueColor];
+    
+    //添加水平抗压缩功能。否则Label会被 UItextFiel 挤压
+    [address setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    
+    [address mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(criclProcessView.bottom).offset(20);
+        make.left.equalTo(@20);
+    }];
+    
+    UITextField *addressTextField = [[UITextField alloc] init];
+    [self.view addSubview:addressTextField];
+    addressTextField.returnKeyType = UIReturnKeyDone;
+    addressTextField.font = [UIFont systemFontOfSize:15];
+    addressTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    addressTextField.layer.borderWidth = 1 / [UIScreen mainScreen].scale;
+    addressTextField.layer.borderColor =  [[UIColor redColor] CGColor];
+    addressTextField.layer.cornerRadius = 3;
+    addressTextField.placeholder=@"输入数据";
+    addressTextField.text=@"Label添加水平抗压缩功能。否则会被UItextFiel挤压";
+    [addressTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(address);
+        make.centerY.equalTo(address);
+        make.right.equalTo(self.view.mas_right).offset(-10);
+        make.left.equalTo(address.mas_right).offset(10);
+    }];
 }
 
 -(void)click:(id)sender{
