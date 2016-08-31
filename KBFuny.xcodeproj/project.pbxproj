@@ -102,6 +102,7 @@
 		A96337BB1D35DE7000726E2F /* KBShaperLayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96337BA1D35DE7000726E2F /* KBShaperLayerDemoViewController.m */; };
 		A96337BE1D37644400726E2F /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96337BD1D37644400726E2F /* UIBezierPathViewController.m */; };
 		A9678A0A1C843DA9006EB732 /* KBCrandCenterDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9678A091C843DA9006EB732 /* KBCrandCenterDispatchViewController.m */; };
+		A974D9211D7575C000F17A17 /* KBImageFloderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A974D9201D7575C000F17A17 /* KBImageFloderTableViewController.m */; };
 		A976153D1C297F8C00741586 /* KCNetWorkProxy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A976153A1C297F8300741586 /* KCNetWorkProxy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A976637D1C0ECB8A00F7E3C9 /* KBRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A976637C1C0ECB8A00F7E3C9 /* KBRefreshViewController.m */; };
 		A97E33061C61A92A004534D1 /* KBObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97E33051C61A92A004534D1 /* KBObjectiveCViewController.m */; };
@@ -343,6 +344,8 @@
 		A96337BD1D37644400726E2F /* UIBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIBezierPathViewController.m; path = DetailController/KBShaperLayerController/UIBezierPathViewController.m; sourceTree = "<group>"; };
 		A9678A081C843DA9006EB732 /* KBCrandCenterDispatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBCrandCenterDispatchViewController.h; path = DetailController/KBGrandCenterDispatch/KBCrandCenterDispatchViewController.h; sourceTree = "<group>"; };
 		A9678A091C843DA9006EB732 /* KBCrandCenterDispatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCrandCenterDispatchViewController.m; path = DetailController/KBGrandCenterDispatch/KBCrandCenterDispatchViewController.m; sourceTree = "<group>"; };
+		A974D91F1D7575C000F17A17 /* KBImageFloderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBImageFloderTableViewController.h; path = DetailController/KBShaperLayerController/ImageFloder/KBImageFloderTableViewController.h; sourceTree = "<group>"; };
+		A974D9201D7575C000F17A17 /* KBImageFloderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBImageFloderTableViewController.m; path = DetailController/KBShaperLayerController/ImageFloder/KBImageFloderTableViewController.m; sourceTree = "<group>"; };
 		A976153A1C297F8300741586 /* KCNetWorkProxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KCNetWorkProxy.framework; path = /Users/jinlb/Desktop/mySelf/2015/KBFuny/KBFuny/KCNetWorkProxy.framework; sourceTree = "<absolute>"; };
 		A976637B1C0ECB8A00F7E3C9 /* KBRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBRefreshViewController.h; path = DetailController/KBTableviewRefresh/KBRefreshViewController.h; sourceTree = "<group>"; };
 		A976637C1C0ECB8A00F7E3C9 /* KBRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBRefreshViewController.m; path = DetailController/KBTableviewRefresh/KBRefreshViewController.m; sourceTree = "<group>"; };
@@ -859,6 +862,7 @@
 		A95F4AD31D34DD2B00EE6A72 /* KBShaperController */ = {
 			isa = PBXGroup;
 			children = (
+				A974D91E1D75757400F17A17 /* ImageFloder */,
 				A9FF89201D63FA1300ADFF86 /* Uber */,
 				A95F4AD81D34DE4100EE6A72 /* Customer */,
 				A9E268771AEC728F008EA651 /* KBShaperLayerController.h */,
@@ -896,6 +900,15 @@
 				A9678A091C843DA9006EB732 /* KBCrandCenterDispatchViewController.m */,
 			);
 			name = KCGrandCenterDispatch;
+			sourceTree = "<group>";
+		};
+		A974D91E1D75757400F17A17 /* ImageFloder */ = {
+			isa = PBXGroup;
+			children = (
+				A974D91F1D7575C000F17A17 /* KBImageFloderTableViewController.h */,
+				A974D9201D7575C000F17A17 /* KBImageFloderTableViewController.m */,
+			);
+			name = ImageFloder;
 			sourceTree = "<group>";
 		};
 		A976637A1C0ECB3F00F7E3C9 /* KBTablevieRefresh */ = {
@@ -1542,6 +1555,7 @@
 				A9D7D83A1AC4F6D10075E333 /* KBBadgeView.m in Sources */,
 				A928D17C1CC5E2C100E1247C /* KCCityListResponse.m in Sources */,
 				A9FEFC341D421CBE00E830F2 /* KBShoppingCartDetailController.m in Sources */,
+				A974D9211D7575C000F17A17 /* KBImageFloderTableViewController.m in Sources */,
 				A9516F761CF6E5A300B45D71 /* UITextField+BSErrorMessageView.m in Sources */,
 				A90D441E1B0750D2009F65C0 /* CWValueObject+Private.m in Sources */,
 				A9E490211B1706220065B7DA /* KBZbarViewController.m in Sources */,
