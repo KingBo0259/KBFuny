@@ -155,10 +155,27 @@
     animation.repeatCount=INFINITY;//无线循环
     CAMediaTimingFunction *fn=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animation.timingFunction=fn;
-    animation.byValue=@(200);
+//    animation.byValue=@(200);
+    animation.toValue=@(200);
     animation.duration=1.0;
 
     [scanNet.layer addAnimation:animation forKey:@"scanel"];
+    
+    
+    //开灯和关灯
+    
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeSystem];
+    [button setBackgroundImage:[UIImage imageNamed:@"开灯"] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"关灯"] forState:UIControlStateSelected];
+    [button addTarget:self action:@selector(openLightClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    [button makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@32);
+        make.height.equalTo(@37);
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(scanWindow.bottom).offset(20);
+    }];
     
     
     [leftBottom makeConstraints:^(MASConstraintMaker *make) {
@@ -188,6 +205,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)openLightClick:(UIButton*)sender{
+    sender.selected=!sender.selected;
+    
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    [device lockForConfiguration:nil];
+    if (device.torchMode == AVCaptureTorchModeOff) {
+        [device setTorchMode: AVCaptureTorchModeOn];
+    }else{
+        [device setTorchMode: AVCaptureTorchModeOff];
+    }
+    [device unlockForConfiguration];
+
+    
+
+}
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
