@@ -134,7 +134,7 @@
         self.objects = [[NSMutableArray alloc] initWithObjects:
                         @"Core-Animation-三"
                         ,@"Core-Animation"
-                        ,@"CAShaperLayer"
+                        ,@"设备操作"
                         ,@"CAMediaTiming"
                         ,@"阿里云盘测试"
                         ,@"Hessian Test"
@@ -244,7 +244,13 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    if (indexPath.row==11) {
+    if (indexPath.row==2) {
+        
+        Class class=NSClassFromString(@"KBDeviceMenuTableViewController");
+        id obj=[class new];
+        [self.navigationController pushViewController:obj animated:YES];
+        
+    }else if (indexPath.row==11) {
         //1、 设置动画
         [self navigationAnimation:@"cameraIrisHollowClose"];
         

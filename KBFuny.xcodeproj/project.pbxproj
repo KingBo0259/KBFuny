@@ -103,6 +103,23 @@
 		A96337BE1D37644400726E2F /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96337BD1D37644400726E2F /* UIBezierPathViewController.m */; };
 		A9678A0A1C843DA9006EB732 /* KBCrandCenterDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9678A091C843DA9006EB732 /* KBCrandCenterDispatchViewController.m */; };
 		A974D9211D7575C000F17A17 /* KBImageFloderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A974D9201D7575C000F17A17 /* KBImageFloderTableViewController.m */; };
+		A974D9251D76824100F17A17 /* KBDeviceMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A974D9241D76824100F17A17 /* KBDeviceMenuTableViewController.m */; };
+		A974D9291D76A79700F17A17 /* KBScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A974D9281D76A79700F17A17 /* KBScanViewController.m */; };
+		A974D93A1D76AF2000F17A17 /* scan_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D92B1D76AF2000F17A17 /* scan_1@2x.png */; };
+		A974D93B1D76AF2000F17A17 /* scan_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D92C1D76AF2000F17A17 /* scan_1@3x.png */; };
+		A974D93C1D76AF2000F17A17 /* scan_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D92D1D76AF2000F17A17 /* scan_2@2x.png */; };
+		A974D93D1D76AF2000F17A17 /* scan_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D92E1D76AF2000F17A17 /* scan_2@3x.png */; };
+		A974D93E1D76AF2000F17A17 /* scan_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D92F1D76AF2000F17A17 /* scan_3@2x.png */; };
+		A974D93F1D76AF2000F17A17 /* scan_3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9301D76AF2000F17A17 /* scan_3@3x.png */; };
+		A974D9401D76AF2000F17A17 /* scan_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9311D76AF2000F17A17 /* scan_4@2x.png */; };
+		A974D9411D76AF2000F17A17 /* scan_4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9321D76AF2000F17A17 /* scan_4@3x.png */; };
+		A974D9421D76AF2000F17A17 /* scan_net@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9331D76AF2000F17A17 /* scan_net@2x.png */; };
+		A974D9431D76AF2000F17A17 /* 关灯@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9341D76AF2000F17A17 /* 关灯@2x.png */; };
+		A974D9441D76AF2000F17A17 /* 关灯@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9351D76AF2000F17A17 /* 关灯@3x.png */; };
+		A974D9451D76AF2000F17A17 /* 后退@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9361D76AF2000F17A17 /* 后退@2x.png */; };
+		A974D9461D76AF2000F17A17 /* 后退@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9371D76AF2000F17A17 /* 后退@3x.png */; };
+		A974D9471D76AF2000F17A17 /* 开灯@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9381D76AF2000F17A17 /* 开灯@2x.png */; };
+		A974D9481D76AF2000F17A17 /* 开灯@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9391D76AF2000F17A17 /* 开灯@3x.png */; };
 		A976153D1C297F8C00741586 /* KCNetWorkProxy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A976153A1C297F8300741586 /* KCNetWorkProxy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A976637D1C0ECB8A00F7E3C9 /* KBRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A976637C1C0ECB8A00F7E3C9 /* KBRefreshViewController.m */; };
 		A97E33061C61A92A004534D1 /* KBObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97E33051C61A92A004534D1 /* KBObjectiveCViewController.m */; };
@@ -346,6 +363,25 @@
 		A9678A091C843DA9006EB732 /* KBCrandCenterDispatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCrandCenterDispatchViewController.m; path = DetailController/KBGrandCenterDispatch/KBCrandCenterDispatchViewController.m; sourceTree = "<group>"; };
 		A974D91F1D7575C000F17A17 /* KBImageFloderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBImageFloderTableViewController.h; path = DetailController/KBShaperLayerController/ImageFloder/KBImageFloderTableViewController.h; sourceTree = "<group>"; };
 		A974D9201D7575C000F17A17 /* KBImageFloderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBImageFloderTableViewController.m; path = DetailController/KBShaperLayerController/ImageFloder/KBImageFloderTableViewController.m; sourceTree = "<group>"; };
+		A974D9231D76824100F17A17 /* KBDeviceMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBDeviceMenuTableViewController.h; path = DetailController/KBDevice/KBDeviceMenuTableViewController.h; sourceTree = "<group>"; };
+		A974D9241D76824100F17A17 /* KBDeviceMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBDeviceMenuTableViewController.m; path = DetailController/KBDevice/KBDeviceMenuTableViewController.m; sourceTree = "<group>"; };
+		A974D9271D76A79700F17A17 /* KBScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBScanViewController.h; path = DetailController/KBDevice/scan/KBScanViewController.h; sourceTree = "<group>"; };
+		A974D9281D76A79700F17A17 /* KBScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBScanViewController.m; path = DetailController/KBDevice/scan/KBScanViewController.m; sourceTree = "<group>"; };
+		A974D92B1D76AF2000F17A17 /* scan_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_1@2x.png"; sourceTree = "<group>"; };
+		A974D92C1D76AF2000F17A17 /* scan_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_1@3x.png"; sourceTree = "<group>"; };
+		A974D92D1D76AF2000F17A17 /* scan_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_2@2x.png"; sourceTree = "<group>"; };
+		A974D92E1D76AF2000F17A17 /* scan_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_2@3x.png"; sourceTree = "<group>"; };
+		A974D92F1D76AF2000F17A17 /* scan_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_3@2x.png"; sourceTree = "<group>"; };
+		A974D9301D76AF2000F17A17 /* scan_3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_3@3x.png"; sourceTree = "<group>"; };
+		A974D9311D76AF2000F17A17 /* scan_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_4@2x.png"; sourceTree = "<group>"; };
+		A974D9321D76AF2000F17A17 /* scan_4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_4@3x.png"; sourceTree = "<group>"; };
+		A974D9331D76AF2000F17A17 /* scan_net@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_net@2x.png"; sourceTree = "<group>"; };
+		A974D9341D76AF2000F17A17 /* 关灯@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "关灯@2x.png"; sourceTree = "<group>"; };
+		A974D9351D76AF2000F17A17 /* 关灯@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "关灯@3x.png"; sourceTree = "<group>"; };
+		A974D9361D76AF2000F17A17 /* 后退@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "后退@2x.png"; sourceTree = "<group>"; };
+		A974D9371D76AF2000F17A17 /* 后退@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "后退@3x.png"; sourceTree = "<group>"; };
+		A974D9381D76AF2000F17A17 /* 开灯@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开灯@2x.png"; sourceTree = "<group>"; };
+		A974D9391D76AF2000F17A17 /* 开灯@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开灯@3x.png"; sourceTree = "<group>"; };
 		A976153A1C297F8300741586 /* KCNetWorkProxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KCNetWorkProxy.framework; path = /Users/jinlb/Desktop/mySelf/2015/KBFuny/KBFuny/KCNetWorkProxy.framework; sourceTree = "<absolute>"; };
 		A976637B1C0ECB8A00F7E3C9 /* KBRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBRefreshViewController.h; path = DetailController/KBTableviewRefresh/KBRefreshViewController.h; sourceTree = "<group>"; };
 		A976637C1C0ECB8A00F7E3C9 /* KBRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBRefreshViewController.m; path = DetailController/KBTableviewRefresh/KBRefreshViewController.m; sourceTree = "<group>"; };
@@ -911,6 +947,47 @@
 			name = ImageFloder;
 			sourceTree = "<group>";
 		};
+		A974D9221D7681F500F17A17 /* KBDevice */ = {
+			isa = PBXGroup;
+			children = (
+				A974D9261D76A74000F17A17 /* Scan */,
+				A974D9231D76824100F17A17 /* KBDeviceMenuTableViewController.h */,
+				A974D9241D76824100F17A17 /* KBDeviceMenuTableViewController.m */,
+			);
+			name = KBDevice;
+			sourceTree = "<group>";
+		};
+		A974D9261D76A74000F17A17 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A974D9271D76A79700F17A17 /* KBScanViewController.h */,
+				A974D9281D76A79700F17A17 /* KBScanViewController.m */,
+			);
+			name = Scan;
+			sourceTree = "<group>";
+		};
+		A974D92A1D76AF2000F17A17 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A974D92B1D76AF2000F17A17 /* scan_1@2x.png */,
+				A974D92C1D76AF2000F17A17 /* scan_1@3x.png */,
+				A974D92D1D76AF2000F17A17 /* scan_2@2x.png */,
+				A974D92E1D76AF2000F17A17 /* scan_2@3x.png */,
+				A974D92F1D76AF2000F17A17 /* scan_3@2x.png */,
+				A974D9301D76AF2000F17A17 /* scan_3@3x.png */,
+				A974D9311D76AF2000F17A17 /* scan_4@2x.png */,
+				A974D9321D76AF2000F17A17 /* scan_4@3x.png */,
+				A974D9331D76AF2000F17A17 /* scan_net@2x.png */,
+				A974D9341D76AF2000F17A17 /* 关灯@2x.png */,
+				A974D9351D76AF2000F17A17 /* 关灯@3x.png */,
+				A974D9361D76AF2000F17A17 /* 后退@2x.png */,
+				A974D9371D76AF2000F17A17 /* 后退@3x.png */,
+				A974D9381D76AF2000F17A17 /* 开灯@2x.png */,
+				A974D9391D76AF2000F17A17 /* 开灯@3x.png */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
 		A976637A1C0ECB3F00F7E3C9 /* KBTablevieRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -1105,6 +1182,7 @@
 		A9DF77771AE10A7600055E0C /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
+				A974D9221D7681F500F17A17 /* KBDevice */,
 				A95F4AD31D34DD2B00EE6A72 /* KBShaperController */,
 				A9839DA01CD1E35C00F2F257 /* KCCoreData */,
 				A928D1641CC4911700E1247C /* KCTms */,
@@ -1205,6 +1283,7 @@
 		A9E74D301ACFD58D00D7F4AC /* myPicture */ = {
 			isa = PBXGroup;
 			children = (
+				A974D92A1D76AF2000F17A17 /* Scan */,
 				A9516F5C1CF6E09000B45D71 /* 樱花瓣1.png */,
 				A9516F5D1CF6E09000B45D71 /* 樱花瓣2.png */,
 				A9516F5E1CF6E09000B45D71 /* 樱花树1.png */,
@@ -1367,12 +1446,16 @@
 				A9516F621CF6E09000B45D71 /* 樱花瓣2.png in Resources */,
 				A9EAD3741B42379500343A51 /* popover@2x.png in Resources */,
 				A98ED6581AA013B10031BA10 /* Main.storyboard in Resources */,
+				A974D9441D76AF2000F17A17 /* 关灯@3x.png in Resources */,
 				A949CD881B2137B00012D0A1 /* main_car_3@2x.png in Resources */,
+				A974D9461D76AF2000F17A17 /* 后退@3x.png in Resources */,
 				A9DB45041B4E7518006A0B89 /* 1.png in Resources */,
 				A9516F631CF6E09000B45D71 /* 樱花树1.png in Resources */,
+				A974D9401D76AF2000F17A17 /* scan_4@2x.png in Resources */,
 				A98ED65D1AA013B10031BA10 /* LaunchScreen.xib in Resources */,
 				A91B69FD1BA7F08C00D7C375 /* nv_bg03@2x.png in Resources */,
 				A91B69C91BA6B8D400D7C375 /* start_Rocket@2x.png in Resources */,
+				A974D93E1D76AF2000F17A17 /* scan_3@2x.png in Resources */,
 				A98102841C9149F10053127B /* KCOperationViewController.xib in Resources */,
 				A923E8201D47591A0060675D /* CreateProductServicePushScript.sh in Resources */,
 				A90964141CDA216F00960D1B /* KCOrderDetailViewController.xib in Resources */,
@@ -1389,8 +1472,15 @@
 				A91B69CE1BA6C5F200D7C375 /* start_Cloud_L@2x.png in Resources */,
 				A959F1EF1B0E2DE80050D9A2 /* Default.png in Resources */,
 				A9E74D321ACFD58D00D7F4AC /* weChatBubble_Receiving_Cavern@2x.png in Resources */,
+				A974D9411D76AF2000F17A17 /* scan_4@3x.png in Resources */,
+				A974D93D1D76AF2000F17A17 /* scan_2@3x.png in Resources */,
+				A974D93F1D76AF2000F17A17 /* scan_3@3x.png in Resources */,
+				A974D9451D76AF2000F17A17 /* 后退@2x.png in Resources */,
+				A974D9471D76AF2000F17A17 /* 开灯@2x.png in Resources */,
+				A974D93B1D76AF2000F17A17 /* scan_1@3x.png in Resources */,
 				A9516F641CF6E09000B45D71 /* 樱花树2.png in Resources */,
 				A9839DB41CD34E7600F2F257 /* back@2x.png in Resources */,
+				A974D93A1D76AF2000F17A17 /* scan_1@2x.png in Resources */,
 				A949CD901B2137B00012D0A1 /* record_2@2x.png in Resources */,
 				A91B69CA1BA6B8D400D7C375 /* start_Star@2x.png in Resources */,
 				A91B69F31BA7F08C00D7C375 /* ng_jump@2x.png in Resources */,
@@ -1406,10 +1496,14 @@
 				A91B6A0B1BA8084A00D7C375 /* nv_2_1@2x.png in Resources */,
 				A91B69CC1BA6B94000D7C375 /* start_background@2x.png in Resources */,
 				A90561BA1CD83C73001A368C /* KCCoreDataMenuTableViewController.xib in Resources */,
+				A974D9431D76AF2000F17A17 /* 关灯@2x.png in Resources */,
+				A974D9481D76AF2000F17A17 /* 开灯@3x.png in Resources */,
 				A949CD931B2137B00012D0A1 /* record_normal@2x.png in Resources */,
 				A9516F611CF6E09000B45D71 /* 樱花瓣1.png in Resources */,
+				A974D9421D76AF2000F17A17 /* scan_net@2x.png in Resources */,
 				A91B6A091BA8084A00D7C375 /* nv_1_1@2x.png in Resources */,
 				A949CD8A1B2137B00012D0A1 /* main_car_gray_1@2x.png in Resources */,
+				A974D93C1D76AF2000F17A17 /* scan_2@2x.png in Resources */,
 				A949CD8D1B2137B00012D0A1 /* microphone@2x.png in Resources */,
 				A91B69FC1BA7F08C00D7C375 /* nv_bg02@2x.png in Resources */,
 				A90D44201B0750D2009F65C0 /* Hessian.hdoc in Resources */,
@@ -1506,6 +1600,7 @@
 				A959F1FC1B0F3F310050D9A2 /* KCUserLoginResponse.m in Sources */,
 				A9EEFD0E1C86EE8F007FCE59 /* KCNetworkFrameworkDemoViewController.m in Sources */,
 				A90D441C1B0750D2009F65C0 /* CWHessianUnarchiver+Private.m in Sources */,
+				A974D9291D76A79700F17A17 /* KBScanViewController.m in Sources */,
 				A928D1751CC5DFE500E1247C /* KCTMSRegionService.m in Sources */,
 				A959F1FB1B0F3F310050D9A2 /* KCAddressResponse.m in Sources */,
 				A9DF777A1AE10AB600055E0C /* KBSecondViewController.m in Sources */,
@@ -1547,6 +1642,7 @@
 				A92C51AA1CC76A1C0097C699 /* KCTMSBaseService.m in Sources */,
 				A92D07281AF5C75A002D4928 /* KBMediaTimingViewController.m in Sources */,
 				A9F3925A1C61D4D70008F62B /* Lion.m in Sources */,
+				A974D9251D76824100F17A17 /* KBDeviceMenuTableViewController.m in Sources */,
 				A98ED6551AA013B10031BA10 /* DetailViewController.m in Sources */,
 				A9E268791AEC728F008EA651 /* KBShaperLayerController.m in Sources */,
 				A96337BB1D35DE7000726E2F /* KBShaperLayerDemoViewController.m in Sources */,

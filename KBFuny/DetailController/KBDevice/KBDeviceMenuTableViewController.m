@@ -9,10 +9,22 @@
 #import "KBDeviceMenuTableViewController.h"
 
 @interface KBDeviceMenuTableViewController ()
+@property(nonatomic,strong)NSArray *titles;
+@property(nonatomic,strong)NSArray *controllers;
 
 @end
 
+
 @implementation KBDeviceMenuTableViewController
+
+
+-(instancetype)init{
+    if (self=[super init]) {
+        _titles=@[@"扫描",@"拍照",@"打印",@"通讯录"];
+        _controllers=@[@"KBScanViewController"];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +34,16 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    [self initUI];
+}
+
+
+-(void)initUI{
+    self.title=@"设备操作";
+
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +54,44 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return _titles.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    static NSString *reuseIdentifier=@"deviceCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier ];
+
+    if (!cell) {
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];
+        cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    }
+    
+    cell.textLabel.text=_titles[indexPath.row];
     
     return cell;
 }
-*/
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (indexPath.row>=_controllers.count) {
+        UIAlertView *alertView=[[UIAlertView  alloc]initWithTitle:@"开发中" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alertView show];
+        return;
+    }
+    
+    
+    Class class=NSClassFromString(_controllers[indexPath.row]);
+    id obj= [class new];
+    [self.navigationController pushViewController:obj animated:YES];
+
+}
+
 
 /*
 // Override to support conditional editing of the table view.
