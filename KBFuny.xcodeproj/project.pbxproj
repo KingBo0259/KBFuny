@@ -15,6 +15,8 @@
 		A90561C21CD85755001A368C /* KCOrderListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A90561C11CD85755001A368C /* KCOrderListTVC.m */; };
 		A90964131CDA216F00960D1B /* KCOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90964111CDA216F00960D1B /* KCOrderDetailViewController.m */; };
 		A90964141CDA216F00960D1B /* KCOrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90964121CDA216F00960D1B /* KCOrderDetailViewController.xib */; };
+		A90A37C61D7EA20B003C4772 /* KBFingerUnLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90A37C51D7EA20B003C4772 /* KBFingerUnLockViewController.m */; };
+		A90A37C81D7EA219003C4772 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90A37C71D7EA219003C4772 /* LocalAuthentication.framework */; };
 		A90D43421B06F44B009F65C0 /* alipIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90D43411B06F44B009F65C0 /* alipIcon@2x.png */; };
 		A90D43441B06F487009F65C0 /* 联系人@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90D43431B06F487009F65C0 /* 联系人@2x.png */; };
 		A90D43521B07470F009F65C0 /* KBHessianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D43511B07470F009F65C0 /* KBHessianViewController.m */; };
@@ -210,6 +212,9 @@
 		A90964101CDA216F00960D1B /* KCOrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCOrderDetailViewController.h; path = DetailController/KCCoreData/DemoViewController/KCOrderDetailViewController.h; sourceTree = "<group>"; };
 		A90964111CDA216F00960D1B /* KCOrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCOrderDetailViewController.m; path = DetailController/KCCoreData/DemoViewController/KCOrderDetailViewController.m; sourceTree = "<group>"; };
 		A90964121CDA216F00960D1B /* KCOrderDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KCOrderDetailViewController.xib; path = DetailController/KCCoreData/DemoViewController/KCOrderDetailViewController.xib; sourceTree = "<group>"; };
+		A90A37C41D7EA20B003C4772 /* KBFingerUnLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBFingerUnLockViewController.h; path = DetailController/KBDevice/FingerUnLock/KBFingerUnLockViewController.h; sourceTree = "<group>"; };
+		A90A37C51D7EA20B003C4772 /* KBFingerUnLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBFingerUnLockViewController.m; path = DetailController/KBDevice/FingerUnLock/KBFingerUnLockViewController.m; sourceTree = "<group>"; };
+		A90A37C71D7EA219003C4772 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		A90D43411B06F44B009F65C0 /* alipIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alipIcon@2x.png"; sourceTree = "<group>"; };
 		A90D43431B06F487009F65C0 /* 联系人@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联系人@2x.png"; sourceTree = "<group>"; };
 		A90D43501B07470F009F65C0 /* KBHessianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBHessianViewController.h; path = DetailController/KBHessianViewController.h; sourceTree = "<group>"; };
@@ -502,6 +507,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90A37C81D7EA219003C4772 /* LocalAuthentication.framework in Frameworks */,
 				A9E490841B170BE50065B7DA /* libiconv.dylib in Frameworks */,
 				A9E490821B170BD70065B7DA /* QuartzCore.framework in Frameworks */,
 				A9E490801B170BC80065B7DA /* CoreVideo.framework in Frameworks */,
@@ -535,6 +541,7 @@
 		86C8106A90F1E458E63B49F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A90A37C71D7EA219003C4772 /* LocalAuthentication.framework */,
 				B69C1FBEA80B086699A2DE14 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -569,6 +576,15 @@
 				A90964121CDA216F00960D1B /* KCOrderDetailViewController.xib */,
 			);
 			name = DemoViewController;
+			sourceTree = "<group>";
+		};
+		A90A37C31D7EA1D8003C4772 /* FingerUnLock */ = {
+			isa = PBXGroup;
+			children = (
+				A90A37C41D7EA20B003C4772 /* KBFingerUnLockViewController.h */,
+				A90A37C51D7EA20B003C4772 /* KBFingerUnLockViewController.m */,
+			);
+			name = FingerUnLock;
 			sourceTree = "<group>";
 		};
 		A90D43FE1B074DF6009F65C0 /* HessianModel */ = {
@@ -950,6 +966,7 @@
 		A974D9221D7681F500F17A17 /* KBDevice */ = {
 			isa = PBXGroup;
 			children = (
+				A90A37C31D7EA1D8003C4772 /* FingerUnLock */,
 				A974D9261D76A74000F17A17 /* Scan */,
 				A974D9231D76824100F17A17 /* KBDeviceMenuTableViewController.h */,
 				A974D9241D76824100F17A17 /* KBDeviceMenuTableViewController.m */,
@@ -1646,6 +1663,7 @@
 				A98ED6551AA013B10031BA10 /* DetailViewController.m in Sources */,
 				A9E268791AEC728F008EA651 /* KBShaperLayerController.m in Sources */,
 				A96337BB1D35DE7000726E2F /* KBShaperLayerDemoViewController.m in Sources */,
+				A90A37C61D7EA20B003C4772 /* KBFingerUnLockViewController.m in Sources */,
 				A9FEFC311D421B2800E830F2 /* KBShoppingWindow.m in Sources */,
 				A9F392571C61AF460008F62B /* Tiger.m in Sources */,
 				A9D7D83A1AC4F6D10075E333 /* KBBadgeView.m in Sources */,

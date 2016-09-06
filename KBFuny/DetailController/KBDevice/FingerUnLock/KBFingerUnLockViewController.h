@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KBFingerUnLockViewController : BaseViewController
+@interface KBFingerUnLockViewController : UIViewController
 
 @end

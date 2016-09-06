@@ -20,8 +20,8 @@
 
 -(instancetype)init{
     if (self=[super init]) {
-        _titles=@[@"扫描",@"拍照",@"打印",@"通讯录"];
-        _controllers=@[@"KBScanViewController"];
+        _titles=@[@"扫描",@"指纹识别",@"拍照",@"打印",@"通讯录"];
+        _controllers=@[@"KBScanViewController",@"KBFingerUnLockViewController"];
     }
     return self;
 }
