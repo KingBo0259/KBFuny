@@ -20,6 +20,7 @@ PODS:
   - MagicalRecord/Core (2.3.2)
   - Masonry (1.0.0)
   - SVProgressHUD (2.0.3)
+  - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - MagicalRecord (~> 2.3.2)
   - Masonry (~> 1.0.0)
   - SVProgressHUD (~> 2.0.3)
+  - SVPullToRefresh (~> 0.4.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -34,5 +36,6 @@ SPEC CHECKSUMS:
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
 COCOAPODS: 0.39.0
