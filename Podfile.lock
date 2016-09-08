@@ -19,6 +19,7 @@ PODS:
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
   - Masonry (1.0.0)
+  - pop (1.0.9)
   - SVProgressHUD (2.0.3)
   - SVPullToRefresh (0.4.1)
 
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - JSONModel (~> 1.2.0)
   - MagicalRecord (~> 2.3.2)
   - Masonry (~> 1.0.0)
+  - pop (~> 1.0.9)
   - SVProgressHUD (~> 2.0.3)
   - SVPullToRefresh (~> 0.4.1)
 
@@ -35,6 +37,7 @@ SPEC CHECKSUMS:
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 

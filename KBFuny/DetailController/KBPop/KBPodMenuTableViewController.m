@@ -1,21 +1,36 @@
 //
 //  KBPodMenuTableViewController.m
 //  KBFuny
-//
+//   这里是FaceBook Pod利用案例
 //  Created by jinlb on 16/9/8.
 //  Copyright © 2016年 jinlb. All rights reserved.
 //
 
 #import "KBPodMenuTableViewController.h"
+#import "POP.h"
+
 
 @interface KBPodMenuTableViewController ()
-
+@property(nonatomic,strong)NSArray *titles;
+@property(nonatomic,strong)NSArray*controllers;
 @end
 
 @implementation KBPodMenuTableViewController
 
+-(instancetype)init
+{
+    if (self=[super init]) {
+        _titles=@[@"POPBasicAnimation"];
+        self.controllers=@[@"KBPOPBasicAnimationViewController"];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title=@"FaceBook POP使用";
+    
+    self.view.backgroundColor=[UIColor whiteColor];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,24 +47,39 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return _titles.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    static  NSString * reuseIdentifier=@"resueIdentifer";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+
+    if (!cell) {
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];
+        
+    }
+    cell.textLabel.text=_titles[indexPath.row];
     
     return cell;
 }
-*/
+
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    NSString *controller=_controllers[indexPath.row];
+    Class class=NSClassFromString(controller);
+    
+    id obj=[class new];
+    
+    [self.navigationController pushViewController:obj animated:YES];
+
+}
 
 /*
 // Override to support conditional editing of the table view.

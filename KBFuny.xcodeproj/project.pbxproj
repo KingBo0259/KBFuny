@@ -17,6 +17,8 @@
 		A90964141CDA216F00960D1B /* KCOrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90964121CDA216F00960D1B /* KCOrderDetailViewController.xib */; };
 		A90A37C61D7EA20B003C4772 /* KBFingerUnLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90A37C51D7EA20B003C4772 /* KBFingerUnLockViewController.m */; };
 		A90A37C81D7EA219003C4772 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90A37C71D7EA219003C4772 /* LocalAuthentication.framework */; };
+		A90A37CC1D813927003C4772 /* KBPodMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90A37CB1D813927003C4772 /* KBPodMenuTableViewController.m */; };
+		A90A37D01D81523E003C4772 /* KBPOPBasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90A37CF1D81523E003C4772 /* KBPOPBasicAnimationViewController.m */; };
 		A90D43421B06F44B009F65C0 /* alipIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90D43411B06F44B009F65C0 /* alipIcon@2x.png */; };
 		A90D43441B06F487009F65C0 /* 联系人@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90D43431B06F487009F65C0 /* 联系人@2x.png */; };
 		A90D43521B07470F009F65C0 /* KBHessianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D43511B07470F009F65C0 /* KBHessianViewController.m */; };
@@ -215,6 +217,10 @@
 		A90A37C41D7EA20B003C4772 /* KBFingerUnLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBFingerUnLockViewController.h; path = DetailController/KBDevice/FingerUnLock/KBFingerUnLockViewController.h; sourceTree = "<group>"; };
 		A90A37C51D7EA20B003C4772 /* KBFingerUnLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBFingerUnLockViewController.m; path = DetailController/KBDevice/FingerUnLock/KBFingerUnLockViewController.m; sourceTree = "<group>"; };
 		A90A37C71D7EA219003C4772 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		A90A37CA1D813927003C4772 /* KBPodMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBPodMenuTableViewController.h; path = DetailController/KBPop/KBPodMenuTableViewController.h; sourceTree = "<group>"; };
+		A90A37CB1D813927003C4772 /* KBPodMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBPodMenuTableViewController.m; path = DetailController/KBPop/KBPodMenuTableViewController.m; sourceTree = "<group>"; };
+		A90A37CE1D81523E003C4772 /* KBPOPBasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBPOPBasicAnimationViewController.h; path = DetailController/KBPop/KBPOPBasicAnimation/KBPOPBasicAnimationViewController.h; sourceTree = "<group>"; };
+		A90A37CF1D81523E003C4772 /* KBPOPBasicAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBPOPBasicAnimationViewController.m; path = DetailController/KBPop/KBPOPBasicAnimation/KBPOPBasicAnimationViewController.m; sourceTree = "<group>"; };
 		A90D43411B06F44B009F65C0 /* alipIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alipIcon@2x.png"; sourceTree = "<group>"; };
 		A90D43431B06F487009F65C0 /* 联系人@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联系人@2x.png"; sourceTree = "<group>"; };
 		A90D43501B07470F009F65C0 /* KBHessianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBHessianViewController.h; path = DetailController/KBHessianViewController.h; sourceTree = "<group>"; };
@@ -585,6 +591,25 @@
 				A90A37C51D7EA20B003C4772 /* KBFingerUnLockViewController.m */,
 			);
 			name = FingerUnLock;
+			sourceTree = "<group>";
+		};
+		A90A37C91D8138AB003C4772 /* KBPop */ = {
+			isa = PBXGroup;
+			children = (
+				A90A37CD1D8151C9003C4772 /* KBPOPBasicAnimation */,
+				A90A37CA1D813927003C4772 /* KBPodMenuTableViewController.h */,
+				A90A37CB1D813927003C4772 /* KBPodMenuTableViewController.m */,
+			);
+			name = KBPop;
+			sourceTree = "<group>";
+		};
+		A90A37CD1D8151C9003C4772 /* KBPOPBasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A90A37CE1D81523E003C4772 /* KBPOPBasicAnimationViewController.h */,
+				A90A37CF1D81523E003C4772 /* KBPOPBasicAnimationViewController.m */,
+			);
+			name = KBPOPBasicAnimation;
 			sourceTree = "<group>";
 		};
 		A90D43FE1B074DF6009F65C0 /* HessianModel */ = {
@@ -1199,6 +1224,7 @@
 		A9DF77771AE10A7600055E0C /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
+				A90A37C91D8138AB003C4772 /* KBPop */,
 				A974D9221D7681F500F17A17 /* KBDevice */,
 				A95F4AD31D34DD2B00EE6A72 /* KBShaperController */,
 				A9839DA01CD1E35C00F2F257 /* KCCoreData */,
@@ -1596,11 +1622,13 @@
 				A90561C21CD85755001A368C /* KCOrderListTVC.m in Sources */,
 				A90D441D1B0750D2009F65C0 /* CWHessianUnarchiver.m in Sources */,
 				A9839DA81CD1E49F00F2F257 /* KCModel.xcdatamodeld in Sources */,
+				A90A37CC1D813927003C4772 /* KBPodMenuTableViewController.m in Sources */,
 				A98102831C9149F10053127B /* KCOperationViewController.m in Sources */,
 				A95F4AE11D34EBA400EE6A72 /* KBShaperTableViewController.m in Sources */,
 				A90D441B1B0750D2009F65C0 /* CWHessianConnection.m in Sources */,
 				A9839DB21CD1EA2C00F2F257 /* KBCoreDataMananger.m in Sources */,
 				A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */,
+				A90A37D01D81523E003C4772 /* KBPOPBasicAnimationViewController.m in Sources */,
 				A9EAD3771B42386800343A51 /* KBPopoverView.m in Sources */,
 				A90D441A1B0750D2009F65C0 /* CWHessianCoder.m in Sources */,
 				A9E3080D1B3DA19C0055D3C8 /* KBNavicontroller.m in Sources */,

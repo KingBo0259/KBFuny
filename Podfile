@@ -5,5 +5,5 @@ pod 'Masonry', '~> 1.0.0'
 pod 'SVProgressHUD', '~> 2.0.3'
 pod 'MagicalRecord', '~> 2.3.2'
 pod 'SVPullToRefresh', '~> 0.4.1'
-
+pod 'pop', '~> 1.0.9'
 
