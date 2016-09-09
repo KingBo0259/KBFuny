@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIButton ()
+@interface UIButton (){
 
+    NSString *_exTag;
+}
+@property(nonatomic,strong)NSString*exTag;//属性声明<! 这里是无法运行的>
 @end

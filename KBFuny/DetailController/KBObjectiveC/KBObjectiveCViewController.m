@@ -11,6 +11,8 @@
 #import "Lion.h"
 #import <objc/runtime.h>
 #import "Masonry.h"
+#import "UIButton_KB.h"
+#import "UIButton+KB.h"
 
 //全局变量，constString1地址不能修改，constString1值能修改
 const NSString *constString1 = @"I am a const NSString * string";
@@ -19,7 +21,6 @@ NSString const *constString2 = @"I am a NSString const * string";
 // stringConst 地址能修改，stringConst值不能修改
 NSString * const stringConst = @"I am a NSString * const string";
 
-static CGFloat  constValue=37.0f;
 
 
 
@@ -94,6 +95,8 @@ static CGFloat  constValue=37.0f;
     [runtimeBtn setTitle:@"RuntimeButton" forState:UIControlStateNormal];
     runtimeBtn.backgroundColor=[UIColor redColor];
     [runtimeBtn addTarget:self action:@selector(pushToRuntimeController:) forControlEvents:UIControlEventTouchUpInside];
+    [runtimeBtn setMyTag:@"我是自定义Tag"];
+    runtimeBtn.exTag=@"我想说 我是kingbo";
     [self.view addSubview:runtimeBtn];
     
     [runtimeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -118,7 +121,8 @@ static CGFloat  constValue=37.0f;
     
 }
 
--(void)pushToRuntimeController:(id)sender{
+-(void)pushToRuntimeController:(UIButton*)sender{
+    NSLog(@"%@---%@",[sender getMyTag],sender.exTag);
     Class class=NSClassFromString(@"KBRuntimeViewController");
     id obj=[class new];
     [self.navigationController pushViewController:obj animated:YES];

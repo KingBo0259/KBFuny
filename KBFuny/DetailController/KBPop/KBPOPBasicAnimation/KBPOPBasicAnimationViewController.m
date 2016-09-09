@@ -23,7 +23,7 @@
     
     self.title=@"POPBasicAnimation";
     
-    self.view.backgroundColor=[UIColor whiteColor];
+    self.view.backgroundColor=[UIColor redColor];
     
     self.textView=[[UIView alloc]initWithFrame:CGRectMake(0, 80, 100, 100)];
     self.textView.backgroundColor=[UIColor yellowColor];
@@ -40,13 +40,25 @@
     [springButton addTarget:self action:@selector(popSpringAnimation) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:springButton];
     
+    UIButton *rotationButton=[UIButton buttonWithType:UIButtonTypeSystem];
+    [rotationButton setTitle:@"旋转" forState:UIControlStateNormal];
+    [rotationButton addTarget:self action:@selector(rotationClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:rotationButton];
+    
+    UIButton *opactiyButton=[UIButton buttonWithType:UIButtonTypeSystem];
+    [opactiyButton setTitle:@"特明度设置" forState:UIControlStateNormal];
+    [opactiyButton addTarget:self action:@selector(opacityClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:opactiyButton];
+    
+    
     
     
     [button makeConstraints:^(MASConstraintMaker *make) {
         
         make.width.equalTo(@100);
         make.height.equalTo(@40);
-        make.center.equalTo(self.view);
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.view).offset(80);
     }];
     
     [springButton makeConstraints:^(MASConstraintMaker *make) {
@@ -54,7 +66,22 @@
         make.width.height.centerX.equalTo(button);
         make.top.equalTo(button.bottom).offset(20);
     }];
+    
+    [rotationButton makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.width.height.centerX.equalTo(button);
+        make.top.equalTo(springButton.bottom).offset(20);
+    }];
+    
+    [opactiyButton makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.width.height.centerX.equalTo(button);
+        make.top.equalTo(rotationButton.bottom).offset(20);
+    }];
+
 }
+
+
 
 
 -(void)randMove{
@@ -90,6 +117,28 @@
     anim.springSpeed = 6;
     [self.textView pop_addAnimation:anim forKey:@"center"];
 }
+
+
+-(void)rotationClick:(UIButton *)sender{
+
+    POPSpringAnimation *rotationAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
+    rotationAnimation.beginTime = CACurrentMediaTime() + 0.2;
+    rotationAnimation.toValue = @(1.2);
+    rotationAnimation.springBounciness = 10.f;
+    rotationAnimation.springSpeed = 3;
+    [self.textView .layer pop_addAnimation:rotationAnimation forKey:@"rotationAnim"];
+
+}
+
+
+
+-(void)opacityClick:(UIButton*)sender{
+
+    POPBasicAnimation *opacityAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerOpacity];
+    opacityAnimation.toValue = @(0.5);
+    [self.textView.layer pop_addAnimation:opacityAnimation forKey:@"opacityAnimation"];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

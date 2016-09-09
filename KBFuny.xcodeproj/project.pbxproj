@@ -19,6 +19,7 @@
 		A90A37C81D7EA219003C4772 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90A37C71D7EA219003C4772 /* LocalAuthentication.framework */; };
 		A90A37CC1D813927003C4772 /* KBPodMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90A37CB1D813927003C4772 /* KBPodMenuTableViewController.m */; };
 		A90A37D01D81523E003C4772 /* KBPOPBasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90A37CF1D81523E003C4772 /* KBPOPBasicAnimationViewController.m */; };
+		A90A37D81D828672003C4772 /* UIButton+KB.m in Sources */ = {isa = PBXBuildFile; fileRef = A90A37D71D828672003C4772 /* UIButton+KB.m */; };
 		A90D43421B06F44B009F65C0 /* alipIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90D43411B06F44B009F65C0 /* alipIcon@2x.png */; };
 		A90D43441B06F487009F65C0 /* 联系人@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90D43431B06F487009F65C0 /* 联系人@2x.png */; };
 		A90D43521B07470F009F65C0 /* KBHessianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D43511B07470F009F65C0 /* KBHessianViewController.m */; };
@@ -221,6 +222,9 @@
 		A90A37CB1D813927003C4772 /* KBPodMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBPodMenuTableViewController.m; path = DetailController/KBPop/KBPodMenuTableViewController.m; sourceTree = "<group>"; };
 		A90A37CE1D81523E003C4772 /* KBPOPBasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBPOPBasicAnimationViewController.h; path = DetailController/KBPop/KBPOPBasicAnimation/KBPOPBasicAnimationViewController.h; sourceTree = "<group>"; };
 		A90A37CF1D81523E003C4772 /* KBPOPBasicAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBPOPBasicAnimationViewController.m; path = DetailController/KBPop/KBPOPBasicAnimation/KBPOPBasicAnimationViewController.m; sourceTree = "<group>"; };
+		A90A37D61D828672003C4772 /* UIButton+KB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+KB.h"; path = "DetailController/KBObjectiveC/AssAssociatedobject/UIButton+KB.h"; sourceTree = "<group>"; };
+		A90A37D71D828672003C4772 /* UIButton+KB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+KB.m"; path = "DetailController/KBObjectiveC/AssAssociatedobject/UIButton+KB.m"; sourceTree = "<group>"; };
+		A90A37D91D828D9E003C4772 /* UIButton_KB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIButton_KB.h; path = DetailController/KBObjectiveC/AssAssociatedobject/UIButton_KB.h; sourceTree = "<group>"; };
 		A90D43411B06F44B009F65C0 /* alipIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alipIcon@2x.png"; sourceTree = "<group>"; };
 		A90D43431B06F487009F65C0 /* 联系人@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联系人@2x.png"; sourceTree = "<group>"; };
 		A90D43501B07470F009F65C0 /* KBHessianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBHessianViewController.h; path = DetailController/KBHessianViewController.h; sourceTree = "<group>"; };
@@ -610,6 +614,16 @@
 				A90A37CF1D81523E003C4772 /* KBPOPBasicAnimationViewController.m */,
 			);
 			name = KBPOPBasicAnimation;
+			sourceTree = "<group>";
+		};
+		A90A37D51D8285EC003C4772 /* AssAssociatedobject  */ = {
+			isa = PBXGroup;
+			children = (
+				A90A37D61D828672003C4772 /* UIButton+KB.h */,
+				A90A37D71D828672003C4772 /* UIButton+KB.m */,
+				A90A37D91D828D9E003C4772 /* UIButton_KB.h */,
+			);
+			name = "AssAssociatedobject ";
 			sourceTree = "<group>";
 		};
 		A90D43FE1B074DF6009F65C0 /* HessianModel */ = {
@@ -1042,6 +1056,7 @@
 		A97E33001C61A7B7004534D1 /* KBObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				A90A37D51D8285EC003C4772 /* AssAssociatedobject  */,
 				A928D1631CC103DB00E1247C /* KBRuntime */,
 				A9F3925B1C61D4DD0008F62B /* Animal */,
 				A97E33041C61A92A004534D1 /* KBObjectiveCViewController.h */,
@@ -1672,6 +1687,7 @@
 				A928D1791CC5E0B300E1247C /* KCCityResponse.m in Sources */,
 				A90D44191B0750D2009F65C0 /* CWHessianArchiver.m in Sources */,
 				A90561B91CD83C73001A368C /* KCCoreDataMenuTableViewController.m in Sources */,
+				A90A37D81D828672003C4772 /* UIButton+KB.m in Sources */,
 				A9F392541C61ABF50008F62B /* Animal.m in Sources */,
 				A9DA072E1AC3A1290070120D /* PopoverView.m in Sources */,
 				A97E33061C61A92A004534D1 /* KBObjectiveCViewController.m in Sources */,

@@ -20,7 +20,7 @@
 -(instancetype)init
 {
     if (self=[super init]) {
-        _titles=@[@"POPBasicAnimation"];
+        _titles=@[@"基本使用"];
         self.controllers=@[@"KBPOPBasicAnimationViewController"];
     }
     return self;
@@ -61,7 +61,8 @@
 
     if (!cell) {
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];
-        
+     
+        cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     }
     cell.textLabel.text=_titles[indexPath.row];
     
