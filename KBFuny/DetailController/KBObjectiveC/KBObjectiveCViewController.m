@@ -96,7 +96,6 @@ NSString * const stringConst = @"I am a NSString * const string";
     runtimeBtn.backgroundColor=[UIColor redColor];
     [runtimeBtn addTarget:self action:@selector(pushToRuntimeController:) forControlEvents:UIControlEventTouchUpInside];
     [runtimeBtn setMyTag:@"我是自定义Tag"];
-    runtimeBtn.exTag=@"我想说 我是kingbo";
     [self.view addSubview:runtimeBtn];
     
     [runtimeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -122,7 +121,6 @@ NSString * const stringConst = @"I am a NSString * const string";
 }
 
 -(void)pushToRuntimeController:(UIButton*)sender{
-    NSLog(@"%@---%@",[sender getMyTag],sender.exTag);
     Class class=NSClassFromString(@"KBRuntimeViewController");
     id obj=[class new];
     [self.navigationController pushViewController:obj animated:YES];

@@ -40,14 +40,7 @@
     [self.view addSubview:button01];
     
     
-    [button01 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(@200);
-        make.height.equalTo(@40);
-        make.top.equalTo(self.view).offset(64+20);
-        make.left.equalTo(self.view).offset(20);
-
-        
-    }];
+   
     
     
     UIButton *propertyBtn=[UIButton buttonWithType:UIButtonTypeSystem];
@@ -55,15 +48,94 @@
     propertyBtn.backgroundColor=[UIColor redColor];
     [propertyBtn addTarget:self action:@selector(buttonPropertyClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:propertyBtn];
+  
+    
+    UIButton *nonSELBtn=[UIButton buttonWithType:UIButtonTypeSystem];
+    [nonSELBtn setTitle:@"执行resolveInstanceMethod添加方法" forState:UIControlStateNormal];
+    nonSELBtn.backgroundColor=[UIColor redColor];
+    
+    [nonSELBtn addTarget:self action:@selector(resolveInstanceMethod12) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:nonSELBtn];
+    
+    UIButton *nonSELBtn1=[UIButton buttonWithType:UIButtonTypeSystem];
+    [nonSELBtn1 setTitle:@"执行forwardingTargetForSelector" forState:UIControlStateNormal];
+    nonSELBtn1.backgroundColor=[UIColor redColor];
+    
+    [nonSELBtn1 addTarget:self action:@selector(metodSwizingToLionTest) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:nonSELBtn1];
+
+    
+    [button01 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@200);
+        make.height.equalTo(@40);
+        make.top.equalTo(self.view).offset(64+20);
+        make.left.equalTo(self.view).offset(20);
+        
+        
+    }];
     
     [propertyBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.left.right.with.height.equalTo(button01);
         make.top.equalTo(button01.mas_bottom).offset(10);
     }];
+    
+    
+    
+    
+    [nonSELBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.height.equalTo(propertyBtn);
+        make.width.equalTo(@300);
+        make.top.equalTo(propertyBtn.mas_bottom).offset(10);
+    }];
+    
+    [nonSELBtn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.with.height.equalTo(nonSELBtn);
+        make.top.equalTo(nonSELBtn.mas_bottom).offset(10);
+    }];
+    
+
+
+    
+
 }
 
 
+#pragma mark - OVVRIDE
+
+//1、在没有找到指定的IMP之后 ，会执行resolveInstanceMethod
++(BOOL)resolveInstanceMethod:(SEL)sel{
+
+    NSLog(@"resolveInstanceMethod:%@",NSStringFromSelector(sel));
+    
+    //这里可以动态的添加方法
+    if (sel!=NSSelectorFromString(@"metodSwizingToLionTest")) {
+
+        //runtime动态添加方法
+        class_addMethod(self, sel, (IMP)dynamicMethodIMP, "v@:");
+        return YES;
+    }
+    return [super resolveInstanceMethod:sel];
+}
+//动态添加方法
+void dynamicMethodIMP(id self,SEL _cmd){
+    NSLog(@"doSomething SEL");
+}
+
+//2、resolveInstanceMethod 还没有找到之后会执行forwardingTargetForSelector . 这样就不会报错
+-(id)forwardingTargetForSelector:(SEL)aSelector{
+    NSLog(@"forwardingTargetForSelector:%@",NSStringFromSelector(aSelector));
+
+    if (aSelector==NSSelectorFromString(@"metodSwizingToLionTest")) {
+        Class class=NSClassFromString(@"Tiger");
+        id obj=[class new];
+        return obj;//将方法转接到  Tiger 对象里面 ---->牛B
+    }
+    return nil;
+}
+
+
+#pragma mark - EVENT
 //
 -(void)buttonPropertyClick:(id)sender{
 

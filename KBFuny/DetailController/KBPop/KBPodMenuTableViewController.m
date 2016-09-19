@@ -29,16 +29,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"FaceBook POP使用";
-    
     self.view.backgroundColor=[UIColor whiteColor];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+   
+    [self facebookPOP];
 }
 
+
+-(void)facebookPOP{
+    
+    // 1. Pick a Kind Of Animation //  POPBasicAnimation  POPSpringAnimation POPDecayAnimation
+    POPSpringAnimation *basicAnimation = [POPSpringAnimation animation];
+    
+    // 2. Decide weather you will animate a view property or layer property, Lets pick a View Property and pick kPOPViewFrame
+    // View Properties - kPOPViewAlpha kPOPViewBackgroundColor kPOPViewBounds kPOPViewCenter kPOPViewFrame kPOPViewScaleXY kPOPViewSize
+    // Layer Properties - kPOPLayerBackgroundColor kPOPLayerBounds kPOPLayerScaleXY kPOPLayerSize kPOPLayerOpacity kPOPLayerPosition kPOPLayerPositionX kPOPLayerPositionY kPOPLayerRotation kPOPLayerBackgroundColor
+    basicAnimation.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
+    
+    // 3. Figure Out which of 3 ways to set toValue
+    //  anim.toValue = @(1.0);
+    //  anim.toValue =  [NSValue valueWithCGRect:CGRectMake(0, 0, 400, 400)];
+    //  anim.toValue =  [NSValue valueWithCGSize:CGSizeMake(40, 40)];
+    basicAnimation.toValue=[NSValue valueWithCGRect:CGRectMake(0, 0, 160, 320)];
+    
+    // 4. Create Name For Animation & Set Delegate
+    basicAnimation.name=@"AnyAnimationNameYouWant";
+    basicAnimation.delegate=self;
+    
+    // 5. Add animation to View or Layer, we picked View so self.tableView and not layer which would have been self.tableView.layer
+    [self.tableView pop_addAnimation:basicAnimation forKey:@"WhatEverNameYouWant"];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
