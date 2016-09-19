@@ -54,7 +54,7 @@
     [nonSELBtn setTitle:@"执行resolveInstanceMethod添加方法" forState:UIControlStateNormal];
     nonSELBtn.backgroundColor=[UIColor redColor];
     
-    [nonSELBtn addTarget:self action:@selector(resolveInstanceMethod12) forControlEvents:UIControlEventTouchUpInside];
+    [nonSELBtn addTarget:self action:@selector(resolveInstanceMethod_m) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:nonSELBtn];
     
     UIButton *nonSELBtn1=[UIButton buttonWithType:UIButtonTypeSystem];
@@ -63,6 +63,15 @@
     
     [nonSELBtn1 addTarget:self action:@selector(metodSwizingToLionTest) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:nonSELBtn1];
+    
+    
+    UIButton *errorButton=[UIButton buttonWithType:UIButtonTypeSystem];
+    [errorButton setTitle:@"调用没有声明的方法全错过程" forState:UIControlStateNormal];
+    errorButton.backgroundColor=[UIColor redColor];
+    
+    [errorButton addTarget:self action:@selector(soud) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:errorButton];
+
 
     
     [button01 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -94,6 +103,13 @@
         make.top.equalTo(nonSELBtn.mas_bottom).offset(10);
     }];
     
+    [errorButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.with.height.equalTo(nonSELBtn1);
+        make.top.equalTo(nonSELBtn1.mas_bottom).offset(10);
+    }];
+    
+
+    
 
 
     
@@ -109,7 +125,7 @@
     NSLog(@"resolveInstanceMethod:%@",NSStringFromSelector(sel));
     
     //这里可以动态的添加方法
-    if (sel!=NSSelectorFromString(@"metodSwizingToLionTest")) {
+    if (sel==NSSelectorFromString(@"resolveInstanceMethod_m")) {
 
         //runtime动态添加方法
         class_addMethod(self, sel, (IMP)dynamicMethodIMP, "v@:");
@@ -134,6 +150,43 @@ void dynamicMethodIMP(id self,SEL _cmd){
     return nil;
 }
 
+//3、若forwardingTargetForSelector 返回nil 或则self 则执行 methodSignatureForSelector
+-(NSMethodSignature*)methodSignatureForSelector:(SEL)aSelector{
+
+    NSLog(@"methodSignatureForSelector:%@",NSStringFromSelector(aSelector));
+    /*
+     * 1、这里可以获取任意类型的method
+     * 这里是测试对象 将其转到Lion  中过的 soud 方法中
+     */
+    Method method = class_getInstanceMethod(NSClassFromString(@"Lion"), NSSelectorFromString(@"soud"));
+
+    struct objc_method_description *md=method_getDescription(method);
+    NSMethodSignature  *methodSignature = [NSMethodSignature signatureWithObjCTypes:(*md).types];
+   
+    // 若返回有效的 NSMethodSignature会执行 forwardInvovation，否则 不会执行到 forwardInvocation
+    return methodSignature;
+
+}
+
+//4、若methodSignatureForSelector 返回有效的NSMethodSignature  则执行 forwardInvocation  (最终若这没有执行则 最终会抛出异常)
+-(void)forwardInvocation:(NSInvocation *)anInvocation{
+    
+//    //创建一个函数签名，这个签名可以是任意的,但需要注意，签名函数的参数数量要和调用的一致。
+//    NSMethodSignature * sig  = [NSNumber instanceMethodSignatureForSelector:@selector(init)];
+
+    NSString* selectorName = NSStringFromSelector([anInvocation selector]);
+    Class class=NSClassFromString(@"Lion");
+    id obj= [class new];
+    //设置target
+    [anInvocation setTarget:obj];
+    //设置selecteor
+    [anInvocation setSelector:NSSelectorFromString(selectorName)];
+    //消息调用
+    [anInvocation invoke];
+    
+    
+    
+}
 
 #pragma mark - EVENT
 //
