@@ -106,6 +106,7 @@ NSString * const stringConst = @"I am a NSString * const string";
     
     
     
+    
 }
 
 -(void)dealloc{
@@ -117,8 +118,20 @@ NSString * const stringConst = @"I am a NSString * const string";
 -(void)KVOClick:(id)sender{
 
     _tiger.name=@"Kingbo";
+    for (int i=0; i<=100000; ++i) {
+        @autoreleasepool {
+            [self logTestValue:i];
+            
+        }
+    }
+    sleep(1);
     
 }
+
+-(void)logTestValue:(int)index{
+    NSLog(@"%i",index);
+}
+
 
 -(void)pushToRuntimeController:(UIButton*)sender{
     Class class=NSClassFromString(@"KBRuntimeViewController");

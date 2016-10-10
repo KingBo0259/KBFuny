@@ -312,6 +312,8 @@ static dispatch_source_t source_t;
     //这里也是这个子线程的RunLoop哦
     _runLoopRef = CFRunLoopGetCurrent();
     
+//    CFRunLoopGetMain();
+//    [NSThread mainThread];
     //将源添加到当前RunLoop中去
     CFRunLoopAddSource(_runLoopRef, _source, kCFRunLoopDefaultMode);
     NSLog(@"onTread ");
