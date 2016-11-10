@@ -147,6 +147,9 @@
 		A98ED6691AA013B20031BA10 /* KBFunyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED6681AA013B20031BA10 /* KBFunyTests.m */; };
 		A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED6BD1AA1C2140031BA10 /* KBButton.m */; };
 		A9AC9D8D1D52E12C00FD3CAB /* SKYBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */; };
+		A9C5D3351DD4147A00454A07 /* KBPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D3341DD4147A00454A07 /* KBPrintViewController.m */; };
+		A9C5D33D1DD4239700454A07 /* NSString+NCPrinting.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D33A1DD4239700454A07 /* NSString+NCPrinting.m */; };
+		A9C5D33E1DD4239700454A07 /* RecipePrintPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D33C1DD4239700454A07 /* RecipePrintPageRenderer.m */; };
 		A9CDC1B11AC64A1C007C14EC /* KBGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CDC1B01AC64A1C007C14EC /* KBGraphicsView.m */; };
 		A9D7D83A1AC4F6D10075E333 /* KBBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7D8391AC4F6D10075E333 /* KBBadgeView.m */; };
 		A9DA072E1AC3A1290070120D /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DA072D1AC3A1290070120D /* PopoverView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -440,6 +443,12 @@
 		A98FF2161B0A1B2700AC1A9A /* activityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activityService.h; sourceTree = "<group>"; };
 		A9AC9D8B1D52E12C00FD3CAB /* SKYBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKYBase64.h; path = KBCommon/SKYBase64.h; sourceTree = "<group>"; };
 		A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKYBase64.m; path = KBCommon/SKYBase64.m; sourceTree = "<group>"; };
+		A9C5D3331DD4147A00454A07 /* KBPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBPrintViewController.h; path = DetailController/KBDevice/Print/KBPrintViewController.h; sourceTree = "<group>"; };
+		A9C5D3341DD4147A00454A07 /* KBPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBPrintViewController.m; path = DetailController/KBDevice/Print/KBPrintViewController.m; sourceTree = "<group>"; };
+		A9C5D3391DD4239700454A07 /* NSString+NCPrinting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NCPrinting.h"; path = "DetailController/KBDevice/Print/NSString+NCPrinting.h"; sourceTree = "<group>"; };
+		A9C5D33A1DD4239700454A07 /* NSString+NCPrinting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NCPrinting.m"; path = "DetailController/KBDevice/Print/NSString+NCPrinting.m"; sourceTree = "<group>"; };
+		A9C5D33B1DD4239700454A07 /* RecipePrintPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipePrintPageRenderer.h; path = DetailController/KBDevice/Print/RecipePrintPageRenderer.h; sourceTree = "<group>"; };
+		A9C5D33C1DD4239700454A07 /* RecipePrintPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipePrintPageRenderer.m; path = DetailController/KBDevice/Print/RecipePrintPageRenderer.m; sourceTree = "<group>"; };
 		A9CDC1AF1AC64A1C007C14EC /* KBGraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBGraphicsView.h; path = Custom/KBGraphicsView.h; sourceTree = "<group>"; };
 		A9CDC1B01AC64A1C007C14EC /* KBGraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBGraphicsView.m; path = Custom/KBGraphicsView.m; sourceTree = "<group>"; };
 		A9D7D8381AC4F6D10075E333 /* KBBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBBadgeView.h; path = Custom/KBBadgeView.h; sourceTree = "<group>"; };
@@ -1005,6 +1014,7 @@
 		A974D9221D7681F500F17A17 /* KBDevice */ = {
 			isa = PBXGroup;
 			children = (
+				A9C5D3321DD4143600454A07 /* Print */,
 				A90A37C31D7EA1D8003C4772 /* FingerUnLock */,
 				A974D9261D76A74000F17A17 /* Scan */,
 				A974D9231D76824100F17A17 /* KBDeviceMenuTableViewController.h */,
@@ -1212,6 +1222,19 @@
 				A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */,
 			);
 			name = KBCommon;
+			sourceTree = "<group>";
+		};
+		A9C5D3321DD4143600454A07 /* Print */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5D3391DD4239700454A07 /* NSString+NCPrinting.h */,
+				A9C5D33A1DD4239700454A07 /* NSString+NCPrinting.m */,
+				A9C5D33B1DD4239700454A07 /* RecipePrintPageRenderer.h */,
+				A9C5D33C1DD4239700454A07 /* RecipePrintPageRenderer.m */,
+				A9C5D3331DD4147A00454A07 /* KBPrintViewController.h */,
+				A9C5D3341DD4147A00454A07 /* KBPrintViewController.m */,
+			);
+			name = Print;
 			sourceTree = "<group>";
 		};
 		A9DA072B1AC3A1290070120D /* PopoverView */ = {
@@ -1679,7 +1702,9 @@
 				A9FEFC2E1D41E94600E830F2 /* KBShoppingCartController.m in Sources */,
 				A98ED6521AA013B10031BA10 /* MasterViewController.m in Sources */,
 				A98ED64C1AA013B10031BA10 /* main.m in Sources */,
+				A9C5D33D1DD4239700454A07 /* NSString+NCPrinting.m in Sources */,
 				A92C51BF1CC8D9C20097C699 /* KCTMSUnarchive.m in Sources */,
+				A9C5D33E1DD4239700454A07 /* RecipePrintPageRenderer.m in Sources */,
 				A9678A0A1C843DA9006EB732 /* KBCrandCenterDispatchViewController.m in Sources */,
 				A949CD9C1B2145AD0012D0A1 /* KBRecordViewController.m in Sources */,
 				A9FF89231D63FA8200ADFF86 /* KBUberImitateViewController.m in Sources */,
@@ -1691,6 +1716,7 @@
 				A9F392541C61ABF50008F62B /* Animal.m in Sources */,
 				A9DA072E1AC3A1290070120D /* PopoverView.m in Sources */,
 				A97E33061C61A92A004534D1 /* KBObjectiveCViewController.m in Sources */,
+				A9C5D3351DD4147A00454A07 /* KBPrintViewController.m in Sources */,
 				A92C51BC1CC8D8370097C699 /* KCTMSArchive.m in Sources */,
 				A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */,
 				A9E7E7231BD0D3CC0080CF5C /* KBTouchTableView.m in Sources */,

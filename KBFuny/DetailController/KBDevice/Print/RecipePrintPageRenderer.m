@@ -83,3 +83,10 @@
 }
 
 @end
+
+
+@implementation Recipe
+
+
+
+@end

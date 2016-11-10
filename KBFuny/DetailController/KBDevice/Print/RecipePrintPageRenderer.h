@@ -18,3 +18,10 @@
 
 @end
 
+
+@interface Recipe : NSObject
+@property(nonatomic,copy)NSString *html;
+@property(nonatomic,strong)NSArray*images;
+
+@end
+

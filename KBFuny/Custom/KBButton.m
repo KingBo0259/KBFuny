@@ -76,7 +76,7 @@
 
 - (NSString *)keyForState:(UIControlState)state
 {
-    return [NSString stringWithFormat:@"state_%lu", state];
+    return [NSString stringWithFormat:@"state_%lu", (unsigned long)state];
 }
 
 

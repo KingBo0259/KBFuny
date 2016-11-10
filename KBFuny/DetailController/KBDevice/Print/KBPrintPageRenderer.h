@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface KBPrintPageRenderer : UIPrintPageRenderer
+@property (nonatomic, strong) NSString *authorName;
+@property (nonatomic, strong) NSString *context;
 
+- (id)initWithAuthorName:(NSString *)authorName
+                  context:(NSString  *)context;
 @end
