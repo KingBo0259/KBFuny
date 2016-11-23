@@ -155,6 +155,7 @@
 		A9DA072E1AC3A1290070120D /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DA072D1AC3A1290070120D /* PopoverView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A9DB45041B4E7518006A0B89 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DB45011B4E7518006A0B89 /* 1.png */; };
 		A9DB45051B4E7518006A0B89 /* TonightSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DB45031B4E7518006A0B89 /* TonightSlider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A9DF21171DE030570042F095 /* KBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DF21161DE030570042F095 /* KBTextField.m */; };
 		A9DF777A1AE10AB600055E0C /* KBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DF77791AE10AB600055E0C /* KBSecondViewController.m */; };
 		A9E268791AEC728F008EA651 /* KBShaperLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E268781AEC728F008EA651 /* KBShaperLayerController.m */; };
 		A9E3080D1B3DA19C0055D3C8 /* KBNavicontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E3080C1B3DA19C0055D3C8 /* KBNavicontroller.m */; };
@@ -458,6 +459,8 @@
 		A9DB45011B4E7518006A0B89 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		A9DB45021B4E7518006A0B89 /* TonightSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TonightSlider.h; sourceTree = "<group>"; };
 		A9DB45031B4E7518006A0B89 /* TonightSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TonightSlider.m; sourceTree = "<group>"; };
+		A9DF21151DE030570042F095 /* KBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBTextField.h; path = Custom/KBTextField/KBTextField.h; sourceTree = "<group>"; };
+		A9DF21161DE030570042F095 /* KBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBTextField.m; path = Custom/KBTextField/KBTextField.m; sourceTree = "<group>"; };
 		A9DF77781AE10AB600055E0C /* KBSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSecondViewController.h; sourceTree = "<group>"; };
 		A9DF77791AE10AB600055E0C /* KBSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSecondViewController.m; sourceTree = "<group>"; };
 		A9E268771AEC728F008EA651 /* KBShaperLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBShaperLayerController.h; path = DetailController/KBShaperLayerController.h; sourceTree = "<group>"; };
@@ -1195,6 +1198,7 @@
 		A98ED6BB1AA1C1B70031BA10 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				A9DF21141DE0301C0042F095 /* KBTextField */,
 				A91FDF181CE573900049B645 /* KTMSAutoSearchDataView */,
 				A9E7E7201BD0D3CC0080CF5C /* KBTouchTableView */,
 				A91B69FE1BA7F6AA00D7C375 /* KCUserNavigationView */,
@@ -1257,6 +1261,15 @@
 			);
 			name = TonightSlider;
 			path = Custom/TonightSlider;
+			sourceTree = "<group>";
+		};
+		A9DF21141DE0301C0042F095 /* KBTextField */ = {
+			isa = PBXGroup;
+			children = (
+				A9DF21151DE030570042F095 /* KBTextField.h */,
+				A9DF21161DE030570042F095 /* KBTextField.m */,
+			);
+			name = KBTextField;
 			sourceTree = "<group>";
 		};
 		A9DF77771AE10A7600055E0C /* DetailController */ = {
@@ -1697,6 +1710,7 @@
 				A9839DA41CD1E39000F2F257 /* KCCoredataViewController.m in Sources */,
 				A976637D1C0ECB8A00F7E3C9 /* KBRefreshViewController.m in Sources */,
 				A95F4ADE1D34E3E100EE6A72 /* KBCALayerFactory.m in Sources */,
+				A9DF21171DE030570042F095 /* KBTextField.m in Sources */,
 				A9839DAF1CD1E82C00F2F257 /* Order.m in Sources */,
 				A90D44181B0750D2009F65C0 /* CWHessianArchiver+Private.m in Sources */,
 				A9FEFC2E1D41E94600E830F2 /* KBShoppingCartController.m in Sources */,

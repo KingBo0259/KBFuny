@@ -15,9 +15,9 @@
 #import "TonightSlider.h"
 #import "KTMSAutoSearchDataView.h"
 #import "UITextField+BSErrorMessageView.h"
+#import "KBTextField.h"
 
-
-@interface KBNavicontroller()<KTMSAutoSearchDataDelegate >
+@interface KBNavicontroller()<KTMSAutoSearchDataDelegate,KBTextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *searchText;
 
 @end
@@ -27,12 +27,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //解决导航栏存在时，需要手动调整64像素问题
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [self.searchText bs_setupErrorMessageViewWithMessage:@"数据错了"];
     [self.searchText bs_showError];
     
     TonightSlider *toSlider=[[TonightSlider alloc]initWithFrame:CGRectMake(0, 100, 100, 60)];
     [self.view addSubview:toSlider];
+    
+    
+    KBTextField *kbTest=[KBTextField new];
+    
+
+    kbTest.leftLabel.text=@"送货方式:";
+    kbTest.rightLabel.text=@"斤";
+    [self.view addSubview:kbTest];
+    
+    [kbTest setKeyborkType:UIKeyboardTypeDecimalPad];
+    [kbTest setValideType:KB_DATA_VALIDE_MAXLENGHT maxValueOrLength:5 errroInfo:nil];
+    [kbTest makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.left.right.equalTo(self.view);
+        make.top.equalTo(@5);
+        make.height.equalTo(@40);
+        
+    }];
+    
+    
+    
+    
     
     
     
@@ -123,6 +147,11 @@
     self.searchText.text=selectRow;
     [self.searchText resignFirstResponder];
 
+}
+
+#pragma mark  - KBTextFieldDelegate
+-(void)textFieldDidEndEditing:(UITextField *)textFeild field:(NSString *)field{
+    NSLog(@"");
 }
 
 @end
