@@ -116,6 +116,12 @@
     //view
     UIView *tempView=[[UIView alloc]initWithFrame:CGRectMake(10, 180, 100, 100)];
     tempView.backgroundColor=[UIColor redColor];
+    
+    imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bigShiper"]];
+    imageView.frame=CGRectMake(0, 0, 100, 100);
+    imageView.center=CGPointMake( CGRectGetWidth(tempView.frame)/2,CGRectGetHeight(tempView.frame)/2);
+    [tempView addSubview:imageView];
+    //利用CAShaperLayer进行裁剪
     tempView.layer.mask=[KBCALayerFactory createShaperWithView:tempView];
     
     [self.view addSubview:tempView];
