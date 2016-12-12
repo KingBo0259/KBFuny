@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface KBBaseCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *topImageView;
+@property (weak, nonatomic) IBOutlet UILabel *botTitleLabel;
 
 @end

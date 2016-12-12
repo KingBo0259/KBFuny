@@ -111,7 +111,6 @@ static id<KCTMSDecodeProtocol> _decode;//解码实体类
 //    }];
     
     
-    
     NSURL *url = [NSURL URLWithString:[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.timeoutInterval=15.0;//设置请求超时为5秒
@@ -120,6 +119,16 @@ static id<KCTMSDecodeProtocol> _decode;//解码实体类
     
     AFHTTPSessionManager *manager=[AFHTTPSessionManager manager];
     
+    [manager POST:urlStr parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        
+    }];
     NSURLSessionDataTask *task= [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error1) {
         
         if (error1) {

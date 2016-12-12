@@ -127,7 +127,7 @@
     UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
     printController.printInfo = printInfo;
     
-    UIMarkupTextPrintFormatter *formatter = [[UIMarkupTextPrintFormatter alloc] initWithMarkupText:@"<h1>我是printFormater打印</h1>"];
+    UIMarkupTextPrintFormatter *formatter = [[UIMarkupTextPrintFormatter alloc] initWithMarkupText:@"<div style='color:#00FF00;background-color: red;'><h1>我是printFormater打印</h1></div>"];
     formatter.contentInsets = UIEdgeInsetsMake(72, 72, 72, 72); // 1" margins
     
     

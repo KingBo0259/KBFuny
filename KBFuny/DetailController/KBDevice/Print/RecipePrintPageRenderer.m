@@ -31,7 +31,9 @@
         UIMarkupTextPrintFormatter *formatter = [[UIMarkupTextPrintFormatter alloc] initWithMarkupText:recipe.html];
         formatter.perPageContentInsets = UIEdgeInsetsMake(POINTS_PER_INCH, POINTS_PER_INCH, POINTS_PER_INCH, POINTS_PER_INCH * 3.5);
         [self addPrintFormatter:formatter startingAtPageAtIndex:0];
+
     }
+    
     return self;
 }
 

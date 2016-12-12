@@ -246,8 +246,8 @@ void dynamicMethodIMP(id self,SEL _cmd){
             
             NSLog(@"PropertyName=%@,PropertyType=%@",propertyName,typeName);
         }
-        
-        
+        //主动释放，否则会导致内存泄漏
+        free(propertys);
         class=class_getSuperclass(class);
     }
 }

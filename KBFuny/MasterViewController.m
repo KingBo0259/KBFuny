@@ -151,6 +151,8 @@
                         ,@"ShaperLayer1"
                         ,@"CoreData"
                         ,@"Facebook Pop"
+                        ,@"KBScriptViewController"
+                        ,@"UICollection 学习"
                         , nil];
     }
 
@@ -320,7 +322,22 @@
         [self.navigationController pushViewController:obj animated:YES];
         
 
+    }else if (indexPath.row==19){
     
+        //FaceBook Pod
+        Class class=NSClassFromString(@"KBScriptViewController");
+        id obj=[class new];
+        [self.navigationController pushViewController:obj animated:YES];
+        
+
+    }else if (indexPath.row==20){
+    
+        //KBCollectionMenuTableViewController
+        Class class=NSClassFromString(@"KBCollectionMenuTableViewController");
+        id obj=[class new];
+        [self.navigationController pushViewController:obj animated:YES];
+        
+
     }
 }
 

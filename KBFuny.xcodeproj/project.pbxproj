@@ -90,6 +90,8 @@
 		A949CD981B2142250012D0A1 /* KBVoiceRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A949CD961B2142250012D0A1 /* KBVoiceRecordViewController.m */; };
 		A949CD991B2142250012D0A1 /* KBVoiceRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A949CD971B2142250012D0A1 /* KBVoiceRecordViewController.xib */; };
 		A949CD9C1B2145AD0012D0A1 /* KBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A949CD9B1B2145AD0012D0A1 /* KBRecordViewController.m */; };
+		A94C52C41DF53C38006C6E0F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94C52C31DF53C38006C6E0F /* JavaScriptCore.framework */; };
+		A94C52C81DF53CE8006C6E0F /* KBScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94C52C71DF53CE8006C6E0F /* KBScriptViewController.m */; };
 		A9516F611CF6E09000B45D71 /* 樱花瓣1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9516F5C1CF6E09000B45D71 /* 樱花瓣1.png */; };
 		A9516F621CF6E09000B45D71 /* 樱花瓣2.png in Resources */ = {isa = PBXBuildFile; fileRef = A9516F5D1CF6E09000B45D71 /* 樱花瓣2.png */; };
 		A9516F631CF6E09000B45D71 /* 樱花树1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9516F5E1CF6E09000B45D71 /* 樱花树1.png */; };
@@ -146,6 +148,10 @@
 		A98ED65D1AA013B10031BA10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98ED65B1AA013B10031BA10 /* LaunchScreen.xib */; };
 		A98ED6691AA013B20031BA10 /* KBFunyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED6681AA013B20031BA10 /* KBFunyTests.m */; };
 		A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED6BD1AA1C2140031BA10 /* KBButton.m */; };
+		A9AB13F81DFE748400C7A756 /* KBCollectionMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB13F71DFE748400C7A756 /* KBCollectionMenuTableViewController.m */; };
+		A9AB13FC1DFE78E700C7A756 /* KBBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB13FB1DFE78E700C7A756 /* KBBaseCollectionViewController.m */; };
+		A9AB14031DFE797D00C7A756 /* KBBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB14011DFE797D00C7A756 /* KBBaseCollectionViewCell.m */; };
+		A9AB14041DFE797D00C7A756 /* KBBaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9AB14021DFE797D00C7A756 /* KBBaseCollectionViewCell.xib */; };
 		A9AC9D8D1D52E12C00FD3CAB /* SKYBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */; };
 		A9C5D3351DD4147A00454A07 /* KBPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D3341DD4147A00454A07 /* KBPrintViewController.m */; };
 		A9C5D33D1DD4239700454A07 /* NSString+NCPrinting.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D33A1DD4239700454A07 /* NSString+NCPrinting.m */; };
@@ -353,6 +359,9 @@
 		A949CD971B2142250012D0A1 /* KBVoiceRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBVoiceRecordViewController.xib; sourceTree = "<group>"; };
 		A949CD9A1B2145AD0012D0A1 /* KBRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRecordViewController.h; sourceTree = "<group>"; };
 		A949CD9B1B2145AD0012D0A1 /* KBRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRecordViewController.m; sourceTree = "<group>"; };
+		A94C52C31DF53C38006C6E0F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		A94C52C61DF53CE8006C6E0F /* KBScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBScriptViewController.h; path = DetailController/KBObjectiveC/KBJavaScript/KBScriptViewController.h; sourceTree = "<group>"; };
+		A94C52C71DF53CE8006C6E0F /* KBScriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBScriptViewController.m; path = DetailController/KBObjectiveC/KBJavaScript/KBScriptViewController.m; sourceTree = "<group>"; };
 		A9516F5C1CF6E09000B45D71 /* 樱花瓣1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "樱花瓣1.png"; sourceTree = "<group>"; };
 		A9516F5D1CF6E09000B45D71 /* 樱花瓣2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "樱花瓣2.png"; sourceTree = "<group>"; };
 		A9516F5E1CF6E09000B45D71 /* 樱花树1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "樱花树1.png"; sourceTree = "<group>"; };
@@ -442,6 +451,13 @@
 		A98FF20C1B09CE1300AC1A9A /* paymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paymentService.h; sourceTree = "<group>"; };
 		A98FF2131B0A10B200AC1A9A /* UnionpayOrderTransDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionpayOrderTransDTO.h; sourceTree = "<group>"; };
 		A98FF2161B0A1B2700AC1A9A /* activityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activityService.h; sourceTree = "<group>"; };
+		A9AB13F61DFE748400C7A756 /* KBCollectionMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBCollectionMenuTableViewController.h; path = DetailController/KBCollectionViewController/KBCollectionMenuTableViewController.h; sourceTree = "<group>"; };
+		A9AB13F71DFE748400C7A756 /* KBCollectionMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCollectionMenuTableViewController.m; path = DetailController/KBCollectionViewController/KBCollectionMenuTableViewController.m; sourceTree = "<group>"; };
+		A9AB13FA1DFE78E700C7A756 /* KBBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBBaseCollectionViewController.h; path = DetailController/KBCollectionViewController/Base/KBBaseCollectionViewController.h; sourceTree = "<group>"; };
+		A9AB13FB1DFE78E700C7A756 /* KBBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBBaseCollectionViewController.m; path = DetailController/KBCollectionViewController/Base/KBBaseCollectionViewController.m; sourceTree = "<group>"; };
+		A9AB14001DFE797D00C7A756 /* KBBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBBaseCollectionViewCell.h; path = DetailController/KBCollectionViewController/Base/KBBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		A9AB14011DFE797D00C7A756 /* KBBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBBaseCollectionViewCell.m; path = DetailController/KBCollectionViewController/Base/KBBaseCollectionViewCell.m; sourceTree = "<group>"; };
+		A9AB14021DFE797D00C7A756 /* KBBaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBBaseCollectionViewCell.xib; path = DetailController/KBCollectionViewController/Base/KBBaseCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9AC9D8B1D52E12C00FD3CAB /* SKYBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKYBase64.h; path = KBCommon/SKYBase64.h; sourceTree = "<group>"; };
 		A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKYBase64.m; path = KBCommon/SKYBase64.m; sourceTree = "<group>"; };
 		A9C5D3331DD4147A00454A07 /* KBPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBPrintViewController.h; path = DetailController/KBDevice/Print/KBPrintViewController.h; sourceTree = "<group>"; };
@@ -529,6 +545,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94C52C41DF53C38006C6E0F /* JavaScriptCore.framework in Frameworks */,
 				A90A37C81D7EA219003C4772 /* LocalAuthentication.framework in Frameworks */,
 				A9E490841B170BE50065B7DA /* libiconv.dylib in Frameworks */,
 				A9E490821B170BD70065B7DA /* QuartzCore.framework in Frameworks */,
@@ -563,6 +580,7 @@
 		86C8106A90F1E458E63B49F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A94C52C31DF53C38006C6E0F /* JavaScriptCore.framework */,
 				A90A37C71D7EA219003C4772 /* LocalAuthentication.framework */,
 				B69C1FBEA80B086699A2DE14 /* libPods.a */,
 			);
@@ -920,6 +938,15 @@
 			path = DetailController/RecordController;
 			sourceTree = "<group>";
 		};
+		A94C52C51DF53CA1006C6E0F /* KBJavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				A94C52C61DF53CE8006C6E0F /* KBScriptViewController.h */,
+				A94C52C71DF53CE8006C6E0F /* KBScriptViewController.m */,
+			);
+			name = KBJavaScript;
+			sourceTree = "<group>";
+		};
 		A9516F661CF6E5A300B45D71 /* BSErrorMessageView-master */ = {
 			isa = PBXGroup;
 			children = (
@@ -1069,6 +1096,7 @@
 		A97E33001C61A7B7004534D1 /* KBObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				A94C52C51DF53CA1006C6E0F /* KBJavaScript */,
 				A90A37D51D8285EC003C4772 /* AssAssociatedobject  */,
 				A928D1631CC103DB00E1247C /* KBRuntime */,
 				A9F3925B1C61D4DD0008F62B /* Animal */,
@@ -1219,6 +1247,28 @@
 			name = Custom;
 			sourceTree = "<group>";
 		};
+		A9AB13F51DFE742600C7A756 /* KBCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB13F91DFE78A900C7A756 /* Base */,
+				A9AB13F61DFE748400C7A756 /* KBCollectionMenuTableViewController.h */,
+				A9AB13F71DFE748400C7A756 /* KBCollectionMenuTableViewController.m */,
+			);
+			name = KBCollectionView;
+			sourceTree = "<group>";
+		};
+		A9AB13F91DFE78A900C7A756 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB13FA1DFE78E700C7A756 /* KBBaseCollectionViewController.h */,
+				A9AB13FB1DFE78E700C7A756 /* KBBaseCollectionViewController.m */,
+				A9AB14001DFE797D00C7A756 /* KBBaseCollectionViewCell.h */,
+				A9AB14011DFE797D00C7A756 /* KBBaseCollectionViewCell.m */,
+				A9AB14021DFE797D00C7A756 /* KBBaseCollectionViewCell.xib */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		A9AC9D8A1D52E0FD00FD3CAB /* KBCommon */ = {
 			isa = PBXGroup;
 			children = (
@@ -1275,6 +1325,7 @@
 		A9DF77771AE10A7600055E0C /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
+				A9AB13F51DFE742600C7A756 /* KBCollectionView */,
 				A90A37C91D8138AB003C4772 /* KBPop */,
 				A974D9221D7681F500F17A17 /* KBDevice */,
 				A95F4AD31D34DD2B00EE6A72 /* KBShaperController */,
@@ -1567,6 +1618,7 @@
 				A959F1EF1B0E2DE80050D9A2 /* Default.png in Resources */,
 				A9E74D321ACFD58D00D7F4AC /* weChatBubble_Receiving_Cavern@2x.png in Resources */,
 				A974D9411D76AF2000F17A17 /* scan_4@3x.png in Resources */,
+				A9AB14041DFE797D00C7A756 /* KBBaseCollectionViewCell.xib in Resources */,
 				A974D93D1D76AF2000F17A17 /* scan_2@3x.png in Resources */,
 				A974D93F1D76AF2000F17A17 /* scan_3@3x.png in Resources */,
 				A974D9451D76AF2000F17A17 /* 后退@2x.png in Resources */,
@@ -1680,6 +1732,7 @@
 				A9839DB21CD1EA2C00F2F257 /* KBCoreDataMananger.m in Sources */,
 				A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */,
 				A90A37D01D81523E003C4772 /* KBPOPBasicAnimationViewController.m in Sources */,
+				A94C52C81DF53CE8006C6E0F /* KBScriptViewController.m in Sources */,
 				A9EAD3771B42386800343A51 /* KBPopoverView.m in Sources */,
 				A90D441A1B0750D2009F65C0 /* CWHessianCoder.m in Sources */,
 				A9E3080D1B3DA19C0055D3C8 /* KBNavicontroller.m in Sources */,
@@ -1707,6 +1760,7 @@
 				A9AC9D8D1D52E12C00FD3CAB /* SKYBase64.m in Sources */,
 				A96337BE1D37644400726E2F /* UIBezierPathViewController.m in Sources */,
 				A98ED64F1AA013B10031BA10 /* AppDelegate.m in Sources */,
+				A9AB13FC1DFE78E700C7A756 /* KBBaseCollectionViewController.m in Sources */,
 				A9839DA41CD1E39000F2F257 /* KCCoredataViewController.m in Sources */,
 				A976637D1C0ECB8A00F7E3C9 /* KBRefreshViewController.m in Sources */,
 				A95F4ADE1D34E3E100EE6A72 /* KBCALayerFactory.m in Sources */,
@@ -1715,6 +1769,7 @@
 				A90D44181B0750D2009F65C0 /* CWHessianArchiver+Private.m in Sources */,
 				A9FEFC2E1D41E94600E830F2 /* KBShoppingCartController.m in Sources */,
 				A98ED6521AA013B10031BA10 /* MasterViewController.m in Sources */,
+				A9AB13F81DFE748400C7A756 /* KBCollectionMenuTableViewController.m in Sources */,
 				A98ED64C1AA013B10031BA10 /* main.m in Sources */,
 				A9C5D33D1DD4239700454A07 /* NSString+NCPrinting.m in Sources */,
 				A92C51BF1CC8D9C20097C699 /* KCTMSUnarchive.m in Sources */,
@@ -1732,6 +1787,7 @@
 				A97E33061C61A92A004534D1 /* KBObjectiveCViewController.m in Sources */,
 				A9C5D3351DD4147A00454A07 /* KBPrintViewController.m in Sources */,
 				A92C51BC1CC8D8370097C699 /* KCTMSArchive.m in Sources */,
+				A9AB14031DFE797D00C7A756 /* KBBaseCollectionViewCell.m in Sources */,
 				A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */,
 				A9E7E7231BD0D3CC0080CF5C /* KBTouchTableView.m in Sources */,
 				A90D44161B0750D2009F65C0 /* CWDistantHessianObject+Private.m in Sources */,
