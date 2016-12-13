@@ -72,6 +72,9 @@
 		A92D07A81AF8E396002D4928 /* libALBB_OSS_IOS_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A92D07991AF8E396002D4928 /* libALBB_OSS_IOS_SDK.a */; };
 		A93A4E301B217C3100AFFAFD /* KBVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */; };
 		A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA161DFF921A00734100 /* KBFowLayout.m */; };
+		A93DBA1B1DFFC6BB00734100 /* KBCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA1A1DFFC6BB00734100 /* KBCircleLayout.m */; };
+		A93DBA1E1DFFC9A300734100 /* KBCircleLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA1D1DFFC9A300734100 /* KBCircleLayoutDemoViewController.m */; };
+		A93DBA211DFFCEB600734100 /* KBStackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA201DFFCEB600734100 /* KBStackLayout.m */; };
 		A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A947406A1C006C5300C38D40 /* UIImage+KBImage.m */; };
 		A949CD851B2137B00012D0A1 /* main_car_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A949CD761B2137B00012D0A1 /* main_car_0@2x.png */; };
 		A949CD861B2137B00012D0A1 /* main_car_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A949CD771B2137B00012D0A1 /* main_car_1@2x.png */; };
@@ -339,6 +342,12 @@
 		A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBVoiceRecordView.m; sourceTree = "<group>"; };
 		A93DBA151DFF921A00734100 /* KBFowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBFowLayout.h; path = DetailController/KBCollectionViewController/ViewFlowLayout/KBFowLayout.h; sourceTree = "<group>"; };
 		A93DBA161DFF921A00734100 /* KBFowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBFowLayout.m; path = DetailController/KBCollectionViewController/ViewFlowLayout/KBFowLayout.m; sourceTree = "<group>"; };
+		A93DBA191DFFC6BB00734100 /* KBCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBCircleLayout.h; path = DetailController/KBCollectionViewController/CircleLayout/KBCircleLayout.h; sourceTree = "<group>"; };
+		A93DBA1A1DFFC6BB00734100 /* KBCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCircleLayout.m; path = DetailController/KBCollectionViewController/CircleLayout/KBCircleLayout.m; sourceTree = "<group>"; };
+		A93DBA1C1DFFC9A300734100 /* KBCircleLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBCircleLayoutDemoViewController.h; path = DetailController/KBCollectionViewController/CircleLayout/KBCircleLayoutDemoViewController.h; sourceTree = "<group>"; };
+		A93DBA1D1DFFC9A300734100 /* KBCircleLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCircleLayoutDemoViewController.m; path = DetailController/KBCollectionViewController/CircleLayout/KBCircleLayoutDemoViewController.m; sourceTree = "<group>"; };
+		A93DBA1F1DFFCEB600734100 /* KBStackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBStackLayout.h; path = DetailController/KBCollectionViewController/CircleLayout/KBStackLayout.h; sourceTree = "<group>"; };
+		A93DBA201DFFCEB600734100 /* KBStackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBStackLayout.m; path = DetailController/KBCollectionViewController/CircleLayout/KBStackLayout.m; sourceTree = "<group>"; };
 		A93F50931C926832000A5D81 /* BuildPackageScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildPackageScript.sh; sourceTree = "<group>"; };
 		A93F50941C929114000A5D81 /* kuaihuoyun.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kuaihuoyun.sh; sourceTree = "<group>"; };
 		A94740691C006C5300C38D40 /* UIImage+KBImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+KBImage.h"; path = "KBExtion/KBImage/UIImage+KBImage.h"; sourceTree = "<group>"; };
@@ -890,6 +899,19 @@
 			path = Universal;
 			sourceTree = "<group>";
 		};
+		A93DBA181DFFC69400734100 /* CircleLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A93DBA191DFFC6BB00734100 /* KBCircleLayout.h */,
+				A93DBA1A1DFFC6BB00734100 /* KBCircleLayout.m */,
+				A93DBA1C1DFFC9A300734100 /* KBCircleLayoutDemoViewController.h */,
+				A93DBA1D1DFFC9A300734100 /* KBCircleLayoutDemoViewController.m */,
+				A93DBA1F1DFFCEB600734100 /* KBStackLayout.h */,
+				A93DBA201DFFCEB600734100 /* KBStackLayout.m */,
+			);
+			name = CircleLayout;
+			sourceTree = "<group>";
+		};
 		A94740681C006BAE00C38D40 /* KBExtion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1256,6 +1278,7 @@
 		A9AB13F51DFE742600C7A756 /* KBCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				A93DBA181DFFC69400734100 /* CircleLayout */,
 				A9AB14051DFF8DBF00C7A756 /* ViewFlowLayout */,
 				A9AB13F91DFE78A900C7A756 /* Base */,
 				A9AB13F61DFE748400C7A756 /* KBCollectionMenuTableViewController.h */,
@@ -1740,6 +1763,7 @@
 			files = (
 				A928D1621CC103D600E1247C /* KBRuntimeViewController.m in Sources */,
 				A92C519E1CC62C4B0097C699 /* KCTMSFactory.m in Sources */,
+				A93DBA1B1DFFC6BB00734100 /* KBCircleLayout.m in Sources */,
 				A90561C21CD85755001A368C /* KCOrderListTVC.m in Sources */,
 				A90D441D1B0750D2009F65C0 /* CWHessianUnarchiver.m in Sources */,
 				A9839DA81CD1E49F00F2F257 /* KCModel.xcdatamodeld in Sources */,
@@ -1748,6 +1772,7 @@
 				A95F4AE11D34EBA400EE6A72 /* KBShaperTableViewController.m in Sources */,
 				A90D441B1B0750D2009F65C0 /* CWHessianConnection.m in Sources */,
 				A9839DB21CD1EA2C00F2F257 /* KBCoreDataMananger.m in Sources */,
+				A93DBA211DFFCEB600734100 /* KBStackLayout.m in Sources */,
 				A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */,
 				A90A37D01D81523E003C4772 /* KBPOPBasicAnimationViewController.m in Sources */,
 				A94C52C81DF53CE8006C6E0F /* KBScriptViewController.m in Sources */,
@@ -1805,6 +1830,7 @@
 				A9DA072E1AC3A1290070120D /* PopoverView.m in Sources */,
 				A97E33061C61A92A004534D1 /* KBObjectiveCViewController.m in Sources */,
 				A9C5D3351DD4147A00454A07 /* KBPrintViewController.m in Sources */,
+				A93DBA1E1DFFC9A300734100 /* KBCircleLayoutDemoViewController.m in Sources */,
 				A92C51BC1CC8D8370097C699 /* KCTMSArchive.m in Sources */,
 				A9AB14031DFE797D00C7A756 /* KBBaseCollectionViewCell.m in Sources */,
 				A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */,

@@ -21,8 +21,8 @@
     self.view.backgroundColor=[UIColor whiteColor];
     
     //只读属性，内部通过直接访问成员变量进行设置值
-    _menus=@[@"UICollection常用Demo",@"FlowLayout应用-五福卡片效果"];
-    _controllers=@[@"KBBaseCollectionViewController",@"KBViewlayoutViewController"];
+    _menus=@[@"UICollection常用Demo",@"FlowLayout应用-五福卡片效果",@"Layout自定义-圆形布局"];
+    _controllers=@[@"KBBaseCollectionViewController",@"KBViewlayoutViewController",@"KBCircleLayoutDemoViewController"];
     
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"collectReuseIdentifier"];
