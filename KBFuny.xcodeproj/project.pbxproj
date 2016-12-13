@@ -71,6 +71,7 @@
 		A92D072B1AF741EE002D4928 /* KBGradientCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A92D072A1AF741EE002D4928 /* KBGradientCircleView.m */; };
 		A92D07A81AF8E396002D4928 /* libALBB_OSS_IOS_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A92D07991AF8E396002D4928 /* libALBB_OSS_IOS_SDK.a */; };
 		A93A4E301B217C3100AFFAFD /* KBVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */; };
+		A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA161DFF921A00734100 /* KBFowLayout.m */; };
 		A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A947406A1C006C5300C38D40 /* UIImage+KBImage.m */; };
 		A949CD851B2137B00012D0A1 /* main_car_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A949CD761B2137B00012D0A1 /* main_car_0@2x.png */; };
 		A949CD861B2137B00012D0A1 /* main_car_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A949CD771B2137B00012D0A1 /* main_car_1@2x.png */; };
@@ -152,6 +153,7 @@
 		A9AB13FC1DFE78E700C7A756 /* KBBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB13FB1DFE78E700C7A756 /* KBBaseCollectionViewController.m */; };
 		A9AB14031DFE797D00C7A756 /* KBBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB14011DFE797D00C7A756 /* KBBaseCollectionViewCell.m */; };
 		A9AB14041DFE797D00C7A756 /* KBBaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9AB14021DFE797D00C7A756 /* KBBaseCollectionViewCell.xib */; };
+		A9AB14081DFF8E4900C7A756 /* KBViewlayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB14071DFF8E4900C7A756 /* KBViewlayoutViewController.m */; };
 		A9AC9D8D1D52E12C00FD3CAB /* SKYBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */; };
 		A9C5D3351DD4147A00454A07 /* KBPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D3341DD4147A00454A07 /* KBPrintViewController.m */; };
 		A9C5D33D1DD4239700454A07 /* NSString+NCPrinting.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D33A1DD4239700454A07 /* NSString+NCPrinting.m */; };
@@ -335,6 +337,8 @@
 		A92D07A71AF8E396002D4928 /* OSSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSTool.h; sourceTree = "<group>"; };
 		A93A4E2E1B217C3100AFFAFD /* KBVoiceRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBVoiceRecordView.h; sourceTree = "<group>"; };
 		A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBVoiceRecordView.m; sourceTree = "<group>"; };
+		A93DBA151DFF921A00734100 /* KBFowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBFowLayout.h; path = DetailController/KBCollectionViewController/ViewFlowLayout/KBFowLayout.h; sourceTree = "<group>"; };
+		A93DBA161DFF921A00734100 /* KBFowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBFowLayout.m; path = DetailController/KBCollectionViewController/ViewFlowLayout/KBFowLayout.m; sourceTree = "<group>"; };
 		A93F50931C926832000A5D81 /* BuildPackageScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildPackageScript.sh; sourceTree = "<group>"; };
 		A93F50941C929114000A5D81 /* kuaihuoyun.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kuaihuoyun.sh; sourceTree = "<group>"; };
 		A94740691C006C5300C38D40 /* UIImage+KBImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+KBImage.h"; path = "KBExtion/KBImage/UIImage+KBImage.h"; sourceTree = "<group>"; };
@@ -458,6 +462,8 @@
 		A9AB14001DFE797D00C7A756 /* KBBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBBaseCollectionViewCell.h; path = DetailController/KBCollectionViewController/Base/KBBaseCollectionViewCell.h; sourceTree = "<group>"; };
 		A9AB14011DFE797D00C7A756 /* KBBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBBaseCollectionViewCell.m; path = DetailController/KBCollectionViewController/Base/KBBaseCollectionViewCell.m; sourceTree = "<group>"; };
 		A9AB14021DFE797D00C7A756 /* KBBaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBBaseCollectionViewCell.xib; path = DetailController/KBCollectionViewController/Base/KBBaseCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9AB14061DFF8E4900C7A756 /* KBViewlayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBViewlayoutViewController.h; path = DetailController/KBCollectionViewController/ViewFlowLayout/KBViewlayoutViewController.h; sourceTree = "<group>"; };
+		A9AB14071DFF8E4900C7A756 /* KBViewlayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBViewlayoutViewController.m; path = DetailController/KBCollectionViewController/ViewFlowLayout/KBViewlayoutViewController.m; sourceTree = "<group>"; };
 		A9AC9D8B1D52E12C00FD3CAB /* SKYBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKYBase64.h; path = KBCommon/SKYBase64.h; sourceTree = "<group>"; };
 		A9AC9D8C1D52E12C00FD3CAB /* SKYBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKYBase64.m; path = KBCommon/SKYBase64.m; sourceTree = "<group>"; };
 		A9C5D3331DD4147A00454A07 /* KBPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBPrintViewController.h; path = DetailController/KBDevice/Print/KBPrintViewController.h; sourceTree = "<group>"; };
@@ -1250,6 +1256,7 @@
 		A9AB13F51DFE742600C7A756 /* KBCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				A9AB14051DFF8DBF00C7A756 /* ViewFlowLayout */,
 				A9AB13F91DFE78A900C7A756 /* Base */,
 				A9AB13F61DFE748400C7A756 /* KBCollectionMenuTableViewController.h */,
 				A9AB13F71DFE748400C7A756 /* KBCollectionMenuTableViewController.m */,
@@ -1267,6 +1274,17 @@
 				A9AB14021DFE797D00C7A756 /* KBBaseCollectionViewCell.xib */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		A9AB14051DFF8DBF00C7A756 /* ViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB14061DFF8E4900C7A756 /* KBViewlayoutViewController.h */,
+				A9AB14071DFF8E4900C7A756 /* KBViewlayoutViewController.m */,
+				A93DBA151DFF921A00734100 /* KBFowLayout.h */,
+				A93DBA161DFF921A00734100 /* KBFowLayout.m */,
+			);
+			name = ViewFlowLayout;
 			sourceTree = "<group>";
 		};
 		A9AC9D8A1D52E0FD00FD3CAB /* KBCommon */ = {
@@ -1780,6 +1798,7 @@
 				A9CDC1B11AC64A1C007C14EC /* KBGraphicsView.m in Sources */,
 				A928D1791CC5E0B300E1247C /* KCCityResponse.m in Sources */,
 				A90D44191B0750D2009F65C0 /* CWHessianArchiver.m in Sources */,
+				A9AB14081DFF8E4900C7A756 /* KBViewlayoutViewController.m in Sources */,
 				A90561B91CD83C73001A368C /* KCCoreDataMenuTableViewController.m in Sources */,
 				A90A37D81D828672003C4772 /* UIButton+KB.m in Sources */,
 				A9F392541C61ABF50008F62B /* Animal.m in Sources */,
@@ -1788,6 +1807,7 @@
 				A9C5D3351DD4147A00454A07 /* KBPrintViewController.m in Sources */,
 				A92C51BC1CC8D8370097C699 /* KCTMSArchive.m in Sources */,
 				A9AB14031DFE797D00C7A756 /* KBBaseCollectionViewCell.m in Sources */,
+				A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */,
 				A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */,
 				A9E7E7231BD0D3CC0080CF5C /* KBTouchTableView.m in Sources */,
 				A90D44161B0750D2009F65C0 /* CWDistantHessianObject+Private.m in Sources */,

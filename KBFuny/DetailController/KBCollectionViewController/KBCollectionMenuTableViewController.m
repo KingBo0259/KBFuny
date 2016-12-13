@@ -21,8 +21,8 @@
     self.view.backgroundColor=[UIColor whiteColor];
     
     //只读属性，内部通过直接访问成员变量进行设置值
-    _menus=@[@"UICollection常用Demo"];
-    _controllers=@[@"KBBaseCollectionViewController"];
+    _menus=@[@"UICollection常用Demo",@"FlowLayout应用-五福卡片效果"];
+    _controllers=@[@"KBBaseCollectionViewController",@"KBViewlayoutViewController"];
     
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"collectReuseIdentifier"];
@@ -40,7 +40,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return _menus.count;
 }
 
 

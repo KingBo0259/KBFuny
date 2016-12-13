@@ -185,13 +185,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KBFuny/DetailController/KBCollectionViewController/Base/KBBaseCollectionViewCell.m"
-            timestampString = "503218899.34325"
+            filePath = "KBFuny/DetailController/KBCollectionViewController/Base/KBBaseCollectionViewController.m"
+            timestampString = "503289649.00659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-awakeFromNib"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "-collectionView:didSelectItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
