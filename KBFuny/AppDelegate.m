@@ -8,10 +8,11 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
-
+#import "KBSecondViewController.h"
 
 @interface AppDelegate ()
 
+@property(strong,nonatomic)PKRevealController *revealVc;
 @end
 
 @implementation AppDelegate
@@ -20,35 +21,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self.window makeKeyAndVisible];
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-//    UIImageView *splashView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0
-//                                                                          ,[UIScreen mainScreen].bounds.size.width
-//                                                                          ,[UIScreen mainScreen].bounds.size.height)];
-//    splashView.image=[UIImage imageNamed:@"Default"];
-//    [self.window addSubview:splashView];
-//    [self.window bringSubviewToFront:splashView];
-//    //设置动画效果
-//    [UIView beginAnimations:nil context:nil];
-//    [UIView setAnimationDuration:3.0];
-//    [UIView setAnimationDelegate:self];
-//    splashView.alpha=0.0;
-//    splashView.frame=CGRectMake(-60, -90, 440, 700);
-//    [UIView commitAnimations];
-//
+   
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
-    NSLog(@"didFinishLaunchingWithOptions：%@",launchOptions);
-
-    NSLog(@"newBranch01");
-    NSLog(@"newBranch02");
+    UIViewController *mainVc = sb.instantiateInitialViewController;
+    UIViewController *leftVc = [KBSecondViewController new];
+    leftVc.view.backgroundColor=[UIColor flatOrangeColor];
+//    UIViewController *rightVc = leftVc;
     
-//    [UIView animateWithDuration:3.0
-//                        animations:^{
-//                            splashView.alpha=0.0;
-//                            splashView.transform=CGAffineTransformMakeScale(1.4, 1.4);
-//                        }];
-//    sleep(5);
+    self.revealVc = [PKRevealController revealControllerWithFrontViewController:mainVc
+                                                             leftViewController:leftVc
+                                                            ];
     
-    // Override point for customization after application launch.
+//    self.revealVc.delegate = self;
+    [self.revealVc showViewController:self.revealVc.leftViewController];
+    self.revealVc.animationDuration = 0.25;
+    
+    self.window.rootViewController = self.revealVc;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

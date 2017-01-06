@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -20,6 +25,11 @@
 			<false/>
 		</dict>
 		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PKRevealController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,22 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>1642FB290D191DD9ACAF0DAAAFB5CF1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39B1198AAE4AB946F1DF6ABC119A13E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6C8E30402434D79ABACFFF8D2657996D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7F00A0CD44D85FADC6E06C3072D14FD4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>80D3879E0DE1EDBBE417B7262C8834E7</key>
+		<key>621B24CE3840B74C75059A0A80964AC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>935A7E52B6D8B7E37EAEA138EDC52155</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D54AB3ECEB9A8FBA15D4F73CBE326692</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F966423161E55FE8A067A26DD1D595EB</key>
+		<key>E86B23E2D7A4FC646398C771B94607AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9B9B8B9AC68AF0D18AB0425A5B02B10</key>
 		<dict>
 			<key>primary</key>
 			<true/>
