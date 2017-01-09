@@ -47,12 +47,13 @@
                         <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="lbO-Cw-WmX"/>
                     </connections>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="显示加密结果" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yBA-Ye-NMR">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yBA-Ye-NMR">
                     <rect key="frame" x="0.0" y="539" width="375" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="7aD-yE-wk3"/>
                     </constraints>
+                    <string key="text">显示加密结果 （备注：  1、MD5、SHA1、SHA128为 Hash  散列加密，为不可逆加密，一般用户密码加密；                                          2、对称加密：AES 、DES 等。加密解密需要统一把私钥。  3、非对称加密：RSA。 有公钥和私钥---公钥加密数据需要私钥解密；另外，私要加密数据需要公钥解密。）</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>

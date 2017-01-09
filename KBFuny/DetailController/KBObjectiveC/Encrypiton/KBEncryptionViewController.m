@@ -145,6 +145,7 @@ enum  {
     
     NSString *body = _inputTextField.text;
     NSString *base64EncodeString = body;
+    
     //1、 需要base64 解码 ==>得到原加密数据
     NSData *decodeDataFromBase64String = [[NSData alloc]
                                       initWithBase64EncodedString:base64EncodeString options:0];
