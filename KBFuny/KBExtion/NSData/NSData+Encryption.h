@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CommonCrypto/CommonCryptor.h>
+
 
 @interface NSData (Encryption)
+- (NSData *)AES128EncryptWithKey:(NSString *)key iv:(NSString *)iv;
+- (NSData *)AES128DecryptWithKey:(NSString *)key iv:(NSString *)iv;
 
+-(NSData*)encryptionWith3DESUsingKey:(NSString*)key andIV:(NSString*)iv;
+-(NSData*)decryptionWith3DESUsingKey:(NSString*)key andIV:(NSString*)iv;
+
+
++(NSData*)blockInitializationVectorOfLength:(size_t)ivLength;
 @end

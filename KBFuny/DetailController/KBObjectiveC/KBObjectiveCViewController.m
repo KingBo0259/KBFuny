@@ -105,7 +105,31 @@ NSString * const stringConst = @"I am a NSString * const string";
     }];
     
     
+    UIButton *cryption=[UIButton buttonWithType:UIButtonTypeSystem];
+    [cryption addTarget:self action:@selector(encryptionClick:) forControlEvents:UIControlEventTouchUpInside];
+    [cryption setTitle:@"加密/解密" forState:UIControlStateNormal];
+    cryption.backgroundColor=[UIColor redColor];
+    [self.view addSubview:cryption];
     
+    [cryption makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(runtimeBtn.mas_bottom).offset(10);
+        make.left.right.with.height.equalTo(runtimeBtn);
+        
+    }];
+
+    
+    
+}
+
+-(void)encryptionClick:(id)sender{
+
+    Class class=NSClassFromString(@"KBEncryptionViewController");
+ 
+    id obj=[class new];
+    
+    [self.navigationController pushViewController:obj
+                                         animated:YES];
+
     
 }
 

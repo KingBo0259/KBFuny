@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Encryption)
+-(NSString*)AES128EncryptWithKey:(NSString*)key andIV:(NSString*)iv;
+-(NSString*)AES128DecryptWithKey:(NSString*)key andIV:(NSString*)iv;
+
+-(NSString*)encryptionWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
+-(NSString*)decryptionWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
 
 @end
