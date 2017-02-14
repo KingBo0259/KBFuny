@@ -66,7 +66,7 @@
     //mask 获取渐变layer
     [self.mask.layer addSublayer:gradientLayer];
     
-    //maskView 只会补货Alph值，颜色无效
+    //maskView 只会扑获Alph值，颜色无效
     self.maskView = self.mask;
 //    self.layer.mask = self.mask.layer;
 
