@@ -86,6 +86,9 @@
 
 -(void)randMove{
 
+    
+    random();
+    
     NSInteger height = CGRectGetHeight(self.view.bounds);
     NSInteger width = CGRectGetWidth(self.view.bounds);
     

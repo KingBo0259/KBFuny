@@ -8,6 +8,7 @@
 
 #import "KBShaperLayerDemoViewController.h"
 #import "KBCALayerFactory.h"
+#import "KBFadeString.h"
 
 @interface KBShaperLayerDemoViewController ()
 
@@ -114,6 +115,15 @@
         make.right.equalTo(self.view.mas_right).offset(-10);
         make.left.equalTo(address.mas_right).offset(10);
     }];
+    
+    
+    KBFadeString * fadeString = [[KBFadeString alloc] initWithFrame:CGRectMake(60, 80, 300, 40)];
+    fadeString.text = @"金凌波创建的";
+    [self.view addSubview:fadeString];
+    
+//    //执行动画
+//    [fadeString fadeRight];
+    
 }
 
 -(void)click:(id)sender{

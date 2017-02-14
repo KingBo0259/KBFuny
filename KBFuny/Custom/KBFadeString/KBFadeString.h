@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface KBFadeString : UIView
+//输入文字
+@property(nonatomic,strong) NSString *text;
 
+
+/**
+ 向右渐变消失
+ */
+-(void)fadeRight;
 @end

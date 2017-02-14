@@ -34,6 +34,7 @@
 		A90D441E1B0750D2009F65C0 /* CWValueObject+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D44111B0750D2009F65C0 /* CWValueObject+Private.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A90D441F1B0750D2009F65C0 /* CWValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D44131B0750D2009F65C0 /* CWValueObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A90D44201B0750D2009F65C0 /* Hessian.hdoc in Resources */ = {isa = PBXBuildFile; fileRef = A90D44141B0750D2009F65C0 /* Hessian.hdoc */; };
+		A9101FDE1E52A46500191527 /* KBFadeString.m in Sources */ = {isa = PBXBuildFile; fileRef = A9101FDD1E52A46500191527 /* KBFadeString.m */; };
 		A91B69BC1BA6B69500D7C375 /* KCStartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A91B69BB1BA6B69500D7C375 /* KCStartAnimation.m */; };
 		A91B69BF1BA6B8CA00D7C375 /* start_animition@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91B69BE1BA6B8CA00D7C375 /* start_animition@3x.png */; };
 		A91B69C71BA6B8D400D7C375 /* start_Cloud_BR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91B69C21BA6B8D400D7C375 /* start_Cloud_BR@2x.png */; };
@@ -273,6 +274,8 @@
 		A90D44131B0750D2009F65C0 /* CWValueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWValueObject.m; sourceTree = "<group>"; };
 		A90D44141B0750D2009F65C0 /* Hessian.hdoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hessian.hdoc; sourceTree = "<group>"; };
 		A90D44151B0750D2009F65C0 /* HessianKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HessianKit.h; sourceTree = "<group>"; };
+		A9101FDC1E52A46500191527 /* KBFadeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBFadeString.h; path = Custom/KBFadeString/KBFadeString.h; sourceTree = "<group>"; };
+		A9101FDD1E52A46500191527 /* KBFadeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBFadeString.m; path = Custom/KBFadeString/KBFadeString.m; sourceTree = "<group>"; };
 		A91B69BA1BA6B69500D7C375 /* KCStartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCStartAnimation.h; path = Custom/KCAnimationView/KCStartAnimation.h; sourceTree = "<group>"; };
 		A91B69BB1BA6B69500D7C375 /* KCStartAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCStartAnimation.m; path = Custom/KCAnimationView/KCStartAnimation.m; sourceTree = "<group>"; };
 		A91B69BE1BA6B8CA00D7C375 /* start_animition@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_animition@3x.png"; sourceTree = "<group>"; };
@@ -728,6 +731,15 @@
 				A90D44151B0750D2009F65C0 /* HessianKit.h */,
 			);
 			path = HessianKit;
+			sourceTree = "<group>";
+		};
+		A9101FDB1E52A2A700191527 /* KBFadeString */ = {
+			isa = PBXGroup;
+			children = (
+				A9101FDC1E52A46500191527 /* KBFadeString.h */,
+				A9101FDD1E52A46500191527 /* KBFadeString.m */,
+			);
+			name = KBFadeString;
 			sourceTree = "<group>";
 		};
 		A91B69B81BA6B61100D7C375 /* KCAnimation */ = {
@@ -1276,6 +1288,7 @@
 		A98ED6BB1AA1C1B70031BA10 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				A9101FDB1E52A2A700191527 /* KBFadeString */,
 				A9DF21141DE0301C0042F095 /* KBTextField */,
 				A91FDF181CE573900049B645 /* KTMSAutoSearchDataView */,
 				A9E7E7201BD0D3CC0080CF5C /* KBTouchTableView */,
@@ -1843,6 +1856,7 @@
 				A92C51B31CC8A0490097C699 /* KCTMSCityRequest.m in Sources */,
 				A91FDF171CE573890049B645 /* KTMSAutoSearchDataView.m in Sources */,
 				A90D44171B0750D2009F65C0 /* CWDistantHessianObject.m in Sources */,
+				A9101FDE1E52A46500191527 /* KBFadeString.m in Sources */,
 				A949CD981B2142250012D0A1 /* KBVoiceRecordViewController.m in Sources */,
 				A92C51B61CC8A3EE0097C699 /* KCTmsTestDetailViewController.m in Sources */,
 				A9048C331B314B84000A4BF4 /* KBGaodeViewController.m in Sources */,
