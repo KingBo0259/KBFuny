@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KBMakeCaculate.h"
 
 @interface KBMakeCaculateManager : NSObject
+@property(strong,nonatomic) KBMakeCaculate *maker;
 
+
+-(NSInteger)makeCaculateContrains:(void(^)(KBMakeCaculate * caculateMaker))maker;
 @end

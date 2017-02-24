@@ -10,16 +10,17 @@
 
 @interface KBMakeCaculate : NSObject
 
+@property(nonatomic,assign) NSInteger reuslt;
 
 
 /**
- add
+ add 加
  */
--(KBConstraint *(^)(NSInteger))add;
+-(KBMakeCaculate *(^)(NSInteger))add;
 
 /**
- add
+ min 减
  */
--(KBConstraint *(^)(NSInteger))min;
+-(KBMakeCaculate *(^)(NSInteger))min;
 
 @end

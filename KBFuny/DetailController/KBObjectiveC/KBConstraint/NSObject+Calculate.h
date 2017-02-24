@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "KBMakeCaculateManager.h"
 @interface NSObject (Calculate)
 
+/**
+ 计算
+
+ @param calculate 计算blokc
+ @return 返回值
+ */
+-(NSInteger)makeCalculate:(void(^)(KBMakeCaculate*maker))calculate;
 @end

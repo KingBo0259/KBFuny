@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A592BA980E8B20F1EE66163E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81FA78E4B0E18702752CCB /* libPods.a */; };
 		A9048C331B314B84000A4BF4 /* KBGaodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9048C321B314B84000A4BF4 /* KBGaodeViewController.m */; };
 		A90561B91CD83C73001A368C /* KCCoreDataMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90561B71CD83C73001A368C /* KCCoreDataMenuTableViewController.m */; };
 		A90561BA1CD83C73001A368C /* KCCoreDataMenuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90561B81CD83C73001A368C /* KCCoreDataMenuTableViewController.xib */; };
@@ -153,6 +152,9 @@
 		A98ED65D1AA013B10031BA10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98ED65B1AA013B10031BA10 /* LaunchScreen.xib */; };
 		A98ED6691AA013B20031BA10 /* KBFunyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED6681AA013B20031BA10 /* KBFunyTests.m */; };
 		A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED6BD1AA1C2140031BA10 /* KBButton.m */; };
+		A991C2681E60035100474D9E /* KBMakeCaculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A991C2671E60035100474D9E /* KBMakeCaculate.m */; };
+		A991C26B1E60064300474D9E /* KBMakeCaculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A991C26A1E60064300474D9E /* KBMakeCaculateManager.m */; };
+		A991C26E1E6009E800474D9E /* NSObject+Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A991C26D1E6009E800474D9E /* NSObject+Calculate.m */; };
 		A9AB13F81DFE748400C7A756 /* KBCollectionMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB13F71DFE748400C7A756 /* KBCollectionMenuTableViewController.m */; };
 		A9AB13FC1DFE78E700C7A756 /* KBBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB13FB1DFE78E700C7A756 /* KBBaseCollectionViewController.m */; };
 		A9AB14031DFE797D00C7A756 /* KBBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB14011DFE797D00C7A756 /* KBBaseCollectionViewCell.m */; };
@@ -197,6 +199,7 @@
 		A9FEFC311D421B2800E830F2 /* KBShoppingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FEFC301D421B2800E830F2 /* KBShoppingWindow.m */; };
 		A9FEFC341D421CBE00E830F2 /* KBShoppingCartDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FEFC331D421CBE00E830F2 /* KBShoppingCartDetailController.m */; };
 		A9FF89231D63FA8200ADFF86 /* KBUberImitateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF89221D63FA8200ADFF86 /* KBUberImitateViewController.m */; };
+		E380638F5D97A3961365A4E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 588285A5ACEF4C91CD244ECA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,7 +228,7 @@
 
 /* Begin PBXFileReference section */
 		1394E53105109ABDA51A6BAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		7B81FA78E4B0E18702752CCB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		588285A5ACEF4C91CD244ECA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9048C311B314B84000A4BF4 /* KBGaodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBGaodeViewController.h; sourceTree = "<group>"; };
 		A9048C321B314B84000A4BF4 /* KBGaodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBGaodeViewController.m; sourceTree = "<group>"; };
 		A90561B61CD83C73001A368C /* KCCoreDataMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCCoreDataMenuTableViewController.h; path = DetailController/KCCoreData/KCCoreDataMenuTableViewController.h; sourceTree = "<group>"; };
@@ -474,6 +477,12 @@
 		A98FF20C1B09CE1300AC1A9A /* paymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paymentService.h; sourceTree = "<group>"; };
 		A98FF2131B0A10B200AC1A9A /* UnionpayOrderTransDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionpayOrderTransDTO.h; sourceTree = "<group>"; };
 		A98FF2161B0A1B2700AC1A9A /* activityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activityService.h; sourceTree = "<group>"; };
+		A991C2661E60035100474D9E /* KBMakeCaculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBMakeCaculate.h; path = DetailController/KBObjectiveC/KBConstraint/KBMakeCaculate.h; sourceTree = "<group>"; };
+		A991C2671E60035100474D9E /* KBMakeCaculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBMakeCaculate.m; path = DetailController/KBObjectiveC/KBConstraint/KBMakeCaculate.m; sourceTree = "<group>"; };
+		A991C2691E60064300474D9E /* KBMakeCaculateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBMakeCaculateManager.h; path = DetailController/KBObjectiveC/KBConstraint/KBMakeCaculateManager.h; sourceTree = "<group>"; };
+		A991C26A1E60064300474D9E /* KBMakeCaculateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBMakeCaculateManager.m; path = DetailController/KBObjectiveC/KBConstraint/KBMakeCaculateManager.m; sourceTree = "<group>"; };
+		A991C26C1E6009E800474D9E /* NSObject+Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Calculate.h"; path = "DetailController/KBObjectiveC/KBConstraint/NSObject+Calculate.h"; sourceTree = "<group>"; };
+		A991C26D1E6009E800474D9E /* NSObject+Calculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Calculate.m"; path = "DetailController/KBObjectiveC/KBConstraint/NSObject+Calculate.m"; sourceTree = "<group>"; };
 		A9AB13F61DFE748400C7A756 /* KBCollectionMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBCollectionMenuTableViewController.h; path = DetailController/KBCollectionViewController/KBCollectionMenuTableViewController.h; sourceTree = "<group>"; };
 		A9AB13F71DFE748400C7A756 /* KBCollectionMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCollectionMenuTableViewController.m; path = DetailController/KBCollectionViewController/KBCollectionMenuTableViewController.m; sourceTree = "<group>"; };
 		A9AB13FA1DFE78E700C7A756 /* KBBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBBaseCollectionViewController.h; path = DetailController/KBCollectionViewController/Base/KBBaseCollectionViewController.h; sourceTree = "<group>"; };
@@ -589,7 +598,7 @@
 				A9E4907C1B170BAF0065B7DA /* AVFoundation.framework in Frameworks */,
 				A9E490731B170A850065B7DA /* libzbar.a in Frameworks */,
 				A92D07A81AF8E396002D4928 /* libALBB_OSS_IOS_SDK.a in Frameworks */,
-				A592BA980E8B20F1EE66163E /* libPods.a in Frameworks */,
+				E380638F5D97A3961365A4E0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,7 +627,7 @@
 				A9EDF5831E23747200A633CC /* Security.framework */,
 				A94C52C31DF53C38006C6E0F /* JavaScriptCore.framework */,
 				A90A37C71D7EA219003C4772 /* LocalAuthentication.framework */,
-				7B81FA78E4B0E18702752CCB /* libPods.a */,
+				588285A5ACEF4C91CD244ECA /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1157,6 +1166,7 @@
 		A97E33001C61A7B7004534D1 /* KBObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				A991C2651E6002E500474D9E /* KBConstraint */,
 				A9EDF5711E23345B00A633CC /* Encryption */,
 				A94C52C51DF53CA1006C6E0F /* KBJavaScript */,
 				A90A37D51D8285EC003C4772 /* AssAssociatedobject  */,
@@ -1308,6 +1318,19 @@
 				A92D072A1AF741EE002D4928 /* KBGradientCircleView.m */,
 			);
 			name = Custom;
+			sourceTree = "<group>";
+		};
+		A991C2651E6002E500474D9E /* KBConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				A991C2661E60035100474D9E /* KBMakeCaculate.h */,
+				A991C2671E60035100474D9E /* KBMakeCaculate.m */,
+				A991C2691E60064300474D9E /* KBMakeCaculateManager.h */,
+				A991C26A1E60064300474D9E /* KBMakeCaculateManager.m */,
+				A991C26C1E6009E800474D9E /* NSObject+Calculate.h */,
+				A991C26D1E6009E800474D9E /* NSObject+Calculate.m */,
+			);
+			name = KBConstraint;
 			sourceTree = "<group>";
 		};
 		A9AB13F51DFE742600C7A756 /* KBCollectionView */ = {
@@ -1899,6 +1922,7 @@
 				A9CDC1B11AC64A1C007C14EC /* KBGraphicsView.m in Sources */,
 				A928D1791CC5E0B300E1247C /* KCCityResponse.m in Sources */,
 				A90D44191B0750D2009F65C0 /* CWHessianArchiver.m in Sources */,
+				A991C26B1E60064300474D9E /* KBMakeCaculateManager.m in Sources */,
 				A9AB14081DFF8E4900C7A756 /* KBViewlayoutViewController.m in Sources */,
 				A90561B91CD83C73001A368C /* KCCoreDataMenuTableViewController.m in Sources */,
 				A90A37D81D828672003C4772 /* UIButton+KB.m in Sources */,
@@ -1909,8 +1933,10 @@
 				A93DBA1E1DFFC9A300734100 /* KBCircleLayoutDemoViewController.m in Sources */,
 				A92C51BC1CC8D8370097C699 /* KCTMSArchive.m in Sources */,
 				A9AB14031DFE797D00C7A756 /* KBBaseCollectionViewCell.m in Sources */,
+				A991C26E1E6009E800474D9E /* NSObject+Calculate.m in Sources */,
 				A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */,
 				A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */,
+				A991C2681E60035100474D9E /* KBMakeCaculate.m in Sources */,
 				A9E7E7231BD0D3CC0080CF5C /* KBTouchTableView.m in Sources */,
 				A90D44161B0750D2009F65C0 /* CWDistantHessianObject+Private.m in Sources */,
 				A92D072B1AF741EE002D4928 /* KBGradientCircleView.m in Sources */,

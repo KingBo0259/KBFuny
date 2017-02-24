@@ -11,6 +11,6 @@ pod 'pop', '~> 1.0.9'
 pod 'ChameleonFramework', '~> 2.1.0'  # 颜色框架
 pod 'PKRevealController', '~> 2.0.6'
 
-#pod 'ReactiveCocoa', ‘4.1.0'
+#pod 'ReactiveCocoa', '~> 4.1.0'
 #pod 'ReactiveCocoa', '2.5'
 

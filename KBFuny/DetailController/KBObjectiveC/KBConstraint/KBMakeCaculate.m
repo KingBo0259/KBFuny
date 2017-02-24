@@ -6,7 +6,7 @@
 //  Copyright © 2017年 jinlb. All rights reserved.
 //
 
-#import "KBConstraint.h"
+#import "KBMakeCaculate.h"
 
 @implementation KBMakeCaculate
 
@@ -14,9 +14,23 @@
  add
  */
 -(KBMakeCaculate *(^)(NSInteger))add{
-    return ^(NSInteger value){
+    return ^ KBMakeCaculate *(NSInteger value){
+        _reuslt+=value;
+        return self;
+    };
+}
+
+
+
+/**
+ min
+ */
+-(KBMakeCaculate *(^)(NSInteger))min{
+    return ^ KBMakeCaculate *(NSInteger value){
+        _reuslt -=value;
         
         return self;
     };
+
 }
 @end

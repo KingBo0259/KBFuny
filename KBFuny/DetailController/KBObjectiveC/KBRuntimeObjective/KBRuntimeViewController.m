@@ -11,6 +11,7 @@
 
 #import "Tiger.h"
 #import <objc/runtime.h>
+#import "NSObject+Calculate.h"
 
 @interface KBRuntimeViewController ()
 
@@ -71,6 +72,15 @@
     
     [errorButton addTarget:self action:@selector(soud) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:errorButton];
+    
+    
+    UIButton *lianShiButton=[UIButton buttonWithType:UIButtonTypeSystem];
+    [lianShiButton setTitle:@"模仿masonry实现链式编程" forState:UIControlStateNormal];
+    lianShiButton.backgroundColor=[UIColor redColor];
+    
+    [lianShiButton addTarget:self action:@selector(lianShiButton:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:lianShiButton];
+
 
 
     
@@ -109,7 +119,11 @@
     }];
     
 
-    
+    [lianShiButton makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.with.height.equalTo(errorButton);
+        make.top.equalTo(errorButton.mas_bottom).offset(10);
+        
+    }];
 
 
     
@@ -252,6 +266,18 @@ void dynamicMethodIMP(id self,SEL _cmd){
     }
 }
 
+-(void)lianShiButton:(id)sender{
+    
+    NSInteger result = [self makeCalculate:^(KBMakeCaculate *maker) {
+      maker.add(1).add(1).add(2).min(10);
+    }];
+    
+    NSString *resultString = [NSString stringWithFormat:@"1+1+2-10=%li",result];
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"链式测试" message:resultString delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+
+    [alertView show];
+}
 
 //遍历对象成员变量
 -(void)buttonClick:(id)sender{
