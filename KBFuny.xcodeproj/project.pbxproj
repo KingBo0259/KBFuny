@@ -131,7 +131,6 @@
 		A974D9461D76AF2000F17A17 /* 后退@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9371D76AF2000F17A17 /* 后退@3x.png */; };
 		A974D9471D76AF2000F17A17 /* 开灯@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9381D76AF2000F17A17 /* 开灯@2x.png */; };
 		A974D9481D76AF2000F17A17 /* 开灯@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A974D9391D76AF2000F17A17 /* 开灯@3x.png */; };
-		A976153D1C297F8C00741586 /* KCNetWorkProxy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A976153A1C297F8300741586 /* KCNetWorkProxy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A976637D1C0ECB8A00F7E3C9 /* KBRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A976637C1C0ECB8A00F7E3C9 /* KBRefreshViewController.m */; };
 		A97E33061C61A92A004534D1 /* KBObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97E33051C61A92A004534D1 /* KBObjectiveCViewController.m */; };
 		A98102831C9149F10053127B /* KCOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98102811C9149F10053127B /* KCOperationViewController.m */; };
@@ -165,6 +164,7 @@
 		A9C5D3351DD4147A00454A07 /* KBPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D3341DD4147A00454A07 /* KBPrintViewController.m */; };
 		A9C5D33D1DD4239700454A07 /* NSString+NCPrinting.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D33A1DD4239700454A07 /* NSString+NCPrinting.m */; };
 		A9C5D33E1DD4239700454A07 /* RecipePrintPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C5D33C1DD4239700454A07 /* RecipePrintPageRenderer.m */; };
+		A9CD17981E84EDF4005A3A6F /* RPDWrapperFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CD17971E84EDF4005A3A6F /* RPDWrapperFloatView.m */; };
 		A9CDC1B11AC64A1C007C14EC /* KBGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CDC1B01AC64A1C007C14EC /* KBGraphicsView.m */; };
 		A9D7D83A1AC4F6D10075E333 /* KBBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7D8391AC4F6D10075E333 /* KBBadgeView.m */; };
 		A9DA072E1AC3A1290070120D /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DA072D1AC3A1290070120D /* PopoverView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -211,20 +211,6 @@
 			remoteInfo = KBFuny;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A976153E1C297F8C00741586 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A976153D1C297F8C00741586 /* KCNetWorkProxy.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1394E53105109ABDA51A6BAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -436,7 +422,6 @@
 		A974D9371D76AF2000F17A17 /* 后退@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "后退@3x.png"; sourceTree = "<group>"; };
 		A974D9381D76AF2000F17A17 /* 开灯@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开灯@2x.png"; sourceTree = "<group>"; };
 		A974D9391D76AF2000F17A17 /* 开灯@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开灯@3x.png"; sourceTree = "<group>"; };
-		A976153A1C297F8300741586 /* KCNetWorkProxy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KCNetWorkProxy.framework; path = /Users/jinlb/Desktop/mySelf/2015/KBFuny/KBFuny/KCNetWorkProxy.framework; sourceTree = "<absolute>"; };
 		A976637B1C0ECB8A00F7E3C9 /* KBRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBRefreshViewController.h; path = DetailController/KBTableviewRefresh/KBRefreshViewController.h; sourceTree = "<group>"; };
 		A976637C1C0ECB8A00F7E3C9 /* KBRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBRefreshViewController.m; path = DetailController/KBTableviewRefresh/KBRefreshViewController.m; sourceTree = "<group>"; };
 		A97E33041C61A92A004534D1 /* KBObjectiveCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBObjectiveCViewController.h; path = DetailController/KBObjectiveC/KBObjectiveCViewController.h; sourceTree = "<group>"; };
@@ -502,6 +487,8 @@
 		A9C5D33A1DD4239700454A07 /* NSString+NCPrinting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NCPrinting.m"; path = "DetailController/KBDevice/Print/NSString+NCPrinting.m"; sourceTree = "<group>"; };
 		A9C5D33B1DD4239700454A07 /* RecipePrintPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecipePrintPageRenderer.h; path = DetailController/KBDevice/Print/RecipePrintPageRenderer.h; sourceTree = "<group>"; };
 		A9C5D33C1DD4239700454A07 /* RecipePrintPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecipePrintPageRenderer.m; path = DetailController/KBDevice/Print/RecipePrintPageRenderer.m; sourceTree = "<group>"; };
+		A9CD17961E84EDF4005A3A6F /* RPDWrapperFloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPDWrapperFloatView.h; path = DetailController/KBShaperLayerController/RPDFloatView/RPDWrapperFloatView.h; sourceTree = "<group>"; };
+		A9CD17971E84EDF4005A3A6F /* RPDWrapperFloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPDWrapperFloatView.m; path = DetailController/KBShaperLayerController/RPDFloatView/RPDWrapperFloatView.m; sourceTree = "<group>"; };
 		A9CDC1AF1AC64A1C007C14EC /* KBGraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBGraphicsView.h; path = Custom/KBGraphicsView.h; sourceTree = "<group>"; };
 		A9CDC1B01AC64A1C007C14EC /* KBGraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBGraphicsView.m; path = Custom/KBGraphicsView.m; sourceTree = "<group>"; };
 		A9D7D8381AC4F6D10075E333 /* KBBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBBadgeView.h; path = Custom/KBBadgeView.h; sourceTree = "<group>"; };
@@ -1061,6 +1048,7 @@
 		A95F4AD31D34DD2B00EE6A72 /* KBShaperController */ = {
 			isa = PBXGroup;
 			children = (
+				A9CD17951E84E98D005A3A6F /* RPDFloatView */,
 				A9BB0C7F1E13B3A800CA77A3 /* Table半糖效果 */,
 				A974D91E1D75757400F17A17 /* ImageFloder */,
 				A9FF89201D63FA1300ADFF86 /* Uber */,
@@ -1399,6 +1387,15 @@
 			name = Print;
 			sourceTree = "<group>";
 		};
+		A9CD17951E84E98D005A3A6F /* RPDFloatView */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD17961E84EDF4005A3A6F /* RPDWrapperFloatView.h */,
+				A9CD17971E84EDF4005A3A6F /* RPDWrapperFloatView.m */,
+			);
+			name = RPDFloatView;
+			sourceTree = "<group>";
+		};
 		A9DA072B1AC3A1290070120D /* PopoverView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1645,7 +1642,6 @@
 				A98ED6421AA013B10031BA10 /* Sources */,
 				A98ED6431AA013B10031BA10 /* Frameworks */,
 				A98ED6441AA013B10031BA10 /* Resources */,
-				A976153E1C297F8C00741586 /* Embed Frameworks */,
 				0A4663E571922823891DD31F /* Embed Pods Frameworks */,
 				96DE48B27512CFBD251A7E72 /* Copy Pods Resources */,
 			);
@@ -1949,6 +1945,7 @@
 				A92D07281AF5C75A002D4928 /* KBMediaTimingViewController.m in Sources */,
 				A9F3925A1C61D4D70008F62B /* Lion.m in Sources */,
 				A9EDF5821E23667200A633CC /* NSData+Encryption.m in Sources */,
+				A9CD17981E84EDF4005A3A6F /* RPDWrapperFloatView.m in Sources */,
 				A974D9251D76824100F17A17 /* KBDeviceMenuTableViewController.m in Sources */,
 				A98ED6551AA013B10031BA10 /* DetailViewController.m in Sources */,
 				A9E268791AEC728F008EA651 /* KBShaperLayerController.m in Sources */,
