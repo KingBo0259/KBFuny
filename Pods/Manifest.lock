@@ -21,11 +21,14 @@ PODS:
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
-  - Masonry (1.0.0)
+  - Masonry (1.0.2)
   - PKRevealController (2.0.6)
   - pop (1.0.9)
-  - SVProgressHUD (2.0.3)
+  - SocketRocket (0.5.1)
+  - SVProgressHUD (2.0.4)
   - SVPullToRefresh (0.4.1)
+  - WeexSDK (0.11.0):
+    - SocketRocket
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -37,16 +40,21 @@ DEPENDENCIES:
   - pop (~> 1.0.9)
   - SVProgressHUD (~> 2.0.3)
   - SVPullToRefresh (~> 0.4.1)
+  - WeexSDK (~> 0.11.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
-  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  WeexSDK: f9cfe6adc91fba3ca5e36bc9808bf1b6e8be2106
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 0913d35fe2398b02478aa5c911b55e8a2bdf3158
+
+COCOAPODS: 1.2.0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		239724A42FDD8E6B5C1EAA72 /* libPods-KBFuny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBB497E5F904376CCD65140 /* libPods-KBFuny.a */; };
 		A9048C331B314B84000A4BF4 /* KBGaodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9048C321B314B84000A4BF4 /* KBGaodeViewController.m */; };
 		A90561B91CD83C73001A368C /* KCCoreDataMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90561B71CD83C73001A368C /* KCCoreDataMenuTableViewController.m */; };
 		A90561BA1CD83C73001A368C /* KCCoreDataMenuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90561B81CD83C73001A368C /* KCCoreDataMenuTableViewController.xib */; };
@@ -199,7 +200,6 @@
 		A9FEFC311D421B2800E830F2 /* KBShoppingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FEFC301D421B2800E830F2 /* KBShoppingWindow.m */; };
 		A9FEFC341D421CBE00E830F2 /* KBShoppingCartDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FEFC331D421CBE00E830F2 /* KBShoppingCartDetailController.m */; };
 		A9FF89231D63FA8200ADFF86 /* KBUberImitateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF89221D63FA8200ADFF86 /* KBUberImitateViewController.m */; };
-		E380638F5D97A3961365A4E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 588285A5ACEF4C91CD244ECA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,8 +213,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1394E53105109ABDA51A6BAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		588285A5ACEF4C91CD244ECA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		537487F7C05A6E85B4700D4D /* Pods-KBFuny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBFuny.release.xcconfig"; path = "Pods/Target Support Files/Pods-KBFuny/Pods-KBFuny.release.xcconfig"; sourceTree = "<group>"; };
+		6EBB497E5F904376CCD65140 /* libPods-KBFuny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KBFuny.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B230CDE876E58F8AFAC971 /* Pods-KBFuny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBFuny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KBFuny/Pods-KBFuny.debug.xcconfig"; sourceTree = "<group>"; };
 		A9048C311B314B84000A4BF4 /* KBGaodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBGaodeViewController.h; sourceTree = "<group>"; };
 		A9048C321B314B84000A4BF4 /* KBGaodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBGaodeViewController.m; sourceTree = "<group>"; };
 		A90561B61CD83C73001A368C /* KCCoreDataMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCCoreDataMenuTableViewController.h; path = DetailController/KCCoreData/KCCoreDataMenuTableViewController.h; sourceTree = "<group>"; };
@@ -567,7 +568,6 @@
 		A9FEFC331D421CBE00E830F2 /* KBShoppingCartDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBShoppingCartDetailController.m; path = DetailController/KBShaperLayerController/KBShoppingCartDetailController.m; sourceTree = "<group>"; };
 		A9FF89211D63FA8200ADFF86 /* KBUberImitateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBUberImitateViewController.h; path = DetailController/KBShaperLayerController/Uber/KBUberImitateViewController.h; sourceTree = "<group>"; };
 		A9FF89221D63FA8200ADFF86 /* KBUberImitateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBUberImitateViewController.m; path = DetailController/KBShaperLayerController/Uber/KBUberImitateViewController.m; sourceTree = "<group>"; };
-		DEAB3643DE78F715BD32C189 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,7 +585,7 @@
 				A9E4907C1B170BAF0065B7DA /* AVFoundation.framework in Frameworks */,
 				A9E490731B170A850065B7DA /* libzbar.a in Frameworks */,
 				A92D07A81AF8E396002D4928 /* libALBB_OSS_IOS_SDK.a in Frameworks */,
-				E380638F5D97A3961365A4E0 /* libPods.a in Frameworks */,
+				239724A42FDD8E6B5C1EAA72 /* libPods-KBFuny.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,24 +599,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F5B2650FFCCA5C6471F1111 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DEAB3643DE78F715BD32C189 /* Pods.debug.xcconfig */,
-				1394E53105109ABDA51A6BAD /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		86C8106A90F1E458E63B49F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A9EDF5831E23747200A633CC /* Security.framework */,
 				A94C52C31DF53C38006C6E0F /* JavaScriptCore.framework */,
 				A90A37C71D7EA219003C4772 /* LocalAuthentication.framework */,
-				588285A5ACEF4C91CD244ECA /* libPods.a */,
+				6EBB497E5F904376CCD65140 /* libPods-KBFuny.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A689C13F88AE853F17A62AF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99B230CDE876E58F8AFAC971 /* Pods-KBFuny.debug.xcconfig */,
+				537487F7C05A6E85B4700D4D /* Pods-KBFuny.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A9048C301B314B84000A4BF4 /* KBGaodePath */ = {
@@ -1212,8 +1212,8 @@
 				A98ED6481AA013B10031BA10 /* KBFuny */,
 				A98ED6651AA013B20031BA10 /* KBFunyTests */,
 				A98ED6471AA013B10031BA10 /* Products */,
-				1F5B2650FFCCA5C6471F1111 /* Pods */,
 				86C8106A90F1E458E63B49F9 /* Frameworks */,
+				A689C13F88AE853F17A62AF1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1638,12 +1638,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A98ED66C1AA013B20031BA10 /* Build configuration list for PBXNativeTarget "KBFuny" */;
 			buildPhases = (
-				35D10C5059AACD869600422F /* Check Pods Manifest.lock */,
+				165B432BCBD13D261DEC2F3F /* [CP] Check Pods Manifest.lock */,
 				A98ED6421AA013B10031BA10 /* Sources */,
 				A98ED6431AA013B10031BA10 /* Frameworks */,
 				A98ED6441AA013B10031BA10 /* Resources */,
-				0A4663E571922823891DD31F /* Embed Pods Frameworks */,
-				96DE48B27512CFBD251A7E72 /* Copy Pods Resources */,
+				9E8584A1C1D14A6A06A68A0E /* [CP] Embed Pods Frameworks */,
+				5512B8035F4241CCDF74BE25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1801,49 +1801,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A4663E571922823891DD31F /* Embed Pods Frameworks */ = {
+		165B432BCBD13D261DEC2F3F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		35D10C5059AACD869600422F /* Check Pods Manifest.lock */ = {
+		5512B8035F4241CCDF74BE25 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KBFuny/Pods-KBFuny-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96DE48B27512CFBD251A7E72 /* Copy Pods Resources */ = {
+		9E8584A1C1D14A6A06A68A0E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KBFuny/Pods-KBFuny-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2081,7 +2081,7 @@
 		};
 		A98ED66D1AA013B20031BA10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEAB3643DE78F715BD32C189 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 99B230CDE876E58F8AFAC971 /* Pods-KBFuny.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2109,7 +2109,7 @@
 		};
 		A98ED66E1AA013B20031BA10 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1394E53105109ABDA51A6BAD /* Pods.release.xcconfig */;
+			baseConfigurationReference = 537487F7C05A6E85B4700D4D /* Pods-KBFuny.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
