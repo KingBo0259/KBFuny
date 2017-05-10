@@ -71,6 +71,9 @@
 		A92D07281AF5C75A002D4928 /* KBMediaTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92D07271AF5C75A002D4928 /* KBMediaTimingViewController.m */; };
 		A92D072B1AF741EE002D4928 /* KBGradientCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A92D072A1AF741EE002D4928 /* KBGradientCircleView.m */; };
 		A92D07A81AF8E396002D4928 /* libALBB_OSS_IOS_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A92D07991AF8E396002D4928 /* libALBB_OSS_IOS_SDK.a */; };
+		A9333DD81EB9D8C800CE9B13 /* KBWeexDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9333DD61EB9D8C800CE9B13 /* KBWeexDemoViewController.m */; };
+		A9333DD91EB9D8C800CE9B13 /* KBWeexDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9333DD71EB9D8C800CE9B13 /* KBWeexDemoViewController.xib */; };
+		A9333DDC1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9333DDB1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m */; };
 		A93A4E301B217C3100AFFAFD /* KBVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */; };
 		A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA161DFF921A00734100 /* KBFowLayout.m */; };
 		A93DBA1B1DFFC6BB00734100 /* KBCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA1A1DFFC6BB00734100 /* KBCircleLayout.m */; };
@@ -95,6 +98,7 @@
 		A949CD981B2142250012D0A1 /* KBVoiceRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A949CD961B2142250012D0A1 /* KBVoiceRecordViewController.m */; };
 		A949CD991B2142250012D0A1 /* KBVoiceRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A949CD971B2142250012D0A1 /* KBVoiceRecordViewController.xib */; };
 		A949CD9C1B2145AD0012D0A1 /* KBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A949CD9B1B2145AD0012D0A1 /* KBRecordViewController.m */; };
+		A94BD6441EC2FC6F009D70B0 /* helloWeex.we in Resources */ = {isa = PBXBuildFile; fileRef = A94BD6431EC2FC6F009D70B0 /* helloWeex.we */; };
 		A94C52C41DF53C38006C6E0F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94C52C31DF53C38006C6E0F /* JavaScriptCore.framework */; };
 		A94C52C81DF53CE8006C6E0F /* KBScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94C52C71DF53CE8006C6E0F /* KBScriptViewController.m */; };
 		A9516F611CF6E09000B45D71 /* 樱花瓣1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9516F5C1CF6E09000B45D71 /* 樱花瓣1.png */; };
@@ -338,6 +342,11 @@
 		A92D07A51AF8E396002D4928 /* OSSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSObject.h; sourceTree = "<group>"; };
 		A92D07A61AF8E396002D4928 /* OSSRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSRange.h; sourceTree = "<group>"; };
 		A92D07A71AF8E396002D4928 /* OSSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSTool.h; sourceTree = "<group>"; };
+		A9333DD51EB9D8C800CE9B13 /* KBWeexDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBWeexDemoViewController.h; path = DetailController/Weex/KBWeexDemoViewController.h; sourceTree = "<group>"; };
+		A9333DD61EB9D8C800CE9B13 /* KBWeexDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBWeexDemoViewController.m; path = DetailController/Weex/KBWeexDemoViewController.m; sourceTree = "<group>"; };
+		A9333DD71EB9D8C800CE9B13 /* KBWeexDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBWeexDemoViewController.xib; path = DetailController/Weex/KBWeexDemoViewController.xib; sourceTree = "<group>"; };
+		A9333DDA1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBWeexShowcaseViewController.h; path = DetailController/Weex/KBWeexShowcaseViewController.h; sourceTree = "<group>"; };
+		A9333DDB1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBWeexShowcaseViewController.m; path = DetailController/Weex/KBWeexShowcaseViewController.m; sourceTree = "<group>"; };
 		A93A4E2E1B217C3100AFFAFD /* KBVoiceRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBVoiceRecordView.h; sourceTree = "<group>"; };
 		A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBVoiceRecordView.m; sourceTree = "<group>"; };
 		A93DBA151DFF921A00734100 /* KBFowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBFowLayout.h; path = DetailController/KBCollectionViewController/ViewFlowLayout/KBFowLayout.h; sourceTree = "<group>"; };
@@ -372,6 +381,7 @@
 		A949CD971B2142250012D0A1 /* KBVoiceRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBVoiceRecordViewController.xib; sourceTree = "<group>"; };
 		A949CD9A1B2145AD0012D0A1 /* KBRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRecordViewController.h; sourceTree = "<group>"; };
 		A949CD9B1B2145AD0012D0A1 /* KBRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRecordViewController.m; sourceTree = "<group>"; };
+		A94BD6431EC2FC6F009D70B0 /* helloWeex.we */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = helloWeex.we; path = DetailController/Weex/helloWeex.we; sourceTree = "<group>"; };
 		A94C52C31DF53C38006C6E0F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		A94C52C61DF53CE8006C6E0F /* KBScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBScriptViewController.h; path = DetailController/KBObjectiveC/KBJavaScript/KBScriptViewController.h; sourceTree = "<group>"; };
 		A94C52C71DF53CE8006C6E0F /* KBScriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBScriptViewController.m; path = DetailController/KBObjectiveC/KBJavaScript/KBScriptViewController.m; sourceTree = "<group>"; };
@@ -925,6 +935,19 @@
 			path = Universal;
 			sourceTree = "<group>";
 		};
+		A9333DD11EB9D72300CE9B13 /* Weex */ = {
+			isa = PBXGroup;
+			children = (
+				A94BD6431EC2FC6F009D70B0 /* helloWeex.we */,
+				A9333DD51EB9D8C800CE9B13 /* KBWeexDemoViewController.h */,
+				A9333DD61EB9D8C800CE9B13 /* KBWeexDemoViewController.m */,
+				A9333DD71EB9D8C800CE9B13 /* KBWeexDemoViewController.xib */,
+				A9333DDA1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.h */,
+				A9333DDB1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m */,
+			);
+			name = Weex;
+			sourceTree = "<group>";
+		};
 		A93DBA181DFFC69400734100 /* CircleLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1430,6 +1453,7 @@
 		A9DF77771AE10A7600055E0C /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
+				A9333DD11EB9D72300CE9B13 /* Weex */,
 				A9AB13F51DFE742600C7A756 /* KBCollectionView */,
 				A90A37C91D8138AB003C4772 /* KBPop */,
 				A974D9221D7681F500F17A17 /* KBDevice */,
@@ -1747,6 +1771,7 @@
 				A91B69BF1BA6B8CA00D7C375 /* start_animition@3x.png in Resources */,
 				A949CD851B2137B00012D0A1 /* main_car_0@2x.png in Resources */,
 				A91B69CE1BA6C5F200D7C375 /* start_Cloud_L@2x.png in Resources */,
+				A9333DD91EB9D8C800CE9B13 /* KBWeexDemoViewController.xib in Resources */,
 				A959F1EF1B0E2DE80050D9A2 /* Default.png in Resources */,
 				A9E74D321ACFD58D00D7F4AC /* weChatBubble_Receiving_Cavern@2x.png in Resources */,
 				A974D9411D76AF2000F17A17 /* scan_4@3x.png in Resources */,
@@ -1780,6 +1805,7 @@
 				A9516F611CF6E09000B45D71 /* 樱花瓣1.png in Resources */,
 				A9EDF5791E23353400A633CC /* KBEncryptionViewController.xib in Resources */,
 				A974D9421D76AF2000F17A17 /* scan_net@2x.png in Resources */,
+				A94BD6441EC2FC6F009D70B0 /* helloWeex.we in Resources */,
 				A91B6A091BA8084A00D7C375 /* nv_1_1@2x.png in Resources */,
 				A949CD8A1B2137B00012D0A1 /* main_car_gray_1@2x.png in Resources */,
 				A974D93C1D76AF2000F17A17 /* scan_2@2x.png in Resources */,
@@ -1884,6 +1910,7 @@
 				A928D1671CC4913500E1247C /* KCTmsViewController.m in Sources */,
 				A959F1FC1B0F3F310050D9A2 /* KCUserLoginResponse.m in Sources */,
 				A9EEFD0E1C86EE8F007FCE59 /* KCNetworkFrameworkDemoViewController.m in Sources */,
+				A9333DD81EB9D8C800CE9B13 /* KBWeexDemoViewController.m in Sources */,
 				A90D441C1B0750D2009F65C0 /* CWHessianUnarchiver+Private.m in Sources */,
 				A974D9291D76A79700F17A17 /* KBScanViewController.m in Sources */,
 				A928D1751CC5DFE500E1247C /* KCTMSRegionService.m in Sources */,
@@ -1933,6 +1960,7 @@
 				A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */,
 				A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */,
 				A991C2681E60035100474D9E /* KBMakeCaculate.m in Sources */,
+				A9333DDC1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m in Sources */,
 				A9E7E7231BD0D3CC0080CF5C /* KBTouchTableView.m in Sources */,
 				A90D44161B0750D2009F65C0 /* CWDistantHessianObject+Private.m in Sources */,
 				A92D072B1AF741EE002D4928 /* KBGradientCircleView.m in Sources */,

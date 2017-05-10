@@ -155,6 +155,7 @@
                         ,@"Facebook Pop"
                         ,@"KBScriptViewController"
                         ,@"UICollection 学习"
+                        ,@"Weex"
                         , nil];
     }
 
@@ -340,6 +341,10 @@
         [self.navigationController pushViewController:obj animated:YES];
         
 
+    } else if (indexPath.row == 21){
+        Class class=NSClassFromString(@"KBWeexDemoViewController");
+        id obj=[class new];
+        [self.navigationController pushViewController:obj animated:YES];
     }
 }
 
