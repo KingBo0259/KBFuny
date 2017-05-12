@@ -30,6 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"我是第一个URL";
     
     self.weexSDK.viewController = self;
     self.weexSDK.frame = self.view.frame;
