@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *eventNameTextFiled;
 @property(nonatomic,strong) EKEventStore *eventStore ;
+
+@property(nonatomic,strong) NSMutableDictionary *storeDic;
 @end
 
 @implementation KBEventViewController
@@ -23,7 +25,6 @@
     // Do any additional setup after loading the view from its nib.
     self.title  = @"日历";
     _eventStore = [[EKEventStore alloc] init];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,9 +86,10 @@
                         
                         _eventIDTextField.text = event.eventIdentifier;
                         NSLog(@"保存成功");
+                        
+                        self.storeDic[event.eventIdentifier] = event.title;
+                        [self saveStore];
                     }
-                   
-                    
                 }
             });
         }];
@@ -175,6 +177,8 @@
                                               otherButtonTitles:nil];
                         [alert show];
                         _eventNameTextFiled.text = @"";
+                        [self.storeDic removeObjectForKey:event.eventIdentifier];
+                        [self saveStore];
                     }else {
                         
                         _eventNameTextFiled.text = error.description;
@@ -187,6 +191,29 @@
     
 }
 
+-(NSString*)storePath {
+    NSArray *array = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documents = [array lastObject];
+    NSString *documnetPath = [documents stringByAppendingPathComponent:@"ENEventStore.plist"];
+    return  documnetPath;
+}
+
+
+
+-(NSMutableDictionary*)storeDic {
+    if (!_storeDic) {
+         NSDictionary *tempDic = [[NSDictionary alloc]initWithContentsOfFile:[self storePath]] ?:@{};
+        _storeDic =  [tempDic mutableCopy];
+    }
+
+    return _storeDic;
+}
+
+
+
+-(void)saveStore {
+    [self.storeDic writeToFile:[self storePath] atomically:YES];
+}
 
 /*
 #pragma mark - Navigation
