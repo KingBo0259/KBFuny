@@ -79,6 +79,8 @@
 		A93DBA1B1DFFC6BB00734100 /* KBCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA1A1DFFC6BB00734100 /* KBCircleLayout.m */; };
 		A93DBA1E1DFFC9A300734100 /* KBCircleLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA1D1DFFC9A300734100 /* KBCircleLayoutDemoViewController.m */; };
 		A93DBA211DFFCEB600734100 /* KBStackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA201DFFCEB600734100 /* KBStackLayout.m */; };
+		A93FA0C41ED41AAA002D4A73 /* KBEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93FA0C21ED41AAA002D4A73 /* KBEventViewController.m */; };
+		A93FA0C51ED41AAA002D4A73 /* KBEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A93FA0C31ED41AAA002D4A73 /* KBEventViewController.xib */; };
 		A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A947406A1C006C5300C38D40 /* UIImage+KBImage.m */; };
 		A949CD851B2137B00012D0A1 /* main_car_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A949CD761B2137B00012D0A1 /* main_car_0@2x.png */; };
 		A949CD861B2137B00012D0A1 /* main_car_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A949CD771B2137B00012D0A1 /* main_car_1@2x.png */; };
@@ -359,6 +361,9 @@
 		A93DBA201DFFCEB600734100 /* KBStackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBStackLayout.m; path = DetailController/KBCollectionViewController/CircleLayout/KBStackLayout.m; sourceTree = "<group>"; };
 		A93F50931C926832000A5D81 /* BuildPackageScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildPackageScript.sh; sourceTree = "<group>"; };
 		A93F50941C929114000A5D81 /* kuaihuoyun.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kuaihuoyun.sh; sourceTree = "<group>"; };
+		A93FA0C11ED41AAA002D4A73 /* KBEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBEventViewController.h; path = DetailController/EventKit/KBEventViewController.h; sourceTree = "<group>"; };
+		A93FA0C21ED41AAA002D4A73 /* KBEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBEventViewController.m; path = DetailController/EventKit/KBEventViewController.m; sourceTree = "<group>"; };
+		A93FA0C31ED41AAA002D4A73 /* KBEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBEventViewController.xib; path = DetailController/EventKit/KBEventViewController.xib; sourceTree = "<group>"; };
 		A94740691C006C5300C38D40 /* UIImage+KBImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+KBImage.h"; path = "KBExtion/KBImage/UIImage+KBImage.h"; sourceTree = "<group>"; };
 		A947406A1C006C5300C38D40 /* UIImage+KBImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KBImage.m"; path = "KBExtion/KBImage/UIImage+KBImage.m"; sourceTree = "<group>"; };
 		A949CD761B2137B00012D0A1 /* main_car_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main_car_0@2x.png"; sourceTree = "<group>"; };
@@ -961,6 +966,16 @@
 			name = CircleLayout;
 			sourceTree = "<group>";
 		};
+		A93FA0BD1ED419B2002D4A73 /* EventKit */ = {
+			isa = PBXGroup;
+			children = (
+				A93FA0C11ED41AAA002D4A73 /* KBEventViewController.h */,
+				A93FA0C21ED41AAA002D4A73 /* KBEventViewController.m */,
+				A93FA0C31ED41AAA002D4A73 /* KBEventViewController.xib */,
+			);
+			name = EventKit;
+			sourceTree = "<group>";
+		};
 		A94740681C006BAE00C38D40 /* KBExtion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1125,6 +1140,7 @@
 		A974D9221D7681F500F17A17 /* KBDevice */ = {
 			isa = PBXGroup;
 			children = (
+				A93FA0BD1ED419B2002D4A73 /* EventKit */,
 				A9C5D3321DD4143600454A07 /* Print */,
 				A90A37C31D7EA1D8003C4772 /* FingerUnLock */,
 				A974D9261D76A74000F17A17 /* Scan */,
@@ -1800,6 +1816,7 @@
 				A91B69CC1BA6B94000D7C375 /* start_background@2x.png in Resources */,
 				A90561BA1CD83C73001A368C /* KCCoreDataMenuTableViewController.xib in Resources */,
 				A974D9431D76AF2000F17A17 /* 关灯@2x.png in Resources */,
+				A93FA0C51ED41AAA002D4A73 /* KBEventViewController.xib in Resources */,
 				A974D9481D76AF2000F17A17 /* 开灯@3x.png in Resources */,
 				A949CD931B2137B00012D0A1 /* record_normal@2x.png in Resources */,
 				A9516F611CF6E09000B45D71 /* 樱花瓣1.png in Resources */,
@@ -1959,6 +1976,7 @@
 				A991C26E1E6009E800474D9E /* NSObject+Calculate.m in Sources */,
 				A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */,
 				A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */,
+				A93FA0C41ED41AAA002D4A73 /* KBEventViewController.m in Sources */,
 				A991C2681E60035100474D9E /* KBMakeCaculate.m in Sources */,
 				A9333DDC1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m in Sources */,
 				A9E7E7231BD0D3CC0080CF5C /* KBTouchTableView.m in Sources */,
