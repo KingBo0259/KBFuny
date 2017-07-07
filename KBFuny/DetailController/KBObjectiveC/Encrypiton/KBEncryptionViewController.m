@@ -46,7 +46,7 @@ enum  {
 }
 
 - (IBAction)buttonClick:(UIButton *)sender {
-    
+    [self.view endEditing:YES];
     NSString *result=nil;
     if (sender.tag==1) {
         
@@ -131,6 +131,8 @@ enum  {
 
 
 -(IBAction)AESClick:(id)sender{
+    [self.view endEditing:YES];
+
     NSString *body = _inputTextField.text;
     
     //1、加密   2、然后对数据进行base64， 这样就能得到可见数据；
@@ -142,7 +144,8 @@ enum  {
 }
 
 - (IBAction)DeAESClick:(id)sender {
-    
+    [self.view endEditing:YES];
+
     NSString *body = _inputTextField.text;
     NSString *base64EncodeString = body;
     

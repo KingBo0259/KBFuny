@@ -218,12 +218,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KBFuny/DetailController/EventKit/KBEventViewController.m"
-            timestampString = "517224504.403799"
+            timestampString = "517233966.082345"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "-storeDic"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-saveClick:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
