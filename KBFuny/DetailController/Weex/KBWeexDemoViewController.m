@@ -11,6 +11,7 @@
 #import "KBWeexShowcaseViewController.h"
 
 @interface KBWeexDemoViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *locationJsNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
 @end
 
@@ -43,6 +44,21 @@
     KBWeexShowcaseViewController *vc = [KBWeexShowcaseViewController new];
     vc.weexUri = [NSURL URLWithString:str];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(IBAction)showLocationWeexClick:(id)sender {
+    //1、获取路径方式一
+//    NSString *jsPath = [[NSBundle mainBundle] pathForResource:_locationJsNameTextField.text ofType:@"js"];
+//    jsPath = [@"file://" stringByAppendingString:jsPath];
+    //2、获取路径方式二
+    NSString *filePath = _locationJsNameTextField.text;
+    NSString *path=[NSString stringWithFormat:@"file://%@/%@.js",[NSBundle mainBundle].bundlePath,filePath];
+    NSLog(@"-----path:%@",path);
+    NSURL * jsUrl=[NSURL URLWithString:path];
+    KBWeexShowcaseViewController *vc = [KBWeexShowcaseViewController new];
+    vc.weexUri = jsUrl;
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 

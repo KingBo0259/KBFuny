@@ -74,6 +74,9 @@
 		A9333DD81EB9D8C800CE9B13 /* KBWeexDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9333DD61EB9D8C800CE9B13 /* KBWeexDemoViewController.m */; };
 		A9333DD91EB9D8C800CE9B13 /* KBWeexDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9333DD71EB9D8C800CE9B13 /* KBWeexDemoViewController.xib */; };
 		A9333DDC1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9333DDB1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m */; };
+		A93451701F14B91E00B72E00 /* order.js in Resources */ = {isa = PBXBuildFile; fileRef = A934516F1F14B91E00B72E00 /* order.js */; };
+		A93451731F14BFEF00B72E00 /* order.js in Resources */ = {isa = PBXBuildFile; fileRef = A93451721F14BFEF00B72E00 /* order.js */; };
+		A93451751F14C02200B72E00 /* order.vue in Resources */ = {isa = PBXBuildFile; fileRef = A93451741F14C02200B72E00 /* order.vue */; };
 		A93A4E301B217C3100AFFAFD /* KBVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */; };
 		A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA161DFF921A00734100 /* KBFowLayout.m */; };
 		A93DBA1B1DFFC6BB00734100 /* KBCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA1A1DFFC6BB00734100 /* KBCircleLayout.m */; };
@@ -349,6 +352,9 @@
 		A9333DD71EB9D8C800CE9B13 /* KBWeexDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBWeexDemoViewController.xib; path = DetailController/Weex/KBWeexDemoViewController.xib; sourceTree = "<group>"; };
 		A9333DDA1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBWeexShowcaseViewController.h; path = DetailController/Weex/KBWeexShowcaseViewController.h; sourceTree = "<group>"; };
 		A9333DDB1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBWeexShowcaseViewController.m; path = DetailController/Weex/KBWeexShowcaseViewController.m; sourceTree = "<group>"; };
+		A934516F1F14B91E00B72E00 /* order.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = order.js; sourceTree = "<group>"; };
+		A93451721F14BFEF00B72E00 /* order.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = order.js; path = DetailController/Weex/File/order.js; sourceTree = "<group>"; };
+		A93451741F14C02200B72E00 /* order.vue */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = order.vue; path = DetailController/Weex/File/order.vue; sourceTree = "<group>"; };
 		A93A4E2E1B217C3100AFFAFD /* KBVoiceRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBVoiceRecordView.h; sourceTree = "<group>"; };
 		A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBVoiceRecordView.m; sourceTree = "<group>"; };
 		A93DBA151DFF921A00734100 /* KBFowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBFowLayout.h; path = DetailController/KBCollectionViewController/ViewFlowLayout/KBFowLayout.h; sourceTree = "<group>"; };
@@ -943,6 +949,7 @@
 		A9333DD11EB9D72300CE9B13 /* Weex */ = {
 			isa = PBXGroup;
 			children = (
+				A93451711F14BFC400B72E00 /* File */,
 				A94BD6431EC2FC6F009D70B0 /* helloWeex.we */,
 				A9333DD51EB9D8C800CE9B13 /* KBWeexDemoViewController.h */,
 				A9333DD61EB9D8C800CE9B13 /* KBWeexDemoViewController.m */,
@@ -951,6 +958,15 @@
 				A9333DDB1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m */,
 			);
 			name = Weex;
+			sourceTree = "<group>";
+		};
+		A93451711F14BFC400B72E00 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				A93451741F14C02200B72E00 /* order.vue */,
+				A93451721F14BFEF00B72E00 /* order.js */,
+			);
+			name = File;
 			sourceTree = "<group>";
 		};
 		A93DBA181DFFC69400734100 /* CircleLayout */ = {
@@ -1294,6 +1310,7 @@
 		A98ED6491AA013B10031BA10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A934516F1F14B91E00B72E00 /* order.js */,
 				A923E81F1D4759190060675D /* CreateProductServicePushScript.sh */,
 				A98ED64A1AA013B10031BA10 /* Info.plist */,
 				A98ED64B1AA013B10031BA10 /* main.m */,
@@ -1767,7 +1784,9 @@
 				A949CD881B2137B00012D0A1 /* main_car_3@2x.png in Resources */,
 				A974D9461D76AF2000F17A17 /* 后退@3x.png in Resources */,
 				A9DB45041B4E7518006A0B89 /* 1.png in Resources */,
+				A93451731F14BFEF00B72E00 /* order.js in Resources */,
 				A9516F631CF6E09000B45D71 /* 樱花树1.png in Resources */,
+				A93451751F14C02200B72E00 /* order.vue in Resources */,
 				A974D9401D76AF2000F17A17 /* scan_4@2x.png in Resources */,
 				A98ED65D1AA013B10031BA10 /* LaunchScreen.xib in Resources */,
 				A91B69FD1BA7F08C00D7C375 /* nv_bg03@2x.png in Resources */,
@@ -1807,6 +1826,7 @@
 				A9516F751CF6E5A300B45D71 /* BSResources.bundle in Resources */,
 				A9516F651CF6E09000B45D71 /* 樱花树3.png in Resources */,
 				A91B69FB1BA7F08C00D7C375 /* nv_bg01@2x.png in Resources */,
+				A93451701F14B91E00B72E00 /* order.js in Resources */,
 				A91B6A0C1BA8084A00D7C375 /* nv_2_2@2x.png in Resources */,
 				A949CD891B2137B00012D0A1 /* main_car_gray_0@2x.png in Resources */,
 				A949CD8B1B2137B00012D0A1 /* main_car_gray_2@2x.png in Resources */,
