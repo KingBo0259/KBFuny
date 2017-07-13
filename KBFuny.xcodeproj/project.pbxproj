@@ -353,7 +353,6 @@
 		A9333DD71EB9D8C800CE9B13 /* KBWeexDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBWeexDemoViewController.xib; path = DetailController/Weex/KBWeexDemoViewController.xib; sourceTree = "<group>"; };
 		A9333DDA1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBWeexShowcaseViewController.h; path = DetailController/Weex/KBWeexShowcaseViewController.h; sourceTree = "<group>"; };
 		A9333DDB1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBWeexShowcaseViewController.m; path = DetailController/Weex/KBWeexShowcaseViewController.m; sourceTree = "<group>"; };
-		A934516F1F14B91E00B72E00 /* order.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = order.js; sourceTree = "<group>"; };
 		A93451721F14BFEF00B72E00 /* order.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = order.js; path = DetailController/Weex/File/order.js; sourceTree = "<group>"; };
 		A93451741F14C02200B72E00 /* order.vue */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = order.vue; path = DetailController/Weex/File/order.vue; sourceTree = "<group>"; };
 		A93837ED1F174330007C2171 /* KBSpinnyMcSpinface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBSpinnyMcSpinface.h; path = DetailController/KBShaperLayerController/SpinnyMcSpinface/KBSpinnyMcSpinface.h; sourceTree = "<group>"; };
@@ -1327,7 +1326,6 @@
 		A98ED6491AA013B10031BA10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A934516F1F14B91E00B72E00 /* order.js */,
 				A923E81F1D4759190060675D /* CreateProductServicePushScript.sh */,
 				A98ED64A1AA013B10031BA10 /* Info.plist */,
 				A98ED64B1AA013B10031BA10 /* main.m */,
