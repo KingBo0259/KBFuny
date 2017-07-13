@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *doorView;
 @property (weak, nonatomic) IBOutlet KBGradientCircleView *gradientView;
 @property (strong,nonatomic) NSTimer *nsTimer;
-
+@property (weak,nonatomic) UIView *bView;
 @property (weak, nonatomic) IBOutlet UIImageView *shiperView;
 @end
 
@@ -34,8 +34,37 @@
     _nsTimer=[NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(refreshCirlce) userInfo:nil repeats:YES];
     [_nsTimer fire];
     
+    //参照页面
+    UIView *aView = [[UIView alloc]initWithFrame:CGRectMake(50, 50, 100, 100)];
+    aView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:aView];
+    
+    UIView *bView = [[UIView alloc]initWithFrame:CGRectMake(150, 50, 100, 100)];
+    _bView = bView;
+    bView.backgroundColor = [UIColor blueColor];
+    [self setViewAnchorPoint:CGPointMake(1, 1) forView:bView];
+    [self setViewAnchorPoint:CGPointMake(0, 0.5) forView:bView];
+    [self.view addSubview:bView];
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
 }
 
+
+/**
+ 设置锚点，且不影响之前的预期布局
+
+ @param anchorPoint 锚点值如：{1,0.5}
+ @param view 要更改的view
+ */
+- (void)setViewAnchorPoint:(CGPoint)anchorPoint forView:(UIView*)view {
+    CGPoint originAnchorPoint = view.layer.anchorPoint;
+    CGPoint offetPoint = CGPointMake(anchorPoint.x - originAnchorPoint.x, anchorPoint.y - originAnchorPoint.y);
+    CGFloat offetX =  (offetPoint.x)*view.frame.size.width;
+    CGFloat offetY =  (offetPoint.y)*view.frame.size.height;
+    view.layer.anchorPoint = anchorPoint;//设置这个值 说明已经改变了便宜量
+    view.layer.position = CGPointMake(view.layer.position.x + offetX, view.layer.position.y + offetY);//将指定的偏宜量更改回来
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -43,8 +72,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startClick:(UIButton*)sender {
-    [self resiginResponse];
     
+    [self resiginResponse];
     if (sender.tag==0) {
         
     
