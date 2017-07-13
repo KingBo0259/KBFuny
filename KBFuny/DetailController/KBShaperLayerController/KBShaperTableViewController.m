@@ -21,9 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"CALayer 效果案例";
-    self.titles=@[@"模态/遮罩/边框/粒子效果",@"Mask",@"UIBezierPath",@"类似淘宝购物车",@"Uber首页动画",@"图片折叠效果",@"浮点窗口"];
+    self.titles=@[@"模态/遮罩/边框/粒子效果",@"Mask",@"UIBezierPath",@"类似淘宝购物车",@"Uber首页动画",@"图片折叠效果",@"浮点窗口",@"CAShaper螺旋效果"];
     
-    self.detailControllers=@[@"KBShaperLayerController",@"KBShaperLayerDemoViewController",@"UIBezierPathViewController",@"KBShoppingCartController",@"KBUberImitateViewController",@"KBImageFloderTableViewController"];
+    self.detailControllers=@[@"KBShaperLayerController",@"KBShaperLayerDemoViewController",@"UIBezierPathViewController",@"KBShoppingCartController",@"KBUberImitateViewController",@"KBImageFloderTableViewController",@"浮点窗",@"KBSpinnyMcSpinfaceViewController"];
     
     UIBarButtonItem *backItem=[[UIBarButtonItem alloc]init];
     backItem.title=@"";

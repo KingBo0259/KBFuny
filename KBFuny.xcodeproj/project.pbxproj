@@ -74,9 +74,10 @@
 		A9333DD81EB9D8C800CE9B13 /* KBWeexDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9333DD61EB9D8C800CE9B13 /* KBWeexDemoViewController.m */; };
 		A9333DD91EB9D8C800CE9B13 /* KBWeexDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9333DD71EB9D8C800CE9B13 /* KBWeexDemoViewController.xib */; };
 		A9333DDC1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9333DDB1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m */; };
-		A93451701F14B91E00B72E00 /* order.js in Resources */ = {isa = PBXBuildFile; fileRef = A934516F1F14B91E00B72E00 /* order.js */; };
 		A93451731F14BFEF00B72E00 /* order.js in Resources */ = {isa = PBXBuildFile; fileRef = A93451721F14BFEF00B72E00 /* order.js */; };
 		A93451751F14C02200B72E00 /* order.vue in Resources */ = {isa = PBXBuildFile; fileRef = A93451741F14C02200B72E00 /* order.vue */; };
+		A93837EF1F174330007C2171 /* KBSpinnyMcSpinface.m in Sources */ = {isa = PBXBuildFile; fileRef = A93837EE1F174330007C2171 /* KBSpinnyMcSpinface.m */; };
+		A93837F21F174665007C2171 /* KBSpinnyMcSpinfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93837F11F174665007C2171 /* KBSpinnyMcSpinfaceViewController.m */; };
 		A93A4E301B217C3100AFFAFD /* KBVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */; };
 		A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA161DFF921A00734100 /* KBFowLayout.m */; };
 		A93DBA1B1DFFC6BB00734100 /* KBCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DBA1A1DFFC6BB00734100 /* KBCircleLayout.m */; };
@@ -355,6 +356,10 @@
 		A934516F1F14B91E00B72E00 /* order.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = order.js; sourceTree = "<group>"; };
 		A93451721F14BFEF00B72E00 /* order.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = order.js; path = DetailController/Weex/File/order.js; sourceTree = "<group>"; };
 		A93451741F14C02200B72E00 /* order.vue */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = order.vue; path = DetailController/Weex/File/order.vue; sourceTree = "<group>"; };
+		A93837ED1F174330007C2171 /* KBSpinnyMcSpinface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBSpinnyMcSpinface.h; path = DetailController/KBShaperLayerController/SpinnyMcSpinface/KBSpinnyMcSpinface.h; sourceTree = "<group>"; };
+		A93837EE1F174330007C2171 /* KBSpinnyMcSpinface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBSpinnyMcSpinface.m; path = DetailController/KBShaperLayerController/SpinnyMcSpinface/KBSpinnyMcSpinface.m; sourceTree = "<group>"; };
+		A93837F01F174665007C2171 /* KBSpinnyMcSpinfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBSpinnyMcSpinfaceViewController.h; path = DetailController/KBShaperLayerController/SpinnyMcSpinface/KBSpinnyMcSpinfaceViewController.h; sourceTree = "<group>"; };
+		A93837F11F174665007C2171 /* KBSpinnyMcSpinfaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBSpinnyMcSpinfaceViewController.m; path = DetailController/KBShaperLayerController/SpinnyMcSpinface/KBSpinnyMcSpinfaceViewController.m; sourceTree = "<group>"; };
 		A93A4E2E1B217C3100AFFAFD /* KBVoiceRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBVoiceRecordView.h; sourceTree = "<group>"; };
 		A93A4E2F1B217C3100AFFAFD /* KBVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBVoiceRecordView.m; sourceTree = "<group>"; };
 		A93DBA151DFF921A00734100 /* KBFowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBFowLayout.h; path = DetailController/KBCollectionViewController/ViewFlowLayout/KBFowLayout.h; sourceTree = "<group>"; };
@@ -969,6 +974,17 @@
 			name = File;
 			sourceTree = "<group>";
 		};
+		A93837EC1F1742DF007C2171 /* SpinnyMcSpinface */ = {
+			isa = PBXGroup;
+			children = (
+				A93837ED1F174330007C2171 /* KBSpinnyMcSpinface.h */,
+				A93837EE1F174330007C2171 /* KBSpinnyMcSpinface.m */,
+				A93837F01F174665007C2171 /* KBSpinnyMcSpinfaceViewController.h */,
+				A93837F11F174665007C2171 /* KBSpinnyMcSpinfaceViewController.m */,
+			);
+			name = SpinnyMcSpinface;
+			sourceTree = "<group>";
+		};
 		A93DBA181DFFC69400734100 /* CircleLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1102,6 +1118,7 @@
 		A95F4AD31D34DD2B00EE6A72 /* KBShaperController */ = {
 			isa = PBXGroup;
 			children = (
+				A93837EC1F1742DF007C2171 /* SpinnyMcSpinface */,
 				A9CD17951E84E98D005A3A6F /* RPDFloatView */,
 				A9BB0C7F1E13B3A800CA77A3 /* Table半糖效果 */,
 				A974D91E1D75757400F17A17 /* ImageFloder */,
@@ -1826,7 +1843,6 @@
 				A9516F751CF6E5A300B45D71 /* BSResources.bundle in Resources */,
 				A9516F651CF6E09000B45D71 /* 樱花树3.png in Resources */,
 				A91B69FB1BA7F08C00D7C375 /* nv_bg01@2x.png in Resources */,
-				A93451701F14B91E00B72E00 /* order.js in Resources */,
 				A91B6A0C1BA8084A00D7C375 /* nv_2_2@2x.png in Resources */,
 				A949CD891B2137B00012D0A1 /* main_car_gray_0@2x.png in Resources */,
 				A949CD8B1B2137B00012D0A1 /* main_car_gray_2@2x.png in Resources */,
@@ -1928,6 +1944,7 @@
 				A90D441B1B0750D2009F65C0 /* CWHessianConnection.m in Sources */,
 				A9839DB21CD1EA2C00F2F257 /* KBCoreDataMananger.m in Sources */,
 				A93DBA211DFFCEB600734100 /* KBStackLayout.m in Sources */,
+				A93837EF1F174330007C2171 /* KBSpinnyMcSpinface.m in Sources */,
 				A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */,
 				A90A37D01D81523E003C4772 /* KBPOPBasicAnimationViewController.m in Sources */,
 				A94C52C81DF53CE8006C6E0F /* KBScriptViewController.m in Sources */,
@@ -1956,6 +1973,7 @@
 				A90D43521B07470F009F65C0 /* KBHessianViewController.m in Sources */,
 				A9EDF5781E23353400A633CC /* KBEncryptionViewController.m in Sources */,
 				A92C51A71CC75B4C0097C699 /* KCTMSRpcResponse.m in Sources */,
+				A93837F21F174665007C2171 /* KBSpinnyMcSpinfaceViewController.m in Sources */,
 				A9516F741CF6E5A300B45D71 /* BSErrorMessageView.m in Sources */,
 				A93A4E301B217C3100AFFAFD /* KBVoiceRecordView.m in Sources */,
 				A9AC9D8D1D52E12C00FD3CAB /* SKYBase64.m in Sources */,
