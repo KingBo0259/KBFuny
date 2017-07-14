@@ -124,6 +124,10 @@
 		A96337BB1D35DE7000726E2F /* KBShaperLayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96337BA1D35DE7000726E2F /* KBShaperLayerDemoViewController.m */; };
 		A96337BE1D37644400726E2F /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96337BD1D37644400726E2F /* UIBezierPathViewController.m */; };
 		A9678A0A1C843DA9006EB732 /* KBCrandCenterDispatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9678A091C843DA9006EB732 /* KBCrandCenterDispatchViewController.m */; };
+		A96923A91F1895C500FFF92A /* KBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96923A81F1895C500FFF92A /* KBTableViewController.m */; };
+		A96923AE1F1899B400FFF92A /* KBCellHeightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96923AD1F1899B400FFF92A /* KBCellHeightTableViewController.m */; };
+		A96923B21F189C6800FFF92A /* KBAutoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96923B01F189C6800FFF92A /* KBAutoTableViewCell.m */; };
+		A96923B31F189C6800FFF92A /* KBAutoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96923B11F189C6800FFF92A /* KBAutoTableViewCell.xib */; };
 		A974D9211D7575C000F17A17 /* KBImageFloderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A974D9201D7575C000F17A17 /* KBImageFloderTableViewController.m */; };
 		A974D9251D76824100F17A17 /* KBDeviceMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A974D9241D76824100F17A17 /* KBDeviceMenuTableViewController.m */; };
 		A974D9291D76A79700F17A17 /* KBScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A974D9281D76A79700F17A17 /* KBScanViewController.m */; };
@@ -427,6 +431,13 @@
 		A96337BD1D37644400726E2F /* UIBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIBezierPathViewController.m; path = DetailController/KBShaperLayerController/UIBezierPathViewController.m; sourceTree = "<group>"; };
 		A9678A081C843DA9006EB732 /* KBCrandCenterDispatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBCrandCenterDispatchViewController.h; path = DetailController/KBGrandCenterDispatch/KBCrandCenterDispatchViewController.h; sourceTree = "<group>"; };
 		A9678A091C843DA9006EB732 /* KBCrandCenterDispatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCrandCenterDispatchViewController.m; path = DetailController/KBGrandCenterDispatch/KBCrandCenterDispatchViewController.m; sourceTree = "<group>"; };
+		A96923A71F1895C500FFF92A /* KBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBTableViewController.h; path = DetailController/KBTableViewController.h; sourceTree = "<group>"; };
+		A96923A81F1895C500FFF92A /* KBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBTableViewController.m; path = DetailController/KBTableViewController.m; sourceTree = "<group>"; };
+		A96923AC1F1899B400FFF92A /* KBCellHeightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBCellHeightTableViewController.h; path = DetailController/TableView/KBCellHeight/KBCellHeightTableViewController.h; sourceTree = "<group>"; };
+		A96923AD1F1899B400FFF92A /* KBCellHeightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCellHeightTableViewController.m; path = DetailController/TableView/KBCellHeight/KBCellHeightTableViewController.m; sourceTree = "<group>"; };
+		A96923AF1F189C6800FFF92A /* KBAutoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBAutoTableViewCell.h; path = DetailController/TableView/KBCellHeight/KBAutoTableViewCell.h; sourceTree = "<group>"; };
+		A96923B01F189C6800FFF92A /* KBAutoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBAutoTableViewCell.m; path = DetailController/TableView/KBCellHeight/KBAutoTableViewCell.m; sourceTree = "<group>"; };
+		A96923B11F189C6800FFF92A /* KBAutoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBAutoTableViewCell.xib; path = DetailController/TableView/KBCellHeight/KBAutoTableViewCell.xib; sourceTree = "<group>"; };
 		A974D91F1D7575C000F17A17 /* KBImageFloderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBImageFloderTableViewController.h; path = DetailController/KBShaperLayerController/ImageFloder/KBImageFloderTableViewController.h; sourceTree = "<group>"; };
 		A974D9201D7575C000F17A17 /* KBImageFloderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBImageFloderTableViewController.m; path = DetailController/KBShaperLayerController/ImageFloder/KBImageFloderTableViewController.m; sourceTree = "<group>"; };
 		A974D9231D76824100F17A17 /* KBDeviceMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBDeviceMenuTableViewController.h; path = DetailController/KBDevice/KBDeviceMenuTableViewController.h; sourceTree = "<group>"; };
@@ -1160,6 +1171,29 @@
 			name = KCGrandCenterDispatch;
 			sourceTree = "<group>";
 		};
+		A96923AA1F18963900FFF92A /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A96923A71F1895C500FFF92A /* KBTableViewController.h */,
+				A96923A81F1895C500FFF92A /* KBTableViewController.m */,
+				A96923AB1F18993E00FFF92A /* KBCellHeight */,
+				A976637A1C0ECB3F00F7E3C9 /* KBTablevieRefresh */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		A96923AB1F18993E00FFF92A /* KBCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				A96923AC1F1899B400FFF92A /* KBCellHeightTableViewController.h */,
+				A96923AD1F1899B400FFF92A /* KBCellHeightTableViewController.m */,
+				A96923AF1F189C6800FFF92A /* KBAutoTableViewCell.h */,
+				A96923B01F189C6800FFF92A /* KBAutoTableViewCell.m */,
+				A96923B11F189C6800FFF92A /* KBAutoTableViewCell.xib */,
+			);
+			name = KBCellHeight;
+			sourceTree = "<group>";
+		};
 		A974D91E1D75757400F17A17 /* ImageFloder */ = {
 			isa = PBXGroup;
 			children = (
@@ -1501,6 +1535,7 @@
 		A9DF77771AE10A7600055E0C /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
+				A96923AA1F18963900FFF92A /* TableView */,
 				A9333DD11EB9D72300CE9B13 /* Weex */,
 				A9AB13F51DFE742600C7A756 /* KBCollectionView */,
 				A90A37C91D8138AB003C4772 /* KBPop */,
@@ -1512,7 +1547,6 @@
 				A9EEFD0B1C86EE8F007FCE59 /* KCNetworkFrameworkDemo */,
 				A9678A071C843CD5006EB732 /* KCGrandCenterDispatch */,
 				A97E33001C61A7B7004534D1 /* KBObjectiveC */,
-				A976637A1C0ECB3F00F7E3C9 /* KBTablevieRefresh */,
 				A91B69B81BA6B61100D7C375 /* KCAnimation */,
 				A9E3080A1B3DA1460055D3C8 /* KBNavigate */,
 				A9048C301B314B84000A4BF4 /* KBGaodePath */,
@@ -1819,6 +1853,7 @@
 				A91B6A0F1BA8084A00D7C375 /* nv_3_3@2x.png in Resources */,
 				A90D43441B06F487009F65C0 /* 联系人@2x.png in Resources */,
 				A91B69BF1BA6B8CA00D7C375 /* start_animition@3x.png in Resources */,
+				A96923B31F189C6800FFF92A /* KBAutoTableViewCell.xib in Resources */,
 				A949CD851B2137B00012D0A1 /* main_car_0@2x.png in Resources */,
 				A91B69CE1BA6C5F200D7C375 /* start_Cloud_L@2x.png in Resources */,
 				A9333DD91EB9D8C800CE9B13 /* KBWeexDemoViewController.xib in Resources */,
@@ -1942,8 +1977,10 @@
 				A90D441B1B0750D2009F65C0 /* CWHessianConnection.m in Sources */,
 				A9839DB21CD1EA2C00F2F257 /* KBCoreDataMananger.m in Sources */,
 				A93DBA211DFFCEB600734100 /* KBStackLayout.m in Sources */,
+				A96923A91F1895C500FFF92A /* KBTableViewController.m in Sources */,
 				A93837EF1F174330007C2171 /* KBSpinnyMcSpinface.m in Sources */,
 				A98ED6BE1AA1C2140031BA10 /* KBButton.m in Sources */,
+				A96923B21F189C6800FFF92A /* KBAutoTableViewCell.m in Sources */,
 				A90A37D01D81523E003C4772 /* KBPOPBasicAnimationViewController.m in Sources */,
 				A94C52C81DF53CE8006C6E0F /* KBScriptViewController.m in Sources */,
 				A9EAD3771B42386800343A51 /* KBPopoverView.m in Sources */,
@@ -2044,6 +2081,7 @@
 				A9E490211B1706220065B7DA /* KBZbarViewController.m in Sources */,
 				A959F1F51B0F3E540050D9A2 /* KBArchiveController.m in Sources */,
 				A90D441F1B0750D2009F65C0 /* CWValueObject.m in Sources */,
+				A96923AE1F1899B400FFF92A /* KBCellHeightTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

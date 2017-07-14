@@ -145,7 +145,7 @@
                         ,@"录音UI制作"
                         ,@"自定义控件"
                         ,@"高德导航测试"
-                        ,@"TableView下拉刷行"
+                        ,@"TableView"
                         ,@"ObjectiveC"
                         ,@"GrandCenterDispatch"
                         ,@"KCNetworkframework"
@@ -262,9 +262,8 @@
         //1、 设置动画
         [self navigationAnimation:@"cameraIrisHollowClose"];
         
-        Class class=NSClassFromString(@"KBRefreshViewController");
+        Class class=NSClassFromString(@"KBTableViewController");
         id obj=[class new];
-        [obj performSelector:NSSelectorFromString(@"isON")];
         [self.navigationController pushViewController:obj animated:YES];
     }else if (indexPath.row==12){
         //1、 设置动画
