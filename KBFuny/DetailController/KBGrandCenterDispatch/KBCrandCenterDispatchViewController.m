@@ -205,11 +205,6 @@ static dispatch_source_t source_t;
 }
 //消费则
 -(void)customerHander{
-
-    
-    
-    
-    
     while (1) {
         
         NSLog(@"customerHander begion");
