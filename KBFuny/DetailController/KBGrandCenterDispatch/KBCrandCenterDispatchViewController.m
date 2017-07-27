@@ -28,6 +28,9 @@ static dispatch_source_t source_t;
 
 @property(strong,nonatomic)NSCondition *condition;
 @property(strong,nonatomic)NSMutableArray<NSString*> *sources;//资源列表
+@property(weak,nonatomic) UILabel *productLabel;
+@property(weak,nonatomic) UILabel *customerLabel;
+
 
 @end
 
@@ -39,17 +42,11 @@ static dispatch_source_t source_t;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor whiteColor];
-
     self.condition=[[NSCondition alloc]init];
     self.sources=[[NSMutableArray alloc]init];
-    
     [self createDataSource];
-    
-    
     [self createCustomer];
-    
     [self UIInit];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,16 +56,13 @@ static dispatch_source_t source_t;
 }
 
 -(void)UIInit{
-    
     self.title=@"Grand Central";
-
     CGFloat top=100,left=10,width=100,height=40;
     UIButton *btn=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn.frame=CGRectMake(left, top, width, height);
     [btn addTarget:self action:@selector(GCD_barrirerClick:) forControlEvents:UIControlEventTouchUpInside];
     [btn setTitle:@"GCD_barrier" forState:UIControlStateNormal];
     [self.view addSubview:btn];
-    
     
     UIButton *runLoopBtn=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     [runLoopBtn setTitle:@"NSRunLoop" forState:UIControlStateNormal];
@@ -79,7 +73,6 @@ static dispatch_source_t source_t;
         make.width.height.left.equalTo(btn);
         make.top.equalTo(btn.mas_bottom).offset(10);
     }];
-    
     
     UIButton *timer=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     [timer setTitle:@"NSTimer" forState:UIControlStateNormal];
@@ -147,12 +140,33 @@ static dispatch_source_t source_t;
     [productButton addTarget:self action:@selector(productButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:productButton];
     
+    UILabel *productLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    _productLabel  = productLabel;
+    productLabel.text = @"Product:0";
+    productLabel.textColor = [UIColor flatGreenColor];
+    [self.view addSubview:productLabel];
+    
+    UILabel *customerLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    _customerLabel  = customerLabel;
+    customerLabel.text = @"Number:0";
+    customerLabel.textColor = [UIColor flatMaroonColor];
+    [self.view addSubview:customerLabel];
+    
     [productButton makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.left.equalTo(runLoopBtn);
         make.top.equalTo(creatLoopButton.mas_bottom).offset(10);
     }];
     
+    [productLabel makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(productButton.right).offset(10);
+        make.centerY.equalTo(productButton.centerY);
+    }];
     
+    [customerLabel makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(productLabel.right).offset(10);
+        make.centerY.equalTo(productButton.centerY);
+
+    }];
     
 }
 
@@ -160,8 +174,6 @@ static dispatch_source_t source_t;
 
 
 -(void)productButtonClick:(id)sender{
-
-
     static NSUInteger index=0;
     NSThread *thread=[[NSThread  alloc]initWithTarget:self selector:@selector(productorHander) object:nil];
     thread.name= [NSString stringWithFormat:@"ProductThread%li",index ];
@@ -173,27 +185,16 @@ static dispatch_source_t source_t;
 
 //生存者创建
 -(void)productorHander{
-
-    
+    NSLog(@"*********Produc condition lock***********");
     [self.condition lock];
-    
     NSLog(@" productorHander Begin");
-    
     self.productNumber++;
-    
     [self.sources addObject:[NSString stringWithFormat: @"source%li",self.productNumber]];
-    
-    sleep(3);
-    [self.condition signal];//发送信号量
-    
-    
+    [self updateProductUI];
+//    [self.condition signal];//发送信号量
     NSLog(@" productorHander End");
-
     [self.condition unlock];
-    
-    
-    
-
+    NSLog(@"*********Produc condition unlock *********");
 }
 
 //创建消费者列表
@@ -206,34 +207,48 @@ static dispatch_source_t source_t;
 //消费则
 -(void)customerHander{
     while (1) {
-        
         NSLog(@"customerHander begion");
-
         [self.condition lock];
-        [self.condition wait];//等待
-        
+        NSLog(@"*********condition lock***********");
+//        [self.condition wait];//等待
         NSLog(@"开始处理事件");
-
         for (NSInteger i=self.sources.count-1; i>=0; --i) {
             NSLog(@"printSource:第%li个; name: %@",i,[self.sources lastObject]);
             [self.sources removeLastObject];
+            [self updateCustomerUI:self.sources.count];
+            sleep(1);
         }
-        
+        [self updateProductUI];
         //处理事件
-        sleep(5);
-        
         NSLog(@"结束事件");
         [self.condition unlock];
-
-        
+        NSLog(@"condition unlock");
         NSLog(@"customerHander End");
-
     }
-    
+}
 
-    
-    
+-(void)updateProductUI {
+    void(^block)() = ^{
+        _productLabel.text = [NSString stringWithFormat:@"product:%li",self.sources.count];
 
+    };
+    if([[NSThread currentThread] isMainThread]){
+        block();
+    }else {
+        dispatch_async(dispatch_get_main_queue(), block);
+    }
+}
+
+-(void)updateCustomerUI:(NSInteger)count {
+    void(^block)() = ^{
+        _customerLabel.text = [NSString stringWithFormat:@"custome:%li",count];
+        
+    };
+    if([[NSThread currentThread] isMainThread]){
+        block();
+    }else {
+        dispatch_async(dispatch_get_main_queue(), block);
+    }
 }
 #pragma mark - GCD 实现倒计时
 ///GCD 实现倒计时
