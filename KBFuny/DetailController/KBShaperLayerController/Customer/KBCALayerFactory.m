@@ -65,6 +65,10 @@
     shaperLayer.fillColor=[UIColor clearColor].CGColor;
     shaperLayer.lineWidth=10.;
     shaperLayer.strokeColor=[UIColor redColor].CGColor;
+    shaperLayer.lineCap = kCALineCapRound;
+    shaperLayer.lineJoin = kCALineJoinBevel;
+    shaperLayer.anchorPoint = CGPointMake(0.5, 0.5);
+
     //添加动画
     CABasicAnimation *pathAnima=[CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     pathAnima.duration=2.0f;
@@ -72,9 +76,13 @@
     pathAnima.fromValue=@0.0f;
     pathAnima.toValue=@1.0f;
     pathAnima.fillMode=kCAFillModeForwards;
-    pathAnima.removedOnCompletion=YES;
+    pathAnima.repeatCount = MAXFLOAT;
+    pathAnima.autoreverses = YES;
+    pathAnima.removedOnCompletion = YES;
     
+
     [shaperLayer addAnimation:pathAnima forKey:@"strokeEndAnimation"];
+
     return shaperLayer;
 }
 @end

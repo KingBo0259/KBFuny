@@ -67,6 +67,14 @@
     criclProcessView.frame=CGRectMake(30, 200, 100, 100);
     
    [criclProcessView.layer addSublayer:   [KBCALayerFactory circlProgressLayerWithWidth:criclProcessView.frame.size.width]];
+    
+    CABasicAnimation *anima3 = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    anima3.toValue = [NSNumber numberWithFloat:-M_PI*2];
+    anima3.duration = 1.0f;
+    anima3.repeatCount = MAXFLOAT;
+    anima3.timingFunction = UIViewAnimationOptionCurveEaseInOut;
+    [criclProcessView.layer addAnimation:anima3 forKey:@"rotaionAniamtion"];
+
     [self.view addSubview:criclProcessView];
     
     descripLabel=[UILabel new];

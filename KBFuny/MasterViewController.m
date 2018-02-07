@@ -51,7 +51,7 @@
      [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back" ]];
     
     //滑动时隐藏bar
-    self.navigationController.hidesBarsOnSwipe=YES;
+//    self.navigationController.hidesBarsOnSwipe=YES;
     [self testStringCompare];
     
     //导航条返回键带的title太讨厌了,怎么让它消失!
