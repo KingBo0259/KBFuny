@@ -31,21 +31,25 @@
 
 -(void)demo{
     // 设置一个异步线程组
+     __block  NSString *message = @"呵呵";
         // 设置一个网络请求
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.github.com"]];
         // 创建一个信号量为0的信号(红灯)
         dispatch_semaphore_t sema = dispatch_semaphore_create(0);
         NSURLSessionDownloadTask *task = [[NSURLSession sharedSession] downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             NSLog(@"第一步操作");
+            message = @"网络结果";
             // 使信号的信号量+1，这里的信号量本来为0，+1信号量为1(绿灯)
             dispatch_semaphore_signal(sema);
         }];
         [task resume];
         // 以下还要进行一些其他的耗时操作
-        NSLog(@"耗时操作继续进行");
+      NSString *temp = [NSString stringWithFormat:@"耗时操作继续进行---%@",message];
+    NSLog(@"%@", temp);
         // 开启信号等待，设置等待时间为永久，直到信号的信号量大于等于1（绿灯）
         dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
-        NSLog(@"dispatch_semaphore_wait_end");
+        temp = [NSString stringWithFormat:@"dispatch_semaphore_wait_end--%@",message];
+    NSLog(@"%@", temp);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
