@@ -64,18 +64,21 @@
     //圆形进度条
     
     UIView *criclProcessView=[[UIView alloc]init];
-    criclProcessView.frame=CGRectMake(30, 200, 100, 100);
+    criclProcessView.backgroundColor = [UIColor yellowColor];
+    criclProcessView.frame=CGRectMake(30, 200, 30, 30);
     
    [criclProcessView.layer addSublayer:   [KBCALayerFactory circlProgressLayerWithWidth:criclProcessView.frame.size.width]];
     
     CABasicAnimation *anima3 = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    anima3.toValue = [NSNumber numberWithFloat:-M_PI*2];
-    anima3.duration = 1.0f;
+    anima3.toValue = [NSNumber numberWithFloat:M_PI*2];
+    anima3.duration = 1.25f;
     anima3.repeatCount = MAXFLOAT;
     anima3.timingFunction = UIViewAnimationOptionCurveEaseInOut;
     [criclProcessView.layer addAnimation:anima3 forKey:@"rotaionAniamtion"];
-
+    
     [self.view addSubview:criclProcessView];
+    
+
     
     descripLabel=[UILabel new];
     descripLabel.textColor=[UIColor blackColor];

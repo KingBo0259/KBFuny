@@ -16,6 +16,8 @@
 #import "SVProgressHUD.h"
 #import "PKRevealController.h"
 #import "Chameleon.h"
+#import "UIViewController+Cloudox.h"
+
 //#import <ReactiveCocoa/ReactiveCocoa.h>
 
 
@@ -27,4 +29,18 @@
 #define KB_SCREEN_HEIGHT        ([UIScreen mainScreen].bounds.size.height)
 #define KB_SCREEN_WIDTH         ([UIScreen mainScreen].bounds.size.width)
 #define KB_SCREEN_SCALE         ([UIScreen mainScreen].scale)
+
+
+#define KB_SYS_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+
+#define KB_SYS_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+
+
+#define KB_SYS_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+
+
+#define KB_SYS_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
+#define KB_SYS_LESS_THAN_OR_EQUAL_TO(v)             ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 #endif /* PrefixHeader_pch */

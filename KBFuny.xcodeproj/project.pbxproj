@@ -107,6 +107,8 @@
 		A94BD6441EC2FC6F009D70B0 /* helloWeex.we in Resources */ = {isa = PBXBuildFile; fileRef = A94BD6431EC2FC6F009D70B0 /* helloWeex.we */; };
 		A94C52C41DF53C38006C6E0F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94C52C31DF53C38006C6E0F /* JavaScriptCore.framework */; };
 		A94C52C81DF53CE8006C6E0F /* KBScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94C52C71DF53CE8006C6E0F /* KBScriptViewController.m */; };
+		A9500909205CEA4600420EB2 /* UINavigationController+Cloudox.m in Sources */ = {isa = PBXBuildFile; fileRef = A9500905205CEA4600420EB2 /* UINavigationController+Cloudox.m */; };
+		A950090A205CEA4600420EB2 /* UIViewController+Cloudox.m in Sources */ = {isa = PBXBuildFile; fileRef = A9500907205CEA4600420EB2 /* UIViewController+Cloudox.m */; };
 		A9516F611CF6E09000B45D71 /* 樱花瓣1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9516F5C1CF6E09000B45D71 /* 樱花瓣1.png */; };
 		A9516F621CF6E09000B45D71 /* 樱花瓣2.png in Resources */ = {isa = PBXBuildFile; fileRef = A9516F5D1CF6E09000B45D71 /* 樱花瓣2.png */; };
 		A9516F631CF6E09000B45D71 /* 樱花树1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9516F5E1CF6E09000B45D71 /* 樱花树1.png */; };
@@ -157,6 +159,7 @@
 		A9839DAF1CD1E82C00F2F257 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = A9839DAD1CD1E82C00F2F257 /* Order.m */; };
 		A9839DB21CD1EA2C00F2F257 /* KBCoreDataMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = A9839DB11CD1EA2C00F2F257 /* KBCoreDataMananger.m */; };
 		A9839DB41CD34E7600F2F257 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9839DB31CD34E7600F2F257 /* back@2x.png */; };
+		A983B0AE216CAE340058BE60 /* KBAutoScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A983B0AD216CAE340058BE60 /* KBAutoScrollerViewController.m */; };
 		A98ED64C1AA013B10031BA10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED64B1AA013B10031BA10 /* main.m */; };
 		A98ED64F1AA013B10031BA10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED64E1AA013B10031BA10 /* AppDelegate.m */; };
 		A98ED6521AA013B10031BA10 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98ED6511AA013B10031BA10 /* MasterViewController.m */; };
@@ -404,6 +407,10 @@
 		A94C52C31DF53C38006C6E0F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		A94C52C61DF53CE8006C6E0F /* KBScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBScriptViewController.h; path = DetailController/KBObjectiveC/KBJavaScript/KBScriptViewController.h; sourceTree = "<group>"; };
 		A94C52C71DF53CE8006C6E0F /* KBScriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBScriptViewController.m; path = DetailController/KBObjectiveC/KBJavaScript/KBScriptViewController.m; sourceTree = "<group>"; };
+		A9500905205CEA4600420EB2 /* UINavigationController+Cloudox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Cloudox.m"; sourceTree = "<group>"; };
+		A9500906205CEA4600420EB2 /* UINavigationController+Cloudox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Cloudox.h"; sourceTree = "<group>"; };
+		A9500907205CEA4600420EB2 /* UIViewController+Cloudox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Cloudox.m"; sourceTree = "<group>"; };
+		A9500908205CEA4600420EB2 /* UIViewController+Cloudox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Cloudox.h"; sourceTree = "<group>"; };
 		A9516F5C1CF6E09000B45D71 /* 樱花瓣1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "樱花瓣1.png"; sourceTree = "<group>"; };
 		A9516F5D1CF6E09000B45D71 /* 樱花瓣2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "樱花瓣2.png"; sourceTree = "<group>"; };
 		A9516F5E1CF6E09000B45D71 /* 樱花树1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "樱花树1.png"; sourceTree = "<group>"; };
@@ -477,6 +484,8 @@
 		A9839DB01CD1EA2C00F2F257 /* KBCoreDataMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBCoreDataMananger.h; path = DetailController/KCCoreData/KCModel/KBCoreDataMananger.h; sourceTree = "<group>"; };
 		A9839DB11CD1EA2C00F2F257 /* KBCoreDataMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBCoreDataMananger.m; path = DetailController/KCCoreData/KCModel/KBCoreDataMananger.m; sourceTree = "<group>"; };
 		A9839DB31CD34E7600F2F257 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		A983B0AC216CAE340058BE60 /* KBAutoScrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBAutoScrollerViewController.h; sourceTree = "<group>"; };
+		A983B0AD216CAE340058BE60 /* KBAutoScrollerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBAutoScrollerViewController.m; sourceTree = "<group>"; };
 		A98ED6461AA013B10031BA10 /* KBFuny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBFuny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98ED64A1AA013B10031BA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A98ED64B1AA013B10031BA10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1083,6 +1092,25 @@
 			name = KBJavaScript;
 			sourceTree = "<group>";
 		};
+		A9500902205CE9D800420EB2 /* KBCategory */ = {
+			isa = PBXGroup;
+			children = (
+				A9500904205CE9F200420EB2 /* UI */,
+			);
+			path = KBCategory;
+			sourceTree = "<group>";
+		};
+		A9500904205CE9F200420EB2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A9500906205CEA4600420EB2 /* UINavigationController+Cloudox.h */,
+				A9500905205CEA4600420EB2 /* UINavigationController+Cloudox.m */,
+				A9500908205CEA4600420EB2 /* UIViewController+Cloudox.h */,
+				A9500907205CEA4600420EB2 /* UIViewController+Cloudox.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		A9516F661CF6E5A300B45D71 /* BSErrorMessageView-master */ = {
 			isa = PBXGroup;
 			children = (
@@ -1311,6 +1339,15 @@
 			name = KCModel;
 			sourceTree = "<group>";
 		};
+		A983B0AB216CACF40058BE60 /* Scroller */ = {
+			isa = PBXGroup;
+			children = (
+				A983B0AC216CAE340058BE60 /* KBAutoScrollerViewController.h */,
+				A983B0AD216CAE340058BE60 /* KBAutoScrollerViewController.m */,
+			);
+			path = Scroller;
+			sourceTree = "<group>";
+		};
 		A98ED63D1AA013B10031BA10 = {
 			isa = PBXGroup;
 			children = (
@@ -1334,6 +1371,7 @@
 		A98ED6481AA013B10031BA10 /* KBFuny */ = {
 			isa = PBXGroup;
 			children = (
+				A9500902205CE9D800420EB2 /* KBCategory */,
 				A9AC9D8A1D52E0FD00FD3CAB /* KBCommon */,
 				A94740681C006BAE00C38D40 /* KBExtion */,
 				A9E4907A1B170B730065B7DA /* Foundation */,
@@ -1535,6 +1573,7 @@
 		A9DF77771AE10A7600055E0C /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
+				A983B0AB216CACF40058BE60 /* Scroller */,
 				A96923AA1F18963900FFF92A /* TableView */,
 				A9333DD11EB9D72300CE9B13 /* Weex */,
 				A9AB13F51DFE742600C7A756 /* KBCollectionView */,
@@ -1748,7 +1787,6 @@
 				A98ED6421AA013B10031BA10 /* Sources */,
 				A98ED6431AA013B10031BA10 /* Frameworks */,
 				A98ED6441AA013B10031BA10 /* Resources */,
-				9E8584A1C1D14A6A06A68A0E /* [CP] Embed Pods Frameworks */,
 				5512B8035F4241CCDF74BE25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1789,6 +1827,7 @@
 				TargetAttributes = {
 					A98ED6451AA013B10031BA10 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Q3A3J38HKC;
 						ProvisioningStyle = Manual;
 					};
 					A98ED6611AA013B20031BA10 = {
@@ -1919,13 +1958,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KBFuny-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5512B8035F4241CCDF74BE25 /* [CP] Copy Pods Resources */ = {
@@ -1934,28 +1976,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KBFuny/Pods-KBFuny-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/WeexSDK/WeexSDK.framework/main.js",
+				"${PODS_ROOT}/WeexSDK/WeexSDK.framework/wx_load_error@3x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/main.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KBFuny/Pods-KBFuny-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E8584A1C1D14A6A06A68A0E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KBFuny/Pods-KBFuny-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1994,6 +2028,7 @@
 				A949CD981B2142250012D0A1 /* KBVoiceRecordViewController.m in Sources */,
 				A92C51B61CC8A3EE0097C699 /* KCTmsTestDetailViewController.m in Sources */,
 				A9048C331B314B84000A4BF4 /* KBGaodeViewController.m in Sources */,
+				A950090A205CEA4600420EB2 /* UIViewController+Cloudox.m in Sources */,
 				A91B6A011BA7F6DE00D7C375 /* KCUserNavigationView.m in Sources */,
 				A9839DAE1CD1E82C00F2F257 /* Order+CoreDataProperties.m in Sources */,
 				A928D1671CC4913500E1247C /* KCTmsViewController.m in Sources */,
@@ -2048,11 +2083,13 @@
 				A9AB14031DFE797D00C7A756 /* KBBaseCollectionViewCell.m in Sources */,
 				A991C26E1E6009E800474D9E /* NSObject+Calculate.m in Sources */,
 				A93DBA171DFF921A00734100 /* KBFowLayout.m in Sources */,
+				A983B0AE216CAE340058BE60 /* KBAutoScrollerViewController.m in Sources */,
 				A947406B1C006C5300C38D40 /* UIImage+KBImage.m in Sources */,
 				A93FA0C41ED41AAA002D4A73 /* KBEventViewController.m in Sources */,
 				A991C2681E60035100474D9E /* KBMakeCaculate.m in Sources */,
 				A9333DDC1EB9DAE800CE9B13 /* KBWeexShowcaseViewController.m in Sources */,
 				A9E7E7231BD0D3CC0080CF5C /* KBTouchTableView.m in Sources */,
+				A9500909205CEA4600420EB2 /* UINavigationController+Cloudox.m in Sources */,
 				A90D44161B0750D2009F65C0 /* CWDistantHessianObject+Private.m in Sources */,
 				A92D072B1AF741EE002D4928 /* KBGradientCircleView.m in Sources */,
 				A90561BE1CD84802001A368C /* KCCoreDataTVC.m in Sources */,
@@ -2207,7 +2244,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Q3A3J38HKC;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2226,8 +2263,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kb.KBFuny2015;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "c8c4d170-b5f2-461d-b0ae-942943d22c39";
+				PROVISIONING_PROFILE_SPECIFIER = YiNiu_General_Development;
 			};
 			name = Debug;
 		};

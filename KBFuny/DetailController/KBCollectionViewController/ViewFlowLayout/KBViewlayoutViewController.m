@@ -40,7 +40,7 @@
     UICollectionView *collectionView=[[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:[KBFowLayout new]];
     
     self.collectionView=collectionView;
-    collectionView.backgroundColor=[UIColor whiteColor];
+    collectionView.backgroundColor=[UIColor yellowColor];
     
     collectionView.delegate=self;
     collectionView.dataSource=self;

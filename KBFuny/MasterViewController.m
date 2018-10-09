@@ -29,7 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self dataInit];
-    
+    self.navBarBgAlpha = @"0.0";
     
     NSString *encode=[SKYBase64 base64StringFromText:@"123456"];
     NSString *decodeStr=[SKYBase64 textFromBase64String:encode];
@@ -156,6 +156,7 @@
                         ,@"KBScriptViewController"
                         ,@"UICollection 学习"
                         ,@"Weex"
+                        ,@"scroller 自动布局"
                         , nil];
     }
 
@@ -342,6 +343,10 @@
 
     } else if (indexPath.row == 21){
         Class class=NSClassFromString(@"KBWeexDemoViewController");
+        id obj=[class new];
+        [self.navigationController pushViewController:obj animated:YES];
+    } else if (indexPath.row == 22){
+        Class class=NSClassFromString(@"KBAutoScrollerViewController");
         id obj=[class new];
         [self.navigationController pushViewController:obj animated:YES];
     }

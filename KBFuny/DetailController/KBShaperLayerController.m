@@ -76,7 +76,7 @@
     shaperLayer.strokeColor=[UIColor redColor].CGColor;
     shaperLayer.lineWidth=3.0;
 
-    [self.view.layer addSublayer:shaperLayer];
+//    [self.view.layer addSublayer:shaperLayer];
     
     
 
@@ -85,7 +85,7 @@
     shipLayer.position=CGPointMake(50, 100);
     shipLayer.contents=(__bridge id)[UIImage imageNamed:@"ship"].CGImage;
     self.shipLayer=shipLayer;
-    [self.view.layer addSublayer:shipLayer];
+//    [self.view.layer addSublayer:shipLayer];
     
     
     
@@ -94,7 +94,7 @@
     UIImage*imge=[UIImage renderImageWithColor:[UIColor greenColor] inSize:CGSizeMake(100, 100)];
     UIImageView *imageView=[[UIImageView alloc]initWithImage:imge];
     imageView.center=CGPointMake(160, 340);
-    [self.view addSubview:imageView];
+//    [self.view addSubview:imageView];
     
     
     

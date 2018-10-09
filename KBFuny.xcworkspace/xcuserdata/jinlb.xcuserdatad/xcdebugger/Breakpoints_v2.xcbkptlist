@@ -327,14 +327,62 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KBFuny/MasterViewController.m"
-            timestampString = "536672977.655562"
+            filePath = "KBFuny/DetailController/URLProtocol/KBURLProtocol.m"
+            timestampString = "536672977.655737"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "-testStringCompare"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "+canInitWithRequest:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KBFuny/KBCategory/UI/UINavigationController+Cloudox.m"
+            timestampString = "542964012.596261"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-setNeedsNavigationBackground:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UINavigationController(Cloudox) setNeedsNavigationBackground:]"
+                  moduleName = "KBFuny"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enniu/Desktop/KingboWorkSpace/KBFuny/KBFuny/KBCategory/UI/UINavigationController+Cloudox.m"
+                  timestampString = "542963099.313899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "266">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UINavigationController(Cloudox) setNeedsNavigationBackground:]"
+                  moduleName = "KBFuny"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enniu/Desktop/KingboWorkSpace/KBFuny/KBFuny/KBCategory/UI/UINavigationController+Cloudox.m"
+                  timestampString = "542963099.317243"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "274">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -343,13 +391,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KBFuny/DetailController/URLProtocol/KBURLProtocol.m"
-            timestampString = "536672977.655737"
+            filePath = "KBFuny/DetailController/KBShaperLayerController/KBShaperLayerDemoViewController.m"
+            timestampString = "546347406.344977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "+canInitWithRequest:"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

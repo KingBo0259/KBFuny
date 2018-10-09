@@ -19,32 +19,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self.window makeKeyAndVisible];
-    
+    //theme
+    [self p_setupTheme];
+    //window
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-   
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
     UIViewController *mainVc = sb.instantiateInitialViewController;
     UIViewController *leftVc = [KBSecondViewController new];
     leftVc.view.backgroundColor=[UIColor flatOrangeColor];
-//    UIViewController *rightVc = leftVc;
     
     self.revealVc = [PKRevealController revealControllerWithFrontViewController:mainVc
                                                              leftViewController:leftVc
                                                             ];
-    
 //    self.revealVc.delegate = self;
     [self.revealVc showViewController:self.revealVc.leftViewController];
     self.revealVc.animationDuration = 0.25;
-    
     self.window.rootViewController = self.revealVc;
-    
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -82,15 +77,9 @@
   NSArray *urlArray=  [urlString componentsSeparatedByString:@"="];
     NSString *sourcApplicationURL=urlArray[1];
     NSLog(@"%@",url.absoluteString);
-    
-
-    
-    
     UIAlertController *alertController=[UIAlertController alertControllerWithTitle:@"来自KBSwiftFuny" message:@"是否返回应用?" preferredStyle:UIAlertControllerStyleActionSheet];
     
     UIAlertAction *okAction=[UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
-        
         NSURL *url=[[NSURL alloc]initWithString:[sourcApplicationURL stringByAppendingString:@":"]];
         [[UIApplication  sharedApplication] openURL:url];
     }];
@@ -108,36 +97,32 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+#pragma mark - Private
+-(void)p_setupTheme{
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setBackgroundColor: [UIColor redColor]];
+}
 
 //淘宝复制分享 打开内容
 -(void)checkPasteBorardContext{
-
     //剪切板内容
     NSString* paste=  [UIPasteboard generalPasteboard].string;
     if (!paste|| [paste isEqualToString:@"我是开发自定义的"]) {
         return;
     }
     [UIPasteboard generalPasteboard].string=@"我是开发自定义的";//清空
-    
     UIAlertController *alertController=[UIAlertController alertControllerWithTitle:@"要打开剪贴板中的链接" message:paste preferredStyle:UIAlertControllerStyleAlert];
-    
     UIAlertAction *action=[UIAlertAction  actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     UIAlertAction *okAction=[UIAlertAction actionWithTitle:@"打开" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"哈哈 你真打开了啊，笨"
                                                          message:paste
                                                         delegate:nil
                                                cancelButtonTitle:@"确定" otherButtonTitles:nil];
-        
             [alert show];
-
-        
     }];
     [alertController addAction:action];
     [alertController addAction:okAction];
 
-
     [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
-    
 }
 @end

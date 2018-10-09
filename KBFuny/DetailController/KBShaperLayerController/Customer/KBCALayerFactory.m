@@ -60,10 +60,11 @@
     CAShapeLayer *shaperLayer=[CAShapeLayer layer];
     
     //画内切圆
-    UIBezierPath *path=[UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, width, width)];
+//    UIBezierPath *path=[UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, width, width)];
+    UIBezierPath *path=[UIBezierPath bezierPathWithArcCenter:CGPointMake(width/2, width/2) radius:width/2 startAngle:0.0 endAngle:(CGFloat) (M_PI/2+M_PI) clockwise:YES];
     shaperLayer.path=path.CGPath;
     shaperLayer.fillColor=[UIColor clearColor].CGColor;
-    shaperLayer.lineWidth=10.;
+    shaperLayer.lineWidth=6.;
     shaperLayer.strokeColor=[UIColor redColor].CGColor;
     shaperLayer.lineCap = kCALineCapRound;
     shaperLayer.lineJoin = kCALineJoinBevel;
@@ -79,9 +80,8 @@
     pathAnima.repeatCount = MAXFLOAT;
     pathAnima.autoreverses = YES;
     pathAnima.removedOnCompletion = YES;
-    
 
-    [shaperLayer addAnimation:pathAnima forKey:@"strokeEndAnimation"];
+//    [shaperLayer addAnimation:pathAnima forKey:@"strokeEndAnimation"];
 
     return shaperLayer;
 }

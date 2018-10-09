@@ -44,7 +44,6 @@ static CGFloat kItemWidth=100.0f;
 -(NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
 
     NSArray *array=[super layoutAttributesForElementsInRect:rect];
-    
     CGFloat inset=(self.collectionView.frame.size.width-kItemWidth)*0.5;
     //设置第一个和最后一个默认局中显示
     self.collectionView.contentInset=UIEdgeInsetsMake(0, inset, 0, inset);
